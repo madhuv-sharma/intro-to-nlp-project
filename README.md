@@ -41,9 +41,9 @@ Submit your deliverables on LEARN. Your proposal/reports must have the names `pr
 **Grading** (our baseline implementation scores around 65% on the private set):
 
 * 0: No/invalid submission.
-* 1: Valid submission that achieves *inferior* performance compared to the baseline implementation on the private set i.e. < 62.5%.
-* 2: Achieves *satisfactory* performance compared to the baseline implementation on the private set i.e. >= 62.5% and <= 75%.
-* 3: Achieves and *significantly* outperforms baseline implementation i.e. > 75%.
+* 1: Valid submission that achieves *inferior* performance compared to the baseline implementation on the private set i.e. < 60%.
+* 2: Achieves *satisfactory* performance compared to the baseline implementation on the private set i.e. >= 60% and <= 70%.
+* 3: Achieves and *significantly* outperforms baseline implementation i.e. > 70%.
 * 4 (Bonus): Program achieves top-3 performance.
 
 **Post-Midterm**: After the midterm, you can make a non-mandatory submission on Kaggle as often as Kaggle allows. These will be automatically evaluated on the validation set and made public on the public leaderboard.
@@ -65,9 +65,9 @@ Submit your deliverables on LEARN. Your proposal/reports must have the names `pr
 * **Report**: Out of 10.
 * **System Performance** (The team reserves the right to raise the performance thresholds specified below. If that happens you will get a heads up):
 
-  * 0: No/invalid submission or *does not achieve satisfactory* performance compared to the baseline implementation i.e. < 62.5%.
-  * 1: Achieves *satisfactory* performance compared to the baseline implementation i.e. >= 62.5% and <= 75%.
-  * 2: Achieves and *significantly* outperforms baseline implementation i.e. > 75%.
+  * 0: No/invalid submission or *does not achieve satisfactory* performance compared to the baseline implementation i.e. < 60%.
+  * 1: Achieves *satisfactory* performance compared to the baseline implementation i.e. >= 60% and <= 70%.
+  * 2: Achieves and *significantly* outperforms baseline implementation i.e. > 70%.
   * 3 (Bonus): Program achieves top-3 performance.
 
 ## Kaggle Competition (Scoring) + LEARN Submission (Code)
