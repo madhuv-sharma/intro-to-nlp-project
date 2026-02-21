@@ -46,7 +46,7 @@ Submit your deliverables on LEARN. Your proposal/reports must have the names `pr
 * 3: Achieves and *significantly* outperforms baseline implementation i.e. > 75%.
 * 4 (Bonus): Program achieves top-3 performance.
 
-**Post-Midterm**: After the midterm, you can make a non-mandatory submission on Kaggle as often as you want. These will be automatically evaluated on the validation set and made public on the public leaderboard.
+**Post-Midterm**: After the midterm, you can make a non-mandatory submission on Kaggle as often as Kaggle allows. These will be automatically evaluated on the validation set and made public on the public leaderboard.
 
 ### Final Report (due end of term)
 
