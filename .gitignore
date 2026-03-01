@@ -1,3 +1,4 @@
 output
 work
 *.py[cod]
+**/images/**

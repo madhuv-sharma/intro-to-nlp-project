@@ -1,0 +1,370 @@
+{
+    "name": "g3",
+    "featured": true,
+    "incomplete": false,
+    "subdomains": ["gemini3", "g3"],
+    "copy": {
+        "title": "Gemini 3",
+        "upper_title": "Gemini",
+        "lower_title": "3",
+        "description": "The mission that performed the first orbital maneuvers by a crewed spacecraft, and which was the first crewed flight of the Gemini spacecraft.",
+        "summary": "First Gemini mission",
+        "glossary_introduction": "Space flight involves a lot of technical terms and acronyms. This glossary gives an expansion or brief description of many of those most likely to occur.",
+        "cleaners": [
+          "George Brocklehurst",
+          "Nathaniel Hine"
+        ],
+        "about": "Gemini 3, flown by Virgil “Gus” Grissom and John Young, was the first crewed flight of the Gemini spacecraft.  It was also the first American spaceflight with a crew of two.  This was the first of ten crewed Project Gemini missions which were designed to develop the spaceflight capabilities that would be required to go to the moon.\n\nThis site allows you to explore transcripts of radio communications between the Mercury 3 crew and the NASA personnel back at Cape Canaveral. Included with the transcripts are photographs, as well as other information about the mission.",
+        "image_attributions": [
+            { "url": "http://earthobservatory.nasa.gov/IOTD/view.php?id=41052", "title": "Thunderstorms on the Brazilian Horizon", "attrib_url": "http://earthobservatory.nasa.gov/", "attrib": "NASA's Earth Observatory" }
+        ],
+        "transcript_attributions": [
+            { "url": "http://www.jsc.nasa.gov/history/mission_trans/gemini3.htm", "title": "Gemini III Composite Air-to-Ground and Onboard Voice Tape Transcription" }
+        ],
+        "component_suppression": {
+            "leading": 1
+        }
+    },
+    "main_transcript": "g3/TEC",
+    "utc_launch_time": -150716160,
+    "acts" : [
+        {
+            "title": "Launch",
+            "description": "Following a smooth preparation with only one minor hold, the Titan rocket overperformed putting the spacecraft into a slightly higher orbit than originally planned.",
+            "range": ["-00:00:00:20", "00:00:07:23"],
+            "banner": "act1.jpg",
+            "banner_colour": "#5d86b2",
+            "homepage": "act1.jpg"
+        },
+        {
+            "title": "1st Orbit",
+            "description": "The crew performed the first orbit change of a crewed spacecraft, a crucial test of the maneuvering capabilities that would be needed later in the Gemini program for rendezvouz and subquently in flying Apollo missions to the moon.",
+            "range": ["00:00:07:23", "00:01:49:03"],
+            "banner": "act2.jpg",
+            "homepage": "act2.jpg"
+        },
+        {
+            "title": "2nd Orbit",
+            "description": "Despite a prank by John Young over a sandwich, the mission continues well. Over the Indian Ocean, Gus Grissom tests the full OAMS, making an adjustment of a fraction of a degree in orbital inclination.",
+            "range": ["00:01:49:03", "00:03:16:00"],
+            "banner": "act3.jpg",
+            "homepage": "act3.jpg"
+        },
+        {
+            "title": "3rd Orbit",
+            "description": "Completing various tests and experiments, the crew starts to prepare for re-entry, including a final orbital maneuvre.",
+            "range": ["00:03:16:00", "00:04:32:49"],
+            "banner": "act4.jpg",
+            "homepage": "act4.jpg"
+        },
+        {
+            "title": "Reentry",
+            "description": "Despite a number of issues with re-entry, including unexpected amounts of smoke from the thrusters and instability of the craft in the water, the crew and spacecraft were successfully recovered by USS Intrepid.",
+            "range": ["00:04:32:49", "00:05:01:00"],
+            "banner": "act5.jpg",
+            "banner_colour": "#5d86b2",
+            "homepage": "act5.jpg"
+        }
+    ],
+    "key_scenes" : [
+        {
+            "title": "The first corned beef sandwich in space",
+            "range": [ "00:01:52:26", "00:01:53:15" ]
+        },
+        {
+            "title": "Problem with one of the OAMS thrusters, possibly similar to problems experienced later on Gemini VIII",
+            "range": [ "00:00:18:41", "00:00:18:57" ]
+        },
+        {
+            "title": "Problems with the primary DC-DC converter",
+            "range": [ "00:00:24:04", "00:00:25:50" ]
+        },
+        {
+            "title": "First orbit change of a crewed spacecraft, lowering the orbit into an almost circular one",
+            "range": [ "00:01:33:00", "00:01:34:14" ]
+        },
+        {
+            "title": "Second orbital maneuvre, changing orbital inclination using all the OAMS thrusters",
+            "range": [ "00:02:16:44", "00:02:17:28" ]
+        },
+        {
+            "title": "Synergistic Effect of Zero Gravity on Sea Urchin Eggs Experiment, a secondary mission objective, fails to activate due to broken handle.",
+            "range": [ "00:03:51:05", "00:03:51:22" ]
+        },
+        {
+            "title": "Third orbital maneuvre, lowering perigee to enable re-entry even if the retrorockets failed",
+            "range": [ "00:04:21:23", "00:04:23:14" ]
+        },
+        {
+            "title": "In going to landing attitude, the change is so sudden that Gus Grissom cracks his helmet faceplate",
+            "range": [ "00:04:48:47", "00:04:48:54" ]
+        },
+        {
+            "title": "Due to smoke from the thrusters, the crew decides to deviate from the post-landing checklist in keeping their helmets on.",
+            "range": [ "00:04:53:50", "00:04:54:13" ]
+        }
+
+    ],
+    "homepage_quotes" : [
+        "00:01:16:31",
+        "00:01:18:24",
+        "00:01:29:31",
+        "00:01:43:26",
+        "00:01:57:18",
+        "00:01:58:25"
+    ],
+    "character_ordering": [
+        "C",
+        "P",
+        "MOLLY_BROWN",
+        "GORDON_COOPER",
+        "PETE_CONRAD",
+        "ROGER_CHAFFEE"
+    ],
+    "characters": {
+        "C": {
+            "role": "astronaut",
+            "name": "Virgil I. “Gus” Grissom",
+            "short_name": "Gus Grissom",
+            "mission_position": "Command Pilot",
+            "bio": "Gemini 3 was Gus Grissom’s second spaceflight, making him the first man to fly in space twice. As one of the original Mercury Seven he’d been part of NASA’s crewed spaceflight program since it began in 1959, and was involved in the Gemini Program from the start, helping to design the flight control systems. He continued to work on the program until 1966 when he was selected to command the ill-fated Apollo 1 mission.",
+            "photo": "grissom.jpg",
+            "photo_width": 190,
+            "photo_height": 205,
+            "avatar": "grissom.jpg",
+            "stats": [
+                {
+                    "value": 38,
+                    "text": "years at launch"
+                },
+                {
+                    "value": 100,
+                    "text": "combat missions"
+                },
+                {
+                    "value": 3,
+                    "text": "NASA missions"
+                }
+            ]
+        },
+        "P": {
+            "role": "astronaut",
+            "name": "John W. Young",
+            "short_name": "John Young",
+            "mission_position": "Pilot",
+            "bio": "John Young was a test pilot in the United States Navy before he joined NASA as part of Astronaut Group 2 in 1962. Gemini 3 was Young’s first spaceflight, and he was famously responsible for smuggling a corned beef sandwich aboard. In spite of the sandwich incident, Young went on to have a long and successful career at NASA during which he walked on the moon and commanded the first Space Shuttle mission, STS-1.",
+            "photo": "young.jpg",
+            "photo_width": 190,
+            "photo_height": 205,
+            "avatar": "young.jpg",
+            "stats": [
+                {
+                    "value": 34,
+                    "text": "years at launch"
+                },
+                {
+                    "value": 835,
+                    "text": "hours in space"
+                },
+                {
+                    "value": 6,
+                    "text": "NASA missions"
+                }
+            ]
+        },
+        "MOLLY_BROWN": {
+            "role": "astronaut",
+            "_comment": "marked as an astronaut for formatting reasons",
+            "name": "Molly Brown",
+            "mission_position": "Spacecraft",
+            "bio": "Molly Brown was the Gemini 3 spacecraft; Gus Grissom named it after the Broadway musical “The Unsinkable Molly Brown”, the name a light hearted reference to the last spacecraft Grissom had commanded, Liberty Bell 7, which sank shortly after splashdown. NASA officials originally rejected the name, ordering Grissom and Young to select something different, but relented when they proposed naming the spacecraft “Titanic” instead.",
+            "photo": "mollybrown.jpg",
+            "photo_width": 190,
+            "photo_height": 205,
+            "stats": [
+                {
+                    "value": 292,
+                    "text": "hours in space"
+                },
+                {
+                    "value": "3.2",
+                    "text": "mass (metric tonnes)"
+                },
+                {
+                    "value": "224",
+                    "text": "apogee (km)"
+                }
+            ]
+        },
+        "CC": {
+            "role": "other",
+            "_comment": "marked as other not mission-ops-title for formatting reasons",
+            "name": "Capsule Communicator",
+            "short_name": "CapCom",
+            "bio": "",
+            "photo": "",
+            "photo_width": 0,
+            "photo_height": 0,
+            "avatar": "person.png",
+            "shifts": [
+              ["GORDON_COOPER", "-00:01:00:00"],
+              ["CC_CANARY", "00:00:15:16"],
+              ["GORDON_COOPER", "00:00:25:07"],
+              ["CC_CSQ", "00:00:42:27"],
+              ["PETE_CONRAD", "00:00:50:27"],
+              ["GORDON_COOPER", "00:01:11:32"],
+              ["CC_RKV", "00:01:23:38"],
+              ["CC_GUAYMAS", "00:01:29:43"],
+              ["ROGER_CHAFFEE", "00:01:31:10"],
+              ["GORDON_COOPER", "00:01:35:27"],
+              ["CC_CANARY", "00:01:49:03"],
+              ["CC_CSQ", "00:02:16:19"],
+              ["PETE_CONRAD", "00:02:22:38"],
+              ["CC_HAWAII", "00:02:49:48"],
+              ["CC_RKV", "00:02:55:32"],
+              ["CC_GUAYMAS", "00:02:59:51"],
+              ["GORDON_COOPER", "00:03:06:15"],
+              ["CC_CSQ", "00:03:48:14"],
+              ["PETE_CONRAD", "00:03:56:00"],
+              ["CC_HAWAII", "00:04:17:39"],
+              ["CC_RKV", "00:04:28:33"],
+              ["CC_GUAYMAS", "00:04:33:55"],
+              ["GORDON_COOPER", "00:04:37:40"]
+            ]
+        },
+        "GORDON_COOPER": {
+            "role": "mission-ops-title",
+            "name": "L. Gordon Cooper",
+            "short_name": "Gordon Cooper (CapCom)",
+            "mission_position": "Capsule Communicator",
+            "photo": "cooper.jpg",
+            "photo_width": 205,
+            "photo_height": 138,
+            "avatar": "cooper.jpg",
+            "bio": "Having flown the last mission of Project Mercury in 1963, Gordon Cooper was the only NASA astronaut at the time of Gemini 3 to have completed over a day in space. He would go on to set a space endurance record with Pete Conrad in Gemini 5, traveling over 3 million miles in 191 hours, a flight which also saw him become the first man to fly a second orbital spaceflight."
+        },
+        "PETE_CONRAD": {
+            "role": "mission-ops-title",
+            "name": "Charles “Pete” Conrad, Jr.",
+            "short_name": "Pete Conrad (CapCom)",
+            "mission_position": "Capsule Communicator",
+            "photo": "conrad.jpg",
+            "photo_width": 205,
+            "photo_height": 138,
+            "avatar": "conrad.jpg",
+            "bio": "A naval aviator and test pilot before joining NASA, Pete Conrad was selected as an astronaut in September 1962, and first flew as pilot of Gemini 5, going on to fly three more times including commanding Apollo XII, the second lunar landing, before leaving NASA and the Navy for roles in industry."
+        },
+        "ROGER_CHAFFEE": {
+            "role": "mission-ops-title",
+            "name": "Roger B. Chaffee",
+            "short_name": "Roger Chaffee (CapCom)",
+            "mission_position": "Capsule Communicator",
+            "photo": "chaffee.jpg",
+            "photo_width": 205,
+            "photo_height": 138,
+            "avatar": "chaffee.jpg",
+            "bio": "Selected as a NASA astronaut in September 1963 following six years in the US Navy, Roger Chaffee was involved in flight control communications systems and instrumentation systems for the Apollo program. He was selected as a pilot for the first crewed Apollo flight, but died on 27th January 1967 in the launch pad test fire during preparation for that mission."
+        },
+        "CC_CANARY": {
+            "short_name": "Canary CapCom",
+            "avatar": "person.png",
+            "role": "other"
+        },
+        "CC_CSQ": {
+            "short_name": "CSQ CapCom",
+            "avatar": "person.png",
+            "role": "other"
+        },
+        "CC_RKV": {
+            "short_name": "RKV CapCom",
+            "avatar": "person.png",
+            "role": "other"
+        },
+        "CC_GUAYMAS": {
+            "short_name": "Guaymas CapCom",
+            "avatar": "person.png",
+            "role": "other"
+        },
+        "CC_HAWAII": {
+            "short_name": "Hawaii CapCom",
+            "avatar": "person.png",
+            "role": "other"
+        },
+        "RA": {
+            "role": "other",
+            "name": "Recovery Aircraft",
+            "short_name": "Recovery Aircraft",
+            "avatar": "ra.png"
+        },
+        "RS": {
+            "role": "other",
+            "name": "Recovery Ship: USS Intrepid",
+            "short_name": "USS Intrepid",
+            "avatar": "rs.png"
+        }
+    },
+    "shared_glossaries": ["space"],
+    "glossary": {
+        "Molly Brown": {
+            "summary": "The call sign of the Gemini III spacecraft",
+            "description": "The name was a reference to “The Unsinkable Molly Brown”, a broadway musical. Gus Grissom chose the name in the hope that the capsule would fare better than the Liberty Bell 7 which sank after splash-down at the end of the Mercury-Redstone 4 mission."
+        },
+        "CAP COM": {
+            "summary": "Capsule Communicator",
+            "type": "abbreviation"
+        },
+        "CSQ": {
+            "summary": "Coastal Sentry Quebec",
+            "type": "abbreviation"
+        },
+        "RKV": {
+            "summary": "Rose Knot Victor",
+            "description": "A tracking ship",
+            "type": "abbreviation"
+        },
+        "FDI": {
+            "summary": "Flight Director Indicator",
+            "type": "abbreviation"
+        },
+        "RGS": {
+            "summary": "Radio Guidance System",
+            "type": "abbreviation"
+        },
+        "IVI": {
+            "summary": "Incremental Velocity Indicator",
+            "type": "abbreviation"
+        },
+        "OAMS": {
+            "summary": "Orbit Attitude and Maneuver System",
+            "type": "abbreviation"
+        },
+        "T/M": {
+            "summary": "Telemetry",
+            "type": "abbreviation"
+        },
+        "GMTRC": {
+            "summary": "GMT of Retrofire Initiation Computed",
+            "type": "abbreviation"
+        },
+        "GETRC": {
+            "summary": "Ground Elapsed Time of Retrofire Initiation Computed",
+            "type": "abbreviation"
+        },
+        "ACME": {
+            "summary": "Attitude control and maneuver electronics",
+            "type": "abbreviation"
+        },
+        "MDIU": {
+            "summary": "Manual Data Insertion Unit",
+            "type": "abbreviation"
+        },
+        "DCS": {
+            "summary": "Digital Command System",
+            "type": "abbreviation"
+        },
+        "MCC": {
+            "summary": "Mission Control Center",
+            "type": "abbreviation"
+        }
+    }
+}

@@ -1,0 +1,201 @@
+{
+    "name": "mr4",
+    "featured": false,
+    "incomplete": false,
+    "subdomains": ["mercury4"],
+    "copy": {
+        "title": "Mercury 4",
+        "upper_title": "Mercury",
+        "lower_title": "4",
+        "description": "NASA's second suborbital mission was a success until after splashdown, when the hatch blew unexpectedly, forcing pilot Gus Grissom to egress into the water as the capsule began to sink.",
+        "summary": "Second American crewed mission",
+        "glossary_introduction": "Space flight involves a lot of technical terms and acronyms. This glossary gives an expansion or brief description of many of those most likely to occur.",
+        "based_on_header": "Based on the original audio recordings",
+        "about_image": "systems.png",
+        "cleaners": [
+            "Emily Carney"
+        ],
+        "about": "Eleven weeks after NASA's first crewed flight, Gus Grissom became the second American and third human in space, performing another suborbital crewed flight ahead of the first orbital mission the following year. An otherwise successful mission was marred after splashdown when the hatch blew after Grissom had completed post-flight checks and was waiting for the recovery helicopter to move into place. As the capsule started taking on water, he performed an emergency egress into the water, from where a second helicopter moved in to pick him up as the primary struggled unsuccessfully to recover the capsule. A little over two weeks later, the Russians would launch Gherman Titov aboard Vostok 2, keeping the pressure on NASA to catch up in the early days of the Space Race.\n\nThis site allows you to explore transcripts of radio communications between Gus Grissom aboard Liberty Bell 7 and the NASA personnel back in Florida, along with photographs of the mission.",
+        "image_attributions": [
+            { "url": "http://earthobservatory.nasa.gov/IOTD/view.php?id=50205", "title": "Sunset over Western South America", "attrib_url": "http://earthobservatory.nasa.gov/", "attrib": "NASA's Earth Observatory" }
+        ],
+        "transcript_attributions": [
+            { "url": "http://www.jsc.nasa.gov/history/mission_trans/mercury.htm", "title": "Mercury-Redstone 4 Results of the Second U.S. Manned Suborbital Space Flight" },
+            { "url": "http://www.archive.org/details/Mercury4", "title": "Audio recordings of Mercury-Redstone 4 mission" }
+        ],
+        "call_signs": "The Mercury capsule's callsign through the mission is Liberty Bell 7 or just 7; the primary CAPCOM (capsule communicator) was Alan Shepard at the Cape; Deke Slayton in the Blockhouse is identified as STONY, and CHASE 1 is another astronaut flying chase in an F-106 plane. CARDFILEs were aircraft assigned to assist communication during re-entry, recovery helicopters are identified as HUNT CLUB, and ATS is a Mercury range station aboard a US Navy ship in the Atlantic close to the landing area."
+    },
+    "main_transcript": "mr4/ATG",
+    "media_transcript": "mr4/MEDIA",
+    "utc_launch_time": "1961-07-21T12:20:36",
+    "acts" : [
+        {
+            "title": "Launch",
+            "description": "Liberty Bell 7 lifts off from Cape Canaveral on top of a modified Redstone missile.",
+            "range": ["-00:00:00:04", "00:00:02:33"],
+            "homepage": "phase_01.jpg",
+            "banner": "phase_01.jpg",
+            "banner_colour": "#383029"
+        },
+        {
+            "title": "Space",
+            "description": "Gus Grissom becomes the second American in space and attempts several manoeuvres but finds the controls more sluggish than expected.",
+            "range": ["00:00:02:33", "00:00:07:00"],
+            "homepage": "phase_02.jpg",
+            "banner": "phase_02.jpg"
+        },
+        {
+            "title": "Reentry",
+            "description": "Liberty Bell re-enters smoothly, although after splashdown Grissom is forced to evacuate after the hatch blows and the capsule takes on water and starts to sink.",
+            "range": ["00:00:07:00", "00:00:30:00"],
+            "homepage": "phase_03.jpg",
+            "banner": "phase_03.jpg",
+            "banner_colour": "#191919"
+        }
+    ],
+    "key_scenes" : [
+    ],
+    "homepage_quotes": [
+        "00:00:04:18",
+        "00:00:03:59",
+        "00:00:08:42"
+    ],
+    "character_ordering": [
+        "BELL 7",
+        "ALAN_SHEPARD",
+        "DEKE_SLAYTON"
+    ],
+    "characters": {
+        "CC": {
+            "role": "other",
+            "name": "Capsule Communicator",
+            "short_name": "CAPCOM",
+            "bio": "In the Mercury missions, CAPCOM was the main person to communicate with the pilot.",
+            "avatar": "capcom_generic.jpg",
+            "shifts": [
+                [ "ALAN_SHEPARD", "00:00:00:00" ]
+            ]
+        },
+        "ALAN_SHEPARD": {
+            "role": "astronaut",
+            "_comment": "not an astronaut, done for formatting reasons",
+            "name": "Alan Barlett Shepard, Jr.",
+            "short_name": "Alan Shepard",
+            "mission_position": "CAPCOM",
+            "bio": "Having become the first American in space in Freedom 7 earlier that year, US Navy pilot Alan Shepard served as Cape CAPCOM for the two subsequent Mercury flights, Gus Grissom's in July 1961 and John Glenn's first American in orbit in February 1962. Plagued with inner-ear problems which grounded him for most of the rest of the decade, Shepard was restored to flight status to become the only Mercury 7 astronaut to walk on the moon in 1971.",
+            "photo": "alan_shepard.jpg",
+            "photo_width": 190,
+            "photo_height": 205,
+            "avatar": "alan_shepard.jpg"
+        },
+        "DEKE_SLAYTON": {
+            "role": "astronaut",
+            "_comment": "not an astronaut, done for formatting reasons",
+            "short_name": "Deke Slayton",
+            "name": "Donald Kent Slayton",
+            "mission_position": "Blockhouse Comm",
+            "bio": "Air Force test pilot Donald “Deke” Slayton had also been selected as one of the “Mercury 7” astronauts in 1959. However, a heart murmur would lead to him being medically disqualified from flight status before Mercury-Atlas 7. He subsequently became the Director of Flight Crew Operations, and was known throughout NASA as “The Chief Astronaut”. In 1972, his flight status was restored, and in 1975 he made his only space flight on the Apollo-Soyuz Test Project.",
+            "photo": "deke_slayton.jpg",
+            "photo_width": 190,
+            "photo_height": 205,
+            "avatar": "deke_slayton.jpg"
+        },
+        "BELL 7": {
+          "role": "astronaut",
+          "name": "Virgil Ivan Grissom",
+          "short_name": "Gus Grissom",
+          "mission_position": "Pilot",
+          "bio": "USAF combat veteran Gus Grissom was a fighter test pilot immediately prior to joining the NASA astronaut program. Following his Mercury flight he would be involved in the Gemini Program from the start, helping to design the flight control systems and commanding the first crewed Gemini mission. He continued to work on the program until 1966 when he was selected to command the ill-fated Apollo 1 mission.",
+          "photo": "gus_grissom.jpg",
+          "photo_width": 190,
+          "photo_height": 205,
+          "avatar": "gus_grissom.png",
+          "quotable_log_line_id": "ATG:00:00:04:18"
+        },
+        "STONY": {
+          "role": "other",
+          "name": "Blockhouse Comm",
+          "short_name": "Stony",
+          "shifts": [
+            [ "DEKE_SLAYTON", "00:00:00:00" ]
+          ]
+        },
+        "CHASE 1": {
+          "role": "other",
+          "name": "Chase 1",
+          "short_name": "Chase 1",
+          "avatar": "chase.png"
+        },
+        "CARDFILE 9": {
+          "role": "other",
+          "name": "Cardfile 9",
+          "short_name": "Cardfile 9",
+          "avatar": "plane.png"
+        },
+        "CARDFILE 23": {
+          "role": "other",
+          "name": "Cardfile 23",
+          "short_name": "Cardfile 23",
+          "avatar": "plane.png"
+        },
+        "HUNTCLUB 1": {
+          "role": "other",
+          "name": "Hunt Club 1",
+          "short_name": "Hunt Club 1",
+          "avatar": "copters.png"
+        },
+        "HUNTCLUB 3": {
+          "role": "other",
+          "name": "Hunt Club 3",
+          "short_name": "Hunt Club 3",
+          "avatar": "copters.png"
+        },
+        "ATS": {
+          "role": "other",
+          "name": "Atlantic Ocean Ship",
+          "short_name": "ATS",
+          "avatar": "ATS.png"
+        },
+        "UKN": {
+          "role": "other",
+          "name": "Unknown",
+          "short_name": "Unknown",
+          "avatar": "person.png"
+        }
+    },
+    "shared_glossaries": ["space"],
+    "glossary": {
+        "ASCS": {
+            "summary": "Automatic Stabilization and Control System",
+            "type": "abbreviation"
+        },
+        "Capsep": {
+            "summary": "Capsule Separation",
+            "type": "abbreviation"
+        },
+        "FBW": {
+            "summary": "Fly By Wire",
+            "type": "abbreviation"
+        }, 
+        "RSCS": {
+            "summary": "Rate Stabilization and Control System",
+            "type": "abbreviation"
+        }, 
+        "MCC": {
+            "summary": "Mercury Control Center",
+            "type": "abbreviation"
+        },
+        "IP": {
+            "summary": "Impact Point",
+            "type": "abbreviation"
+        },
+        "TM": {
+            "summary": "Telemeter or Telemetry",
+            "type": "abbreviation"
+        },
+        "ATS": {
+            "summary": "Atlantic Ocean Ship",
+            "type": "abbreviation"
+        }
+    }
+}
