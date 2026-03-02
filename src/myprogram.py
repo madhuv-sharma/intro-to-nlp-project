@@ -2,6 +2,7 @@ import argparse
 import math
 import os
 import pickle
+import re
 import time
 import unicodedata
 
@@ -204,6 +205,18 @@ def train(args):
 # ===============================
 
 
+def normalize_caps(text):
+    def fix_word(match):
+        word = match.group(0)
+
+        if len(word) <= 3:
+            return word
+
+        return word.lower()
+
+    return re.sub(r"\b[A-Z]{2,}\b", fix_word, text)
+
+
 def detect_script(text):
     counts = {
         "ru": 0,
@@ -292,6 +305,8 @@ def test(args):
         best_score = float("-inf")
 
         context = unicodedata.normalize("NFC", context)
+        # TODO: uncomment with normalized caps data
+        # context = normalize_caps(context)
         detected = detect_script(context)
 
         if detected and detected in lms:

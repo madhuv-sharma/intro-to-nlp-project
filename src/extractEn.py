@@ -13,6 +13,19 @@ dialogue_pattern = re.compile(r"^([A-Za-z0-9][A-Za-z0-9 ()\-']{0,40}):\s+(.*)")
 dataset = []
 files_processed = 0
 
+
+def normalize_caps(text):
+    def fix_word(match):
+        word = match.group(0)
+
+        if len(word) <= 3:
+            return word
+
+        return word.lower()
+
+    return re.sub(r"\b[A-Z]{2,}\b", fix_word, text)
+
+
 for mission in os.listdir(BASE_DIR):
     print(f"Processing mission: {mission}...")
 
@@ -60,6 +73,9 @@ for mission in os.listdir(BASE_DIR):
                         full_text = re.sub(r" _page\s*:.*", "", full_text)
                         full_text = re.sub(r" _comment\s*:.*", "", full_text)
                         full_text = re.sub(r" _note\s*:.*", "", full_text)
+
+                        full_text = re.sub(r"\s+", " ", full_text)
+                        full_text = normalize_caps(full_text)
 
                         dataset.append(
                             {
