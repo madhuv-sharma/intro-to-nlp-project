@@ -3,11 +3,13 @@ import math
 import os
 import pickle
 import time
+import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
-import unicodedata
 
 import pandas as pd
+
+import fasttext
 
 # ===============================
 # Character Ngram Language Model
@@ -15,14 +17,16 @@ import pandas as pd
 
 
 class CharNgramLM:
-    def __init__(self, n_min, n_max):
+    def __init__(self, n_min, n_max, alpha):
         self.n_min = n_min
         self.n_max = n_max
+        self.alpha = alpha
         self.n_orders = list(range(self.n_min, self.n_max + 1))
         self.n_orders_rev = list(reversed(self.n_orders))
         self.counts = {n: defaultdict(Counter) for n in self.n_orders}
         self.vocab = set()
         self.vocab_size = 0
+        self.log_vocab_size = 0.0
         self.cache = {}
 
     def train_text(self, text):
@@ -43,21 +47,25 @@ class CharNgramLM:
         for i in range(1, len(context)):
             char = context[i]
             max_n = min(self.n_max, i)
+            found = False
             for n in range(max_n, self.n_min - 1, -1):
                 sub_context = context[i - n : i]
                 counter = self.counts[n].get(sub_context)
                 if not counter:
                     continue
 
+                found = True
                 context_count = counter["__total__"]
                 char_count = counter.get(char, 0)
 
-                score += math.log(char_count + 1) - math.log(
-                    context_count + self.vocab_size
+                score += math.log(char_count + self.alpha) - math.log(
+                    context_count + (self.alpha * self.vocab_size)
                 )
                 break
+            if not found:
+                score -= self.log_vocab_size
 
-        score = score / max(len(context), 1) if context else 0.0
+        # score = score / max(len(context), 1) if context else 0.0
         return score
 
     def prob(self, context, char):
@@ -70,7 +78,9 @@ class CharNgramLM:
                 continue
             context_count = counter["__total__"]
             char_count = counter.get(char, 0)
-            return (char_count + 1) / (context_count + self.vocab_size)
+            return (char_count + self.alpha) / (
+                context_count + (self.alpha * self.vocab_size)
+            )
         return 1 / self.vocab_size if self.vocab_size else 0.0
 
     def predict_top3(self, context):
@@ -145,10 +155,16 @@ def train(args):
     for file in train_dir.glob("*.txt"):
         lang = file.stem
         print(f"Training {lang}")
-        if lang in {"zh", "ja"}:
-            lms[lang] = CharNgramLM(n_min=1, n_max=3)
-        else:
-            lms[lang] = CharNgramLM(n_min=args.n_min, n_max=args.n_max)
+        n_min = args.n_min
+        n_max = args.n_max
+        alpha = args.alpha
+        if lang in ["zh", "ja"]:
+            n_min = 1
+            n_max = 3
+            alpha = 1.5
+        elif lang == "ko":
+            n_min = 1
+        lms[lang] = CharNgramLM(n_min=n_min, n_max=n_max, alpha=alpha)
 
         with file.open("r", encoding="utf-8") as f:
             for line in f:
@@ -159,7 +175,7 @@ def train(args):
                 if not line:
                     continue
                 line = unicodedata.normalize("NFC", line)
-                line = "^" * args.n_max + line + "$"
+                line = ("^" * lms[lang].n_max) + line + "$"
                 lms[lang].train_text(line)
 
         # text = file.read_text(encoding="utf-8")
@@ -171,6 +187,7 @@ def train(args):
         lm.vocab.discard("^")
         lm.vocab.discard("$")
         lm.vocab_size = len(lm.vocab)
+        lm.log_vocab_size = math.log(lm.vocab_size)
 
     os.makedirs(args.work_dir, exist_ok=True)
     save_model(lms, os.path.join(args.work_dir, "model.pkl"))
@@ -256,6 +273,8 @@ def test(args):
 
     rows = []
 
+    # ft_model = fasttext.load_model("lid.176.bin")
+
     inference_start = time.perf_counter()
 
     for idx, context in enumerate(contexts):
@@ -271,6 +290,16 @@ def test(args):
         if detected and detected in lms:
             candidate_langs = [detected]
         else:
+            # label, confidence = ft_model.predict(context)
+            # predicted_lang = label[0].replace("__label__", "")
+            # conf = confidence[0]
+
+            # latin_langs = {"en", "fr", "de", "it"}
+
+            # if predicted_lang in latin_langs and conf > 0.6:
+            #     candidate_langs = [predicted_lang]
+            # else:
+            #     candidate_langs = latin_langs
             candidate_langs = lms.keys()
 
         for lang in candidate_langs:
@@ -323,6 +352,7 @@ def main():
     parser.add_argument("--test_output", default="../submission.csv")
     parser.add_argument("--n_min", type=int, default=2)
     parser.add_argument("--n_max", type=int, default=5)
+    parser.add_argument("--alpha", type=float, default=0.3)
     parser.add_argument("--no_adapt", action="store_true")
 
     args = parser.parse_args()
