@@ -4,12 +4,13 @@ import os
 import pickle
 import time
 import unicodedata
+
+# import urllib.request
 from collections import Counter, defaultdict
 from pathlib import Path
 
+# import fasttext
 import pandas as pd
-
-import fasttext
 
 # ===============================
 # Character Ngram Language Model
@@ -273,6 +274,12 @@ def test(args):
 
     rows = []
 
+    # if not os.path.exists("lid.176.bin"):
+    #     print("Downloading fastText language ID model...")
+    #     urllib.request.urlretrieve(
+    #         "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin",
+    #         "lid.176.bin",
+    #     )
     # ft_model = fasttext.load_model("lid.176.bin")
 
     inference_start = time.perf_counter()
@@ -290,13 +297,14 @@ def test(args):
         if detected and detected in lms:
             candidate_langs = [detected]
         else:
-            # label, confidence = ft_model.predict(context)
-            # predicted_lang = label[0].replace("__label__", "")
-            # conf = confidence[0]
+            # labels, probs = ft_model.predict(context, k=1)
+            # label = labels[0]
+            # conf = float(probs[0])
+            # predicted_lang = label.replace("__label__", "")
 
             # latin_langs = {"en", "fr", "de", "it"}
 
-            # if predicted_lang in latin_langs and conf > 0.6:
+            # if predicted_lang in latin_langs and conf > 0.8:
             #     candidate_langs = [predicted_lang]
             # else:
             #     candidate_langs = latin_langs

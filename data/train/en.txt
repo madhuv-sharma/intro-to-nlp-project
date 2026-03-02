@@ -18,7 +18,7 @@ Why don't I leave the dark slide - -
 Are we ready for that, you think? What's the time?
 30 minutes. ...
 ... to NORMAL, and check the radiator.
-It will take awhile, that's - - _page : 2
+It will take awhile, that's - -
 Okay, now, is that normal for the discharge pressure to zap down low and to do that? Do you think, Mike?
 What's that? I'm sorry, I wasn't listening.
 When Neil sends the GLYCOL RADIATORS to NORMAL, temporarily, it - -
@@ -36,7 +36,7 @@ Okay. I'll just let go of it, Buzz; it will be hanging over here in the air. Com
 Okay.
 Just leave the dark slide with it?
 Well, I thought about ... the dark slide or something, and then I thought we might need it later for a magazine change; so, I left it with it.
-Well, I know there's an orange dot on this ... somewhere. _page : 3
+Well, I know there's an orange dot on this ... somewhere.
 That looks just a couple of degrees still above the -
 Buzz, did you ever get that camera?
 Yes.
@@ -57,7 +57,7 @@ Okay, Buzz, I'm going to have to do something about your couch. You mind sliding
 No, that's fine.
 Could you - -
 Can you work on that strap?
-Oh, yes, I will. Sure will. The - the one that your strut's off ... instrument panel. _page : 4
+Oh, yes, I will. Sure will. The - the one that your strut's off ... instrument panel.
 Yes. ...
 And your ...
 That temperature's coming down a little bit now.
@@ -77,7 +77,7 @@ We're on SIMPLEX A, but we're not due over Tananarive for another couple of seco
 Okay.
 What - ... time is 36 something - -
 Am I set up on VHF? Can you tell ...?
-Yes, just a second. Just a second - Your MASTER is ON; your INTERCOM is ON; your VHF is ON; your PAD COMM is OFF; your S-BAND is ON; and you're in INTERCOM/PUSH-TO-TALK, so you're all squared away, except for maybe VOLUME dial. _page : 5
+Yes, just a second. Just a second - Your MASTER is ON; your INTERCOM is ON; your VHF is ON; your PAD COMM is OFF; your S-BAND is ON; and you're in INTERCOM/PUSH-TO-TALK, so you're all squared away, except for maybe VOLUME dial.
 Okay.
 Now, Buzz, this item here at Canaries. LOS, 23:36; POTABLE WATER HEATER, MAIN A - -
 Yes, I got that.
@@ -96,7 +96,7 @@ I'm reading 3.50.
 Houston, Apollo 11.
 Hello, Houston; Apollo ll.
 OPTICS ZERO is OFF. I'm going to jettison the ... cover - -
-Apollo 11, Apollo 11; this is Houston through Tananarive. Over. _page : 6
+Apollo 11, Apollo 11; this is Houston through Tananarive. Over.
 Hello, Houston; Apollo 11. Go ahead.
 Houston. Apollo 11, read you on VHF A SIMPLEX. How do you read? Over.
 Roger, 11; this is Houston. We're reading you loud and fairly clearly. For your information, Tananarive radar shows you in a 103.0 by 103.0 orbit. Over.
@@ -114,7 +114,7 @@ That's right, plus.
 Sure's a big one, isn't it? Okay, well, I'm standing by to do this - -
 Got A and B down.
 - - IMU align. Unstow the optics handles. Anybody wants any of that claptrap out of R-1, now is the time to say it.
-Give me that little circular Job. _page : 7
+Give me that little circular Job.
 Alright, I'll - I'll look for it, Buzz. Let me get these - optics handles. I guess I really didn't mean what I said right when I said it a little while ... Oh, I knew there was something messed up.
 You say you had about 3-point-something volts up there?
 Yes. ... and on the ...
@@ -133,7 +133,7 @@ You want some of these lights down further, Mark - Mike?
 Don't worry about it for the time being; I'm potting around with handholds right now, Neil. ...
 That battery compartment pressure, Mike, it ought to be less that 1.5. However, it says NA until first vent.
 Okay.
-It's greater than 1.5; that vent - vent - _page : 8
+It's greater than 1.5; that vent - vent -
 Well, we haven't even done it yet.
 ...
 Yes.
@@ -152,7 +152,7 @@ Yes, I noticed that. Before, it was maintaining less than that; it was abnormall
 Menkent - God, what a star.
 Nobody in their right - -
 Menkent's good - -
-- - nobody in their right mind would pick that one. _page : 9
+- - nobody in their right mind would pick that one.
 - - Menkent's a good star.
 Hey, I sure wish you'd get out that - that star chart.
 Can't see a thing, huh?
@@ -173,7 +173,7 @@ No, that's - -
 Okay. Hey, Buzz?
 What?
 Did you write down any marks on 30 and on 37?
-I was going to mark on 37, and that's Nunki; 30 and 37? _page : 10
+I was going to mark on 37, and that's Nunki; 30 and 37?
 Yes, sir.
 30 -
 I can see some stars. Well, maybe I ...
@@ -190,7 +190,7 @@ Copy.
 Okay. Now I - I - If I remember right, I think you're just supposed to torque without further ado. We give them the time at which we torque. So, as soon as you got them written down, let me know and I'll proceed and you can mark the time.
 I've got it.
 Okay, here we go. Proceed - torque.
-48:15. _page : 11
+48:15.
 Okay, now I - I'm going to verify with the third star, and let's see what that star's going to be. Star number 34 - -
 Atria - -
 - - is Atria. You might note that, Buzz, also. I think - -
@@ -205,7 +205,7 @@ It's ...
 Okay, Buzz, got all that good stuff?
 GDC's realigned, okay -
 Reticle brightness ... I don't know anything about that. ... Stow optics eyepieces, okay, that's in work.
-And ... out there right now. ... , Buzz? _page : 12
+And ... out there right now. ... , Buzz?
 Neil, I haven't been looking out - My eyes aren't very well adapted.
 You got your light on.
 Yes, look at those bright ones down here.
@@ -224,7 +224,7 @@ Okay.
 Okay, and my optics eyepieces are stowed.
 You want me to take your checklist, Mike, and kind of skim through it?
 It says here, coming up on Carnarvon LOS at - -
-Let - let me tell them about the TV ... _page : 13
+Let - let me tell them about the TV ...
 Roger, Bruce. Thank you. We expect TV. We've got it all hooked up. We have not yet turned it on; we're ready to do that now.
 Okay, you think we can do that?
 That's fine with us.
@@ -243,7 +243,7 @@ Is that right?
 Yes.
 Have we got any daylight? I can't see outside at all.
 Nothing yet, ...
-How are you going to rig that up, Michael? _page : 14
+How are you going to rig that up, Michael?
 Well, Buzz, I'm going to hold it out that hatch window.
 Handhold it?
 Yes - yes, yes, handhold it; don't dick with that.
@@ -262,7 +262,7 @@ Yes. ...
 Let's get into the Hasselblad ... get the right settings on it.
 Okay.
 Is Goldstone the only station that's going to get this?
-Yes, that's all. That's the only one that's got a scanner converter. We've only got about 4 minutes, looks like. _page : 15
+Yes, that's all. That's the only one that's got a scanner converter. We've only got about 4 minutes, looks like.
 That must be doing something.
 Yes.
 How long - -
@@ -280,7 +280,7 @@ Who knows about zoom lenses? This lens goes from 12.5 millimeters to 75; I assum
 I would think so.
 - - and 12.5 is wide angle. The only thing that confuses me is that it says for vehicle to vehicle - We want to be zoom on 12.5. I guess they just want to make sure you got the other vehicle in view. Probably ... telephoto.
 Okay, well, then, I'll put the zoom on 12.5.
-Okay. You didn't touch this lighting? _page : 16
+Okay. You didn't touch this lighting?
 No, I didn't ... Minimum ...
 I've got bright.
 Focus, I'll put at infinity, and the f-stop for vehicle to vehicle is - -
@@ -299,7 +299,7 @@ Okay.
 There are two pieces on the back of them ...
 You think so, huh?
 Yes, over, just a little up toward the ...
-Now, ... - It's rolling around, so I can start looking outside, upside down. _page : 17
+Now, ... - It's rolling around, so I can start looking outside, upside down.
 I don't know, I think we'd almost be better just by looking at the monitor, Buzz.
 Yes, yes, but this way I think I'll know how to - know which way to move it.
 Are you going the right way for those hoses? It looks to me like you ought to roll over the other way.
@@ -319,7 +319,7 @@ Brilliant ...
 I got your checklist, Mike; you want it back?
 Yes, I'll take it back, Neil - Thank you, just put it here.
 No, you got Buzz's checklist here. You gave me BUZZ'S.
-Excuse me. _page : 18
+Excuse me.
 ... I'd rather have my own.
 How does the checklist look to you, Neil? You happy with it?
 Yes, it looks fine to me.
@@ -338,7 +338,7 @@ This 16-millimeter camera, Buzz, with the 18-millimeter lens - you got it shoved
 Yes.
 Okay, that was correct. You - you were asking about that.
 And you have 6 frames per second, and it's color; you got 15 minutes worth - 6 frames a second, f:8, infinity, 1/250th.
-Okay. The only question is, how much do we want to indicate on that? _page : 19
+Okay. The only question is, how much do we want to indicate on that?
 Outside of it - on the magazine?
 Yes.
 How does zero g feel? Your head feel funny, anybody, or anything like that?
@@ -371,7 +371,7 @@ Now, what do we have - Is that all the -
 You had the switch down - inside. ... automatic light control features.
 Well, that pisses me off. Hasselblad gone. Find that mother before she or I ends the ... Everybody look for a floating Hasselblad. I see a pen floating loose down here, too. Is anybody missing a ballpoint pen?
 Got mine. Is it ballpoint, or is it ...?
-Yes, ballpoint. Here it is. I mean felt tip. _page : 21
+Yes, ballpoint. Here it is. I mean felt tip.
 ... much embarrassed to say they've lost a Hasselblad. I seem to be prone to that.
 And we're about 7 minutes away, so we got about 7 minutes of practice time.
 I've looked - I've looked everywhere over here for that Hasselblad, and I just don't see it.
@@ -392,7 +392,7 @@ Ah! Here it is.
 Find it?
 Yes.
 Beautiful.
-It was floating in the aft bulkhead. _page : 22
+It was floating in the aft bulkhead.
 On your side?
 I got a way on it - of keeping it.
 I got a little horizon. Man, look at that!
@@ -408,7 +408,7 @@ Must be past Hawaii by now. 01:28 is AOS.
 Buzz, how's it going there, the monitor giving you good service?
 Not yet - flicking an awful lot.
 Well, that's ... - It looks to me like you're home free. Just remember now, you're going to have to get that f-stop probably off 22, maybe not – focus stays on infinity and the zoom beats me. You can take your choice, you can zoom with that thing all the way in if you take it fairly slowly.
-Sun is bright, isn't it? ... It's a pretty nice camera, to tell you the truth. _page : 23
+Sun is bright, isn't it? ... It's a pretty nice camera, to tell you the truth.
 I think you probably want sort of a wide angle - -
 Yes, I think ... would be something ...
 Well, if I take normal to the window, it's going to be ..., ...?
@@ -427,7 +427,7 @@ Yes.
 That's pull - pull - -
 See that, Buzz? You're a TV expert.
 Now, the next big thing we got to do is, after the attitude reference check, is extend the docking probe. No big thing. Copy down a bunch of pads and then you got your RCS hotfire.
-That booster, when that thing - - _page : 24
+That booster, when that thing - -
 Apollo 11, this is Houston through Guaymas. Over.
 Roger, Houston. Reading you loud and clear.
 Reading you the same. Coming up on AOS Goldstone.
@@ -443,7 +443,7 @@ With the sun glaring like it is, you're - you're correct on the f:22, I'm sure. 
 - - and the launch - vehicle guidance are both looking to be in good shape. We estimate you have better than a 99-percent probability of a guidance cut-off on the launch vehicle. So, things are apparently holding in very well. For your information, MLA received approximately 1 minute of a usable TV picture; so, apparently the system is working. You're a little over a minute from LOS at Canary; AOS Tananarive is 2 hours 9 minutes and 18 seconds. Over.
 Roger. We like those 99 numbers. Thank you.
 Roger. Out.
-Okay. _page : 25
+Okay.
 Now, let's see. We want to go to the suit circuit - -
 Yes, I'll get the suit circuit if I can find that valve.
 Okay, let's see, that's the EDS POWER, ON.
@@ -466,7 +466,7 @@ Then go to NORMAL. Anybody know what we're doing with VERB 48 up there?
 What are we supposed to be putting in there?
 ...
 I wonder what the hell that is?
-Just verify you got a 3 there? _page : 26
+Just verify you got a 3 there?
 I guess so, that's what you need.
 That's all you need.
 Yes.
@@ -489,7 +489,7 @@ EMS FUNCTION to DELTA-V TEST.
 That's good; that light enough.
 ...
 Now, we want a GDC align.
-Yes. _page : 27
+Yes.
 Now, let's see - -
 Minus 19.9.
 That's alright - minus 0.1 to - can you write that one down?
@@ -512,7 +512,7 @@ Yes.
 Yes, they did.
 They did, yes.
 No, that's VERB 66. ... apogee - perigee.
-I'll just put a question mark here about - not show our ignorance. _page : 28
+I'll just put a question mark here about - not show our ignorance.
 Well, looks like we're picking up a little. That sound reasonable? 1166?
 ... the time, is that right?
 The S-IVB?
@@ -534,7 +534,7 @@ Huh?
 That means ...
 Oh.
 Won't get them on S-band.
-S what? _page : 29
+S what?
 VHF.
 Okay. A SIMPLEX, it should be on.
 Set ORDEAL? Do something with it, anyway.
@@ -557,7 +557,7 @@ And emergency shutdown, Neil, is plus 10 seconds; 10 minus 40 on the DELTA-VC, i
 Plus 6 seconds - plus 6.
 And - no - no, I'm sure about that minus.
 No, no, it's not; it's only ...
-No, it's plus 6 seconds and VI on the DSKY at G&N. _page : 30
+No, it's plus 6 seconds and VI on the DSKY at G&N.
 I think that's going to show up here, isn't it?
 What?
 TLI?
@@ -580,7 +580,7 @@ LAUNCH VEHICLE indicators: GPI to S-II/S-IVB. GUIDANCE to IU.
 That IU?
 Yes.
 Have we got pyros armed?
-No. _page : 31
+No.
 No.
 Okay.
 CB, DIRECT ULLAGE, two of them, CLOSED.
@@ -600,7 +600,7 @@ Where would it be? It'd be right in here -
 I finally gave it to ...
 Hey, that's - you know what the numbers are, roughly.
 25 - 25 550 at a 100 miles - something like that, it changes, probably - -
-Yes, but this was to be - What do you have on this side to give you that on the other side? _page : 32
+Yes, but this was to be - What do you have on this side to give you that on the other side?
 I'm running a little bit on the warm side; how are you guys ... along?
 Probably a tad on the warm side.
 Suit and cabin pressures both look - I guess we should be cool.
@@ -618,7 +618,7 @@ How'd the - is this the first part of the attitude comparison check or the secon
 I haven't done the second GDC align yet; it comes up on the next page. About now, I guess.
 Well, we should have Tananarive. How about going - pressing ahead with the sequence pyro arm?
 Okay, let me align the GDC.
-Well, they cleverly do this on - just on opposite sides of the world so you always have to pitch - run all the thumbwheels the maximum amount. _page : 33
+Well, they cleverly do this on - just on opposite sides of the world so you always have to pitch - run all the thumbwheels the maximum amount.
 Apollo 11, Apollo 11, this is Houston standing by through Tananarive. Over.
 Houston, Apollo 11. Roger.
 Roger. Reading you loud and clear.
@@ -639,7 +639,7 @@ Houston, Apollo 11. We have the pyros armed.
 Okay.
 This is Houston. Roger; out.
 TRANS CONTROL POWER's ON. ROT CONTROL POWER, NORMAL, two, AC/DC.
-They're all up. _page : 34
+They're all up.
 DIRECT? MAIN A/MAIN B.
 DIRECT.
 S-II/S-IVB.
@@ -662,7 +662,7 @@ Got a long way around, yet.
 Apollo 11, this is Houston. 1 minute to LOS Tananarive; AOS at Carnarvon, 02:25:30.
 Roger.
 02:25:30.
-Yes. 02:25. ... _page : 35
+Yes. 02:25. ...
 Why did they do that? That should be up here, before 02:35.
 I don't know. It's screwed up in here anyway.
 Well, weren't they giving us two abort pads before?
@@ -681,7 +681,7 @@ I wonder if I was that slow getting everything going? I ought to have given them
 It didn't seem to me as though there was a tremendous cue; there's no doubt that you were moving, but to say exactly what the precise time was when you started to move, I think you'd call it whenever the thing started vibrating.
 Yes, I didn't know when the hell we were airborne; I just took his word for it. It was sure shaking, rattling, and rolling, son of a bitch!
 Wake me up at TLI, somebody.
-Another 15 minutes, just time to sleep. _page : 36
+Another 15 minutes, just time to sleep.
 You need to get out the alarm clock.
 I don't know, I think I'll just put my window guard up.
 Yes.
@@ -701,7 +701,7 @@ Yes, that says 58-1/2 degrees, huh?
 Yes.
 ... 57-1/2 isn't that something like that? Now wait a minute.
 Yes, 57-1/2 degrees.
-I guess they're ... about on the horizon anyway. Yes, okay. _page : 37
+I guess they're ... about on the horizon anyway. Yes, okay.
 Huh?
 Buzz, I put 39.5 volts over here; that's a reminder on the battery check - real good on the wall. Okay, Neil, now TLI - I'm going to write on the wall here - TLI - nominal is 05 plus 47; and 6 seconds later, it's 05 plus 53. And you want me to let you know when that is; I'll yell "cut-off" at that time.
 Okay.
@@ -721,7 +721,7 @@ PYROs are - four breakers are in, and switches are up.
 Okay, on this thing here, we should be reading 02:41:01, shutdown, and - -
 Add 6 seconds to it?
 Yes. At 07, cut-off.
-BLOCK, BLOCK. SPACECRAFT CONTROL to SCS? _page : 38
+BLOCK, BLOCK. SPACECRAFT CONTROL to SCS?
 It is.
 Tank pressures looking alright?
 Tank pressures are looking good.
@@ -743,7 +743,7 @@ Flashes out window number 5.
 I'm not sure whether that's - it could be lightning, or it could be something to do with the engine -
 Continual flashes ...
 About 2 degrees off in the pitch ...
-Yes, wouldn't worry too much about that. _page : 39
+Yes, wouldn't worry too much about that.
 Apollo 11, this is Houston. At 1 minute, trajectory and guidance look good, and the stage is good. Over.
 Apollo 11. Roger.
 Don't look out window 1. If you're - if it looks like what I see out window 5, you don't want to look at it (laughter).
@@ -761,7 +761,7 @@ Think it's the PU shift?
 Apollo 11, this is Houston. Thrust is good; everything's still looking good.
 That's about like a pitch change rather than an acceleration increase. Did it feel that way to you?
 Okay. We got a lighted horizon at 2-1/2 minutes. Pretty horizon.
-A fairly smooth ride, you know; it's just a little tiny bit rattly, but nothing like Stafford's – H-dot looks great. Don't bet you could do any better. _page : 40
+A fairly smooth ride, you know; it's just a little tiny bit rattly, but nothing like Stafford's – H-dot looks great. Don't bet you could do any better.
 I'm sure I couldn't. I'd do worse because I'd be a - a full degree off from where it is right now.
 Don't sweat that. 3 minutes.
 3 minutes. What we got, about one g, Neil?
@@ -781,7 +781,7 @@ Roger. Apollo 11's GO.
 I see a bright star out there, must be Venus. Forgot to memorize John Mayer's views out the window well enough to say that's Venus or not, but it's sure bright.
 What would you do about it?
 Nothing.
-4 minutes – _page : 41
+4 minutes –
 Tell you what - that's Venus.
 10 feet per second off on H-dot -
 ..., that's about where it is.
@@ -803,7 +803,7 @@ Right on it.
 ... yaw.
 ... do that?
 Yes, we better do that.
-5 - 5 seconds – _page : 42
+5 - 5 seconds –
 What kind of g we pulling?
 We got a 1.2 or 3 - 1.3, maybe.
 Gee, feels a lot more than that already.
@@ -825,7 +825,7 @@ Why don't you try to get up high - -
 SCS TVC SERVO POWER 1, OFF.
 Okay.
 You want to get Houston on the radio if you can?
-Yes. _page : 43
+Yes.
 PCM BIT RATE, LOW.
 PCM BIT RATE is LOW - -
 - - two, ARMED.
@@ -849,7 +849,7 @@ Thrusting -
 This is Houston. We copy.
 SEP.
 Look at that trash.
-SEP complete. _page : 44
+SEP complete.
 Got DELTA-V?
 Okay, got 0.7; I'm going to stop there and - -
 ... go to RELEASE; DELTA-V indicator minus 100.8 - -
@@ -871,7 +871,7 @@ Yes.
 PROCEED and you're pitching?
 She's pitching.
 Trying - to turn itself off again; look at this.
-Is it holding it this time? _page : 45
+Is it holding it this time?
 Watch, it'll probably go back to RATE COMMAND.
 That slows it down?
 ... keeps pitching.
@@ -894,7 +894,7 @@ Yes.
 You got him?
 No, I don't.
 To the right over here.
-Can you see him? _page : 46
+Can you see him?
 No, I don't see - -
 He's a little bit to our right.
 Okay, I see him.
@@ -914,7 +914,7 @@ Yes, it looks like he's drifting down just a tad, and he's supposed to be.
 How are our eight gray talkbacks; they still good?
 Very good.
 Flies like a spacecraft instead of a simulator. Hope that's good.
-Sure beautiful. I hope you got some pictures, Buzz. _page : 47
+Sure beautiful. I hope you got some pictures, Buzz.
 I got the 16 millimeter going - -
 Is it going?
 - - 16 frames at f:8 - -
@@ -935,7 +935,7 @@ Take a couple of ...
 Yes, you might look - if you're looking for something to do, you might just look over my panel 1 and 8 and all that and make sure all the switches are - to your liking.
 I'll do it.
 ...
-Be sure that your RCS is working anyway. _page : 48
+Be sure that your RCS is working anyway.
 How far out are you, Mike?
 I'm still quite a ways. That's definitely a SLA panel - there's no doubt about that. Sure looks like ... panel. That stuff's hitting from the S-IVB from us. Gees, look it - that one thing just hit the - gyro package on the S-band antenna.
 Yes, things occasionally come scooting out.
@@ -954,7 +954,7 @@ And we're - translated plus X. That CAPTURE PROBE, EXTEND/RELEASE, you've done t
 Yes, sir.
 Yes.
 Allow probe to damp spacecraft oscillations?
-We did that. _page : 49
+We did that.
 Yes, you've done that. DOCKING PROBE, RETRACT, PRIMARY 1?
 We did that.
 Alright, after dock - -
@@ -973,7 +973,7 @@ COAS POWER, OFF.
 COAS POWER, OFF.
 ... get this to stop ...
 Yes, that wasn't the smoothest docking I've ever done.
-Well, it felt good from here. _page : 50
+Well, it felt good from here.
 I mean the - I mean the whole - I mean the gas consumption would be a lot more than I would have guessed, you know? I thought I could about equal the simulator in ... and I didn't - I bet you I used - I hate to quote a number, but I've been down around 30-some pounds in the simulator, and I'll bet this was 50, 60 pounds, something like that. Hate to quote a number.
 How do the - Speaking of that, how do the service module RCS quantities look?
 Well, Buzz is fooling around with that - Let me just - -
@@ -991,7 +991,7 @@ I - clip it to that - clip up there beside the COAS - you see - -
 Okay.
 - - see those clips up there, one of those. It's got a snap right here that's pretty good.
 I think I can get it now - ...
-Okay, Buzz, how am I doing on the checklist? _page : 51
+Okay, Buzz, how am I doing on the checklist?
 Well, I'm trying to - -
 You're at the high gain - -
 - - you're at postdocking; I'm trying to get the high gain going - and I'm having a little trouble - ... trouble.
@@ -1011,7 +1011,7 @@ Okay.
 - - this one was just kind of wandering around there - with no - -
 As soon as I went down to HIGH GAIN was when the signal strength came up.
 Okay, ... man.
-Apollo 11 - - _page : 52
+Apollo 11 - -
 ...
 Optics ... are up?
 Yes.
@@ -1032,7 +1032,7 @@ I'm going to turn my S-BAND VOLUME down, so you can ...
 DOWN VOICE BACKUP.
 MAIN BUS TIE A coming ON. Have you got TVC GIMBAL DRIVE - PITCH and YAW, to AUTO, huh?
 TVC GIMBAL DRIVE, PITCH and YAW, to AUTO.
-Okay, TVC - - _page : 53
+Okay, TVC - -
 He's not going to have the sun in your eyes – I mean, on this thing, why don't we ...?
 Is that right?
 Now, you may have the sun in your eyes coming around the corner; now, you've got your patch ready in case you want it?
@@ -1053,7 +1053,7 @@ Okay, we've got 6-1/2.
 MARK it -
 6-1/2.
 10-minutes difference whether we ..., huh? That's a lot of time.
-Yes. _page : 54
+Yes.
 Now, what do we do? Turn up - Where did the noise come from?
 VHF or the S-band?
 I don't know.
@@ -1073,7 +1073,7 @@ Alright. TRANSLATION HAND CONTROLLER's counterclock - clockwise.
 Hey, are you - are you on your INTERCOM switch? INTERCOM/PUSH-TO-TALK and all that?
 Yes, yes.
 Okay. Alright. TRANSLATIONAL CONTROLLER's - -
-... going TVC. _page : 55
+... going TVC.
 - - clockwise - that's verified. Alright, secondary TVC check; GIMBAL MOTORS, PITCH 2, YAW 2, ON.
 PITCH 2, MARK.
 Got it.
@@ -1095,7 +1095,7 @@ AC/DC.
 SPACECRAFT CONTROL, CMC, verify.
 CMC.
 Okay. Now you got an option of trimming or bypassing.
-Let's bypass. _page : 56
+Let's bypass.
 Alright. BMAG MODE, three, to ATT 1/RATE 2.
 Okay, we're going to - Did you say after ENTER?
 Before ENTER.
@@ -1116,7 +1116,7 @@ FDAI scale, 50/15.
 Alright.
 Stand by for 2 minutes; then we'll have DELTA-V THRUST B, ON, okay?
 That's right. Guess we want to turn it on at 2 minutes - Want to wait awhile?
-You already asked them that and they said turn it on at 2 minutes. _page : 57
+You already asked them that and they said turn it on at 2 minutes.
 I never saw any lights, so they never saw a signal so everything looks good. Put it on 2 minutes and be ready to turn it off.
 Okay. I'll be ready. Coming up on 2 minutes.
 MARK -
@@ -1138,7 +1138,7 @@ You're going to watch the - go gray - -
 Right.
 - - and the ball valve.
 Right.
-35 seconds; DSKY's blank, EMS MODE, NORMAL. Okay. _page : 58
+35 seconds; DSKY's blank, EMS MODE, NORMAL. Okay.
 Yes, the moon is there, boy - in all its splendor.
 Man, it's a - -
 Plaster of paris gray to me.
@@ -1159,7 +1159,7 @@ It's good. 95, 95.
 PUGS is oscillating around. Okay, we're steering.
 95 seconds in, it says go DECREASE, and we're ...
 You're in pretty good; your gimbals are working a little bit more busily than I would have guessed, but everything's looking good.
-EMS and G&N CALS together. _page : 59
+EMS and G&N CALS together.
 Okay.
 Pitch trim is up at 1.5 degrees, cycling about that, which is a little bit off the SIM value. Yaw trim is cycling about zero. Chamber pressure - -
 ...
@@ -1178,7 +1178,7 @@ We may - -
 Shut down a little early.
 - - shut down a little early.
 What do you think about this crazy g-scale?
-All your ... look okay over there, Buzz? _page : 60
+All your ... look okay over there, Buzz?
 Man, I'm not going to look at them.
 Alright, probably a good rule.
 How about that? It's running a couple up.
@@ -1197,7 +1197,7 @@ Okay - -
 We're well into mode 3.
 - - it's going to be about 3 seconds early - cutoff.
 Alright, cut-off nominal at 06:02; expect cut-off around 6 minutes even then, huh?
-... _page : 61
+...
 Okay, the rates. We're ... all three axes are about 0.1 degree per second. APS is punting back and forth.
 I'm predicting 05:58.
 Okay.
@@ -1215,7 +1215,7 @@ Okay, going to get the DELTA-V switches OFF right at shutdown?
 Shutdown, I'll get both DELTA-V THRUST, NORMAL switches, OFF.
 10 seconds.
 Okay. 9, 8, 7, 6, 5, 4, 3, - -
-... _page : 62
+...
 SHUTDOWN.
 Okay, now.
 Ball valves closed - -
@@ -1239,7 +1239,7 @@ Okay.
 Man, man!
 Alright.
 Understand.
-Look at the residuals. PROCEED. _page : 63
+Look at the residuals. PROCEED.
 PROCEED? Copy them down; we're not going to trim them.
 ...
 ... minus 1, minus 1, plus 1. Jesus!
@@ -1260,7 +1260,7 @@ Three to RATE 2.
 ATT DEADBAND, MAX?
 ATT DEADBAND, MAX.
 PCM BIT RATE, LOW?
-ROTATION CONTROL POWER, DIRECT, two of them, OFF? _page : 64
+ROTATION CONTROL POWER, DIRECT, two of them, OFF?
 DIRECT, two, is OFF.
 Circuit breakers - PITCH 1, PITCH 2, YAW 1, YAW 2, OPEN.
 PITCH 1, PITCH 2, YAW 1, YAW 2, OPEN. Proceed.
@@ -1281,7 +1281,7 @@ Looks tan to me.
 But when I first saw it, at the other sun angle - -
 Yes?
 It looked gray.
-- - it really looked gray. _page : 65
+- - it really looked gray.
 Yes.
 More - more sun angle you get - -
 It got more - more brown - with increasing sun angle.
@@ -1303,7 +1303,7 @@ Write it down just for the hell of it. 170 by 60, like gangbusters.
 We only missed by a couple of tenths of a mile.
 Hello, Moon; how's the old back side?
 Well, it's - -
-VERB 66, alright? _page : 66
+VERB 66, alright?
 VERB 66.
 We won't need that other vector ever again.
 Now, we're - PCM, LOW, and we want to turn the TAPE RECORDER, OFF?
@@ -1324,7 +1324,7 @@ That do it? Alrighty, let's go to SCS and do it.
 And -
 Don't waste all the gas, now.
 ... When I get around there, I'll pitch down 70, huh? What are we pitching down for, what, what, what - -
-We're going to - what we're - - _page : 67
+We're going to - what we're - -
 I don't even know what we're doing.
 Well, we're going to roll over and pitch down so we're looking out the front windows, down at the - -
 Oh, yes, okay.
@@ -1345,7 +1345,7 @@ We should be able to ...
 - - ... precise. What was the time we got on it, Neil?
 Yes, we can - -
 Neil?
-What's that? _page : 68
+What's that?
 What was the time we got on it?
 Burn time?
 No, no - -
@@ -1366,7 +1366,7 @@ Okay, infinity, at f:11 - and 1/250th, huh?
 Okay, let me get my - let me get my gouge out here. I got my gouge - -
 You might want to back off a half stop to get the earth -
 Are you - you black and white or color?
-Color. _page : 69
+Color.
 Alrighty.
 Moon ..., 5.6; earth ..., 11; ... terminator, 1.8 - -
 You think it's on your - your spotmeter reading for the earth?
@@ -1387,7 +1387,7 @@ The earth's going to be over here?
 AOS, 76:15. That's exact - -
 Can you verify that you got the state vectors transferred with the VERB 83?
 I'll do that.
-Now, what else we got? _page : 70
+Now, what else we got?
 Coming up there.
 ... Eyeballing and chattering. We got the burn status report? That's all?
 Ready to go.
@@ -1409,7 +1409,7 @@ Look at those craters in a row. You see them right - going right out there?
 ...
 Look at that line of them.
 ...
-... _page : 71
+...
 Something really peppered that one. There's a lot less variation in color than I would have thought, you know, looking down?
 Yes, but when you look down, you say it's brownish color?
 Sure.
@@ -1429,7 +1429,7 @@ Yes, let's take some pictures here, first.
 Well, don't miss that first one.
 See how am I doing. Yes, you're right.
 We'll need - we need to catch it about 10.
-Shoot, you're going to have plenty of passes. _page : 72
+Shoot, you're going to have plenty of passes.
 Yes, right.
 Plenty of earthrises, I guess.
 Yes, we are.
@@ -1464,7 +1464,7 @@ A slumping big mother. Well, you see those every once in a while.
 Most of them are slumping. The bigger they are, the more they slump - that's a truism, isn't it?
 That is, the older they get.
 Well, we're at 180 degrees, and now we're going to want to stop that and start a slow pitchdown. We want to go - -
-We're not going to see the earth come up over the horizon. _page : 74
+We're not going to see the earth come up over the horizon.
 - - about 70 degrees.
 It says pitchdown or pitchup?
 Pitchdown, so we're looking forward.
@@ -1486,7 +1486,7 @@ Huh?
 The next REV around, that is.
 Before LOI 2.
 Yes.
-Could you give me a gimbal angle to pitch to? _page : 75
+Could you give me a gimbal angle to pitch to?
 What are you going to do on that one?
 Oh, I guess - get 10 pictures of the moon.
 What did you want, Mike?
@@ -1506,7 +1506,7 @@ We might make it in time.
 Yes.
 There it is, it's coming up!
 What?
-The earth. See it? _page : 76
+The earth. See it?
 Yes. Beautiful.
 It's halfway up.
 We ought to have AOS now.
@@ -1526,7 +1526,7 @@ That's why I'm trying to get it out.
 No alignment this REV, huh?
 Mike, I guess the name of the game is to go back to - B OMNI?
 Huh?
-Go back to B in OMNI? _page : 77
+Go back to B in OMNI?
 Well, let's see - when we come over the hill next time, we're supposed to have them on the high gain, I think.
 Not sure of that.
 ...
@@ -1562,7 +1562,7 @@ Yes.
 Okay.
 We'll have to give them pictures of the moon.
 ... I've been plotting on them ... 50:05.
-We'll have a gouge as to where we are. _page : 79
+We'll have a gouge as to where we are.
 55 -
 Outside, huh? Alright, the switch is set for outside.
 Could I have that map that y'all were looking at before, that lunar map? Thank you.
@@ -1583,7 +1583,7 @@ Okay, let's get out of this; let me get VERB 62. Okay, Mike?
 Oh, I really need these ..., Buzz; I really need these goddam ...
 Well, we're not going to have much of a TV unless we get high gain.
 Alright.
-I'll give it back to you - ... _page : 80
+I'll give it back to you - ...
 You got yourself some rates going about like what you want?
 You got - you got high gain right now, I mean the angles, right now.
 And we're 23 - we're 30 seconds from AOS, so those angles should be okay. You reading them?
@@ -1603,7 +1603,7 @@ Okay, we got it solid.
 Got it solid on AUTO.
 Houston, Apollo 11. Are you picking up our signal okay?
 Another 5 minutes, Neil babe.
-Okay. _page : 81
+Okay.
 This pitch angle is quite a bit off nominal; 196 instead of 212.
 Umm.
 16 degrees.
@@ -1622,7 +1622,7 @@ And we're not going to do any VERB 41, NOUN 91, any of that stuff - -
 No ...
 - - so you can - enter on this one.
 Okay. OPTICS, ZERO, ZERO, huh?
-No! _page : 82
+No!
 Supposed to be 0.7.
 Oh.
 Okay?
@@ -1646,7 +1646,7 @@ ATT DEADBAND, MINIMUM.
 MINIMUM.
 RATE, LOW?
 RATE, LOW.
-LIMIT CYCLE, ON? _page : 83
+LIMIT CYCLE, ON?
 ON.
 MAN ATT, three, to RATE COMMAND.
 Okay, MANUAL ATTITUDE, three, RATE COMMAND. And - sunrise.
@@ -1669,7 +1669,7 @@ Putting out?
 - - SERVO POWER?
 No. The TVC GIMBAL DRIVE, PITCH and YAW, to AUTO. That didn't do anything, did it?
 No. No, that didn't do a thing; servo power's what takes it.
-You know not to leave them on too long. _page : 84
+You know not to leave them on too long.
 19 seconds to ullage; two jets.
 Okay, 19 seconds, two jets.
 A valves only.
@@ -1692,7 +1692,7 @@ When's TIG?
 17 seconds - 17 plus 1, huh?
 Those little - fluorescent things on there must be from the heat and transfer.
 Where are they? On the command module?
-No. _page : 85
+No.
 On the LM?
 No.
 I don't know, but the command module's got about ...
@@ -1711,7 +1711,7 @@ Poor old LM is contaminated; it's got urine particles all over it; and, the way 
 I guess.
 Wait until the back contam - forward contamination people hear about that.
 Yes.
-No more urine dumps on the way to the moon. Put it all in a nice little bag and – _page : 86
+No more urine dumps on the way to the moon. Put it all in a nice little bag and –
 You're not - you've got plenty of black and white film, don't you?
 Yes, plenty of black and white film.
 ... terminator, 4.
@@ -1731,7 +1731,7 @@ Okay, 7 minutes. Okay?
 Buzz, you want to read us that checklist; we'll use my panel chart. Which checklist would you like?
 Alright, MAIN BUS TIES coming ON.
 Okay. 7 minutes -
-MARK. _page : 87
+MARK.
 AC's ON - DC's ON.
 TVC SERVO POWER, number 1, AC 1.
 AC 1.
@@ -1754,7 +1754,7 @@ Got it.
 YAW 1 -
 MARK it.
 Got it.
-Okay. _page : 88
+Okay.
 TRANSLATION CONTROLLER, clockwise.
 Clockwise.
 Verify no MTVC.
@@ -1778,7 +1778,7 @@ MTVC is verified.
 Alright, TRANSLATION CONTROLLER, NEUTRAL.
 NEUTRAL.
 Verify GPI returns to zero, zero.
-Verified. _page : 89
+Verified.
 ROT CONTROL POWER, number 2 - ROT CONTROL POWER, NORMAL, number 2, to AC/DC.
 AC/DC.
 SPACECRAFT CONTROL, CMC, verify.
@@ -1798,7 +1798,7 @@ Which way's it shaking, can you tell? Pitch and yaw?
 I don't know; it goes up more on the yaw needle than the pitch needle, but I'm not sure that's indicative of anything except needle sensitivity.
 Okay, did it go to ...?
 Yes, it did. ... OFF and the ... OFF.
-ROTATION CONTROL POWER, DIRECT, two of them, to MAIN A/MAIN B. _page : 90
+ROTATION CONTROL POWER, DIRECT, two of them, to MAIN A/MAIN B.
 MAIN A/MAIN B.
 SPS HELIUM VALUES, verified AUTO; LIMIT CYCLE, OFF.
 LIMIT CYCLE, OFF.
@@ -1820,7 +1820,7 @@ Okay, 19 seconds ullage this time.
 Okay, stand by for ...
 ...
 EMS MODE to NORMAL?
-EMS MODE, NORMAL. Stand by for ullage. ... _page : 91
+EMS MODE, NORMAL. Stand by for ullage. ...
 20, 19 -
 Ullage.
 You got the ullage?
@@ -1844,7 +1844,7 @@ YAW 1, OFF -
 MARK.
 Got it.
 PITCH 2, OFF -
-MARK. _page : 92
+MARK.
 Got it.
 YAW 2, OFF -
 MARK.
@@ -1867,7 +1867,7 @@ Okay.
 BMAG MODE, three, to RATE 2?
 Three to RATE 2.
 ATT DEADBAND, MAX?
-MAX. _page : 93
+MAX.
 PCM BIT RATE going to LOW. ROT CONTROL POWER, DIRECT, two of them, OFF.
 OFF.
 Circuit breakers, PITCH 1, YAW 1, PITCH 2, YAW 2, OPEN? Proceed and go to VERB 82. No!
@@ -1887,7 +1887,7 @@ That's about as close as you're going to get.
 Yes, I bet we never get circular.
 Hey, have you got any more circuit breakers – I mean any more switches for me?
 No. When everybody likes this one, why don't you try VERB 83 or a VERB 66 or a - suit yourself. See how much ... you put in.
-158. _page : 94
+158.
 15.8, huh?
 158.
 Or 158, that's about right. Okay.
@@ -1908,7 +1908,7 @@ Okay.
 But I waited for it to start an upward trend on the first burn.
 Understand; that's alright.
 Alright - back to the flight plan.
-... 33, as I remember it - the right number - - _page : 95
+... 33, as I remember it - the right number - -
 ...
 Yes, roll 180, pitch down 81, ORB rate. God damn, here comes the draft again.
 Okay, we're supposed to start charging battery A.
@@ -1925,7 +1925,7 @@ LOI 1 could've got to it, I imagine.
 Yes.
 Are you going to maintain ORB rate?
 Yes, I guess so. It's going to be sort of a passthrough ORB rate kind of thing because, see if I whip - do it in a hurry, why I got to pitch down 80 degrees, stop the pitch, or stop almost all of it, except for the ORB rate amount. That's going to waste a hell of a lot of gas.
-Do we have to do anything - to the O2 to pressurize the LM? _page : 96
+Do we have to do anything - to the O2 to pressurize the LM?
 No, we haven't - small enough – DELTA-P -
 That's 0.9.
 0.9?
@@ -1944,7 +1944,7 @@ Hey, well, I'm - while this thing's rolling over, I'm going to take a pee; I'm g
 That's a spectacular crater.
 Did you shoot some pictures while you were over there?
 No, it's just going by - we'd better get it later; there will be better times. If the damn antenna isn't in the way -
-Boy, there must be nothing more desolate than to be inside some of these small craters, these conical ones. _page : 97
+Boy, there must be nothing more desolate than to be inside some of these small craters, these conical ones.
 People that live in there probably never get out.
 Yes, I think you're right. Boy, you can really see the slumping, though. Most of the - You can see where it's all gathered down in the bottom in the corner; you know, on the edge - where a lot of the white stuff has dribbled on down – and evidently it gets covered over after a while with a - a darker layer. There's always a certain amount of the white stuff right in the edges. Pretty characteristic of all of these – white conical ones.
 Yes, you know, you can change the color of what you're looking at by moving your head to a different spot in the window - and looking in a different direction.
@@ -1958,7 +1958,7 @@ How's our roll doing, Neil?
 Oh, you got about 30 degrees to go.
 Oh, boy!
 Okay.
-How far you going to roll? _page : 98
+How far you going to roll?
 Over and over.
 Got that DIRECT O2 ..., didn't you?
 Yes, just a tiny bit.
@@ -1976,7 +1976,7 @@ No - -
 There's atmospheric drag up here.
 - - departed it with a little DELTA-V.
 I think what's really happening is - we're rolling and - it's changing the angle that I'm looking out the window.
-Let's see, I want to pitch down 80 degrees to - - ... 293, down 293, I believe that, I wonder what rate would be reasonable – _page : 99
+Let's see, I want to pitch down 80 degrees to - - ... 293, down 293, I believe that, I wonder what rate would be reasonable –
 Okay, it's about 7 minutes until AOS.
 Down 80 degrees in 7 minutes, that's - let's see, about 10 degrees per minute, 10 degrees per minute is -
 ... floating up here -
@@ -1995,7 +1995,7 @@ Shouldn't be a bad picture. Why don't we stop it?
 Okay.
 We ought to be able to get high gain from this attitude, shouldn't we?
 Think we ought to get the long lens on, Mike?
-Yes, we ought to get the 250 - we ought to do it at 250. _page : 100
+Yes, we ought to get the 250 - we ought to do it at 250.
 You've got 4 minutes; that's plenty, Now, we're going to want to - -
 Are we at a good enough attitude? I hope so. We are out this window, babe, but we're not out that one. If the earth is right there, that's where it's coming up, huh? Better be.
 You want color?
@@ -2014,7 +2014,7 @@ ORB rate -
 No, we're not ORB rate.
 The earth's going to be coming ORB rate at us.
 ...
-Okay. Let's see, I've got to pitch up a tad then ... _page : 101
+Okay. Let's see, I've got to pitch up a tad then ...
 Okay, I've still got f:8 and ...
 250th at f:8, I think we can do it, and infinity.
 I don't know; what's the matter with where you had it?
@@ -2034,7 +2034,7 @@ Wow!
 ...
 You got it, huh?
 I think it focused the second one a little bit better. I think it's beautiful. Just fabulous. Not really sure what you're looking at - but there's some mighty big fresh rocks down in that crater.
-The walls actually look pockmarked. Sure enough, and they're not filled in. Pockmarked and it looks like somebody's painted white paint vertically down the edges and then it's been eaten away. _page : 102
+The walls actually look pockmarked. Sure enough, and they're not filled in. Pockmarked and it looks like somebody's painted white paint vertically down the edges and then it's been eaten away.
 ... that one ... into the LM.
 Here is the earth. Hey, I got the view over here.
 I guess I'd better get the high gain off, hadn't I?
@@ -2052,7 +2052,7 @@ Apollo 11, Houston. ...
 Do you want to talk to them?
 ... Roger, Houston. Burn status report follows: DELTA-TIG zero; burn time, 17; angle through the pad values, DELTA-VGX was plus 0.3; VGY, minus 0.0; VGZ minus 0.1; DELTA-VC, minus 5.2; fuel, 362; OX, 364; unbalance, plus 50, and a postburn NOUN 94, 66.1 by - -
 Well, they look like they were made to go - That's - that's it, isn't it? Weren't they made to put here so you stow them by putting them on here instead of the way we do it?
-... _page : 103
+...
 Then we only have to decide what - what's supposed to go here.
 I ... two of them.
 Both of those - those things are in here.
@@ -2072,7 +2072,7 @@ That's - that's not - that's mine.
 You've got the wrong one.
 No, that's not the right one.
 The one - -
-The one you want, Neil, is way over here in – R-13. _page : 104
+The one you want, Neil, is way over here in – R-13.
 No, it's not in there; it was on my girth shelf.
 Okay.
 Oh, okay, there it is. Did you get that one put back?
@@ -2093,7 +2093,7 @@ You're not ...
 Man, can't you stop some of that racket up there?
 Huh?
 That's the S-band - you turn your volumes down.
-(Coughing) _page : 105
+(Coughing)
 Is that better on the S-band?
 Yes.
 Yes.
@@ -2112,7 +2112,7 @@ Right here?
 Yes. ...
 We may be ending up with one more than we're authorized - one, two, three, four, five. Yes, one of these will be changed over to - As a matter of fact, I stole one from Mike - but one of them we'll change over to the - -
 I'll go check around up here.
-Oh, wait a minute, here it is. I got it. _page : 106
+Oh, wait a minute, here it is. I got it.
 I don't think the - -
 This other one got changed.
 No, it didn't.
@@ -2132,7 +2132,7 @@ Yes.
 I'm going to put the R in the reserve camera.
 Okay.
 And the S in the surface camera.
-Good idea. _page : 107
+Good idea.
 Even though we're going to use them the other way.
 Do you want to try it out in there?
 I guess we could open the window here, just as well.
@@ -2153,7 +2153,7 @@ Okay, when do you get your tracking?
 In a little while.
 About what time?
 About another half hour.
-Before 83 hours? _page : 108
+Before 83 hours?
 Wasn't like this yesterday - must be because the sun was on it.
 Boy, look at that big mother coming up there. Looks like we're heading for - ... over the horizon.
 I don't think there's any place except in the – in here, that it says anything about 16-millimeter footage -
@@ -2168,7 +2168,7 @@ Did you say something about taking pictures right now?
 No, no; stop the camera.
 Yes, I know, I don't think it'd take a very good picture right now.
 One thing, when you get way up here, you can - see a lot more of that secondary strut.
-No, that thing - that's holding up those damn baffles. _page : 109
+No, that thing - that's holding up those damn baffles.
 Well, if we could get a towel, we could get us a couple of fair-to-middling pictures out of here.
 Alright. You want one?
 Yes. Maybe - Some of it will come off, anyway.
@@ -2187,7 +2187,7 @@ What do you know, it works!
 I could sure get the stop watch, huh?
 Yes, you have the exact time to AOS - because I don't have my watch - set up for that.
 ...
-... _page : 110
+...
 I'm just fooling around; what do you need - AOS time? AOS is going to be - well, let's see - 82:30 - about 15 minutes from now.
 Okay. I'll get another good picture of what comes along. Well, hell, I guess we might as well load the other camera and make sure it works, too, huh?
 Adjust the - chronometer and put the cables in it, huh?
@@ -2201,7 +2201,7 @@ No, I don't think you know; I don't think you know; I don't see how you know.
 Hey, Neil, you see any need for keeping this thing?
 What's that?
 In the LM, this cover for the camera. Think about that for a while - I got it loaded, and I don't see any need to ever change it. If it works now - I guess if it quits before we actually went EVA, why there might be some reason to. 5.6 at 250th, huh?
-Now, a few pictures of that and one of earthrise and - and then we'll stow it. _page : 111
+Now, a few pictures of that and one of earthrise and - and then we'll stow it.
 Well, I can't do anything until we transfer to LM power.
 Do you know where the shaving cream is?
 Shaving cream?
@@ -2222,7 +2222,7 @@ I'm through with the flight plan, Neil, if you want it.
 The razor should be in there with the shaving cream, isn't it?
 No - -
 It wasn't?
-- - ... shaving cream. _page : 112
+- - ... shaving cream.
 The razor wasn't in there?
 The razor's in here, and I think the shaving cream was when I pulled it out, but - -
 How much time to AOS, Mike?
@@ -2243,7 +2243,7 @@ No, sure didn't.
 Yes.
 But I can't see ... - I see the earth, but it's a lousy picture.
 Could you wait just 1? I'm right in the middle of the event-timer setting.
-Okay, Houston. We'll be doing P22 in just a couple of minutes here. _page : 113
+Okay, Houston. We'll be doing P22 in just a couple of minutes here.
 You want to come in, Neil? Going in?
 Want back up?
 No.
@@ -2262,7 +2262,7 @@ Okay, that's good. That program alarm is normal; it will reach that when the tru
 Okay.
 All I'm doing is waiting for - the time; everything else is done.
 You holding inertial, Mike?
-Yes. _page : 114
+Yes.
 No wonder the earth isn't moving.
 Ho-hum, ho-hum. I only got set up for this thing about an hour early (laughter). Better late than never; better early than late.
 ... should be coming over the horizon here pretty soon.
@@ -2282,7 +2282,7 @@ I'll watch.
 The preflight - ...
 That ... is working.
 Okay, fine.
-Okay, MARK it – _page : 115
+Okay, MARK it –
 Number 1. They're 30-second marks.
 Check.
 15.
@@ -2306,7 +2306,7 @@ Okay.
 MARK it -
 Number 5.
 Okay.
-... _page : 116
+...
 ...
 Check.
 Checklist says - You're going to go blind doing this - ... 06 71 - confirm 7000; 06 89 confirm ... 320 7000 ... -
@@ -2326,7 +2326,7 @@ Would you like to control the ...? I'd say we're going to keep pitching for quit
 Houston, Apollo 11.
 Roger. Are you copying NOUN 129 on your downlink? If you've had enough time, I'll proceed.
 Look, what gimbal angle was that when - on the pitch - when that activity started, just out of curiosity?
-Oh, must have been around - 210. _page : 117
+Oh, must have been around - 210.
 Just like the simulator.
 Okay, now, the flight plan says where we want to stop ..., that says so right here - pitch 229 is where we want to stop.
 Okay, we've gone by that, however, quite a ways.
@@ -2349,7 +2349,7 @@ Okay. So much for that.
 A beautiful view out here, Neil.
 ...
 What's the GET?
-It's 82:51. _page : 118
+It's 82:51.
 There's Mount Marilyn.
 Yes.
 Okay, we didn't waste any gas by doing what we did, but what we wasted gas by was that goddamn DAP activity; I don't understand that. just like the simulator.
@@ -2366,7 +2366,7 @@ Or could you tell?
 - - they're sort of inconclusive because I marked - see, they gave me -
 That's in work, Houston. Hey, how about holding this for just a little bit?
 Yes, let's hold this attitude a little bit; I want to look at the - -
-Boy, that's beautiful out there, isn't it? _page : 119
+Boy, that's beautiful out there, isn't it?
 - - TPI approach. Man, this is really something; you ought to look at this. You want to watch our approach into the landing site; you got to watch right through this window. We're coming over - we just passed Mount Marilyn. We're coming up on Maskelyne series here - straight out ahead, coming into the landing area.
 Houston, we're holding inertial a little while to study the approach to the landing zone.
 See the monocular -
@@ -2384,7 +2384,7 @@ No, Duke Hill.
 Duke Hill?
 No, I'm sorry ... that's - -
 Duke Island, Duke Island.
-Oh God, look at that Moltke; he's my favorite ... Look at that son of a bitch. You see all those roads - triangular roads leading right past him? _page : 120
+Oh God, look at that Moltke; he's my favorite ... Look at that son of a bitch. You see all those roads - triangular roads leading right past him?
 Yes.
 That's US 1, I guess, huh?
 Yes.
@@ -2402,7 +2402,7 @@ Boy, that sure is eerie looking.
 Isn't that something?
 ...
 ... enough of a shot down there, but you can't find a single spot on the surface that doesn't look ... 1-degree sun angle, that's - that's just a lousy sun angle.
-That's spectacular out there - Looks like you're flying right into the side of a mountain, doesn't it? _page : 121
+That's spectacular out there - Looks like you're flying right into the side of a mountain, doesn't it?
 Yes, sure does.
 I missed taking a picture of it, ...
 Well, that was good ... Shall we go to maneuver, I mean to sleep attitude - anybody object to doing that?
@@ -2424,7 +2424,7 @@ Will you cut my SUIT POWER and AUDIO, OFF, please?
 Yes.
 Okay, fine.
 Okay, going OFF now.
-We're starting our maneuver to sleep attitude; roll 82, pitch 229, yaw zero. _page : 122
+We're starting our maneuver to sleep attitude; roll 82, pitch 229, yaw zero.
 About ready to maneuver?
 Go ahead.
 Okay.
@@ -2444,7 +2444,7 @@ I can't hear you, Buzz.
 He says, "Why don't you turn on VHF B, just for kicks."
 Alright, I'll do it. You going to send me some data?
 Yes, I'll get right to it.
-Huh? _page : 123
+Huh?
 I'll get right to it.
 Alright.
 Soon as I get some COMM first.
@@ -2464,7 +2464,7 @@ Hey, Mike, you transmitting on B?
 Mike, what are you transmitting on up there?
 Say again.
 What are you transmitting on up there?
-I'm transmitting right now on OMNI A, but I'm about to get new high-gain angles; just 1 second. Okay, we're there. _page : 124
+I'm transmitting right now on OMNI A, but I'm about to get new high-gain angles; just 1 second. Okay, we're there.
 How come I - he don't hear you on INTERCOM?
 You should hear - -
 Houston, Apollo 11; Apollo 11, Eagle. Over.
@@ -2484,7 +2484,7 @@ Did you hear him answer?
 No.
 I didn't either. Buzz is reading him, though.
 Houston, Columbia. How do you read on the high gain? Over.
-Hey, how about asking them if they can hear me calling? _page : 125
+Hey, how about asking them if they can hear me calling?
 I don't believe they can hear you, Mike, ... sleep attitude.
 Well, we're in sleep attitude, and I got the high-gain angles, and they should be good angles. And I'm locked on and I got about a half signal strength, and they can't hear me.
 Houston, Eagle. ... high gain ...
@@ -2503,7 +2503,7 @@ What?
 Yes, forward's okay.
 I don't think that would be too horrible sleeping down there.
 It's for sure it's not going anywhere; this one's bolted down two places - and this one is - -
-You can try it. If we could find a place to put our legs back in there, it'll be alright. _page : 126
+You can try it. If we could find a place to put our legs back in there, it'll be alright.
 See - it's going to be hard to get into that - sampler there.
 No - no, that's alright. That's the place for it.
 (Sneeze)
@@ -2522,7 +2522,7 @@ Alright, that's fine; I can have it there. I don't know how I'd get out, but - (
 ...
 That's ..., alright.
 Hey, you don't want to bring this one back? You on a weight-saving kick for the command module?
-You want it? _page : 127
+You want it?
 Sure, you - -
 There's room for the Hasselblad.
 - - you got stowage space?
@@ -2544,7 +2544,7 @@ Yes.
 Have you got the waste water dump?
 No, I haven't done that, but I will.
 Let's see, I imagine we want to go out of VOICE? Or not?
-Very, very - - _page : 128
+Very, very - -
 The whole bit they said.
 Okay.
 Lunar orbit asleep; (cough) S-BAND SQUELCH, ENABLE?
@@ -2580,7 +2580,7 @@ Well, I propose to give myself a little bit of a - a bath, but not to put that d
 I think we ought to do that.
 Neil, you still got that tissue dispenser, the empty one?
 Thank you.
-What's baseline altitude? ... the altitude - descent altitude settings? _page : 130
+What's baseline altitude? ... the altitude - descent altitude settings?
 That's the - that's the last meal we eat before descent, huh?
 Sure is.
 Wowee!
@@ -2601,7 +2601,7 @@ Monoculars?
 - - during the maneuvers.
 Found it, huh?
 We're going to take that into the LM.
-Yes. Sure can. _page : 131
+Yes. Sure can.
 ...
 ... - ... novel and earn a million dollars.
 Amazing how quickly you adapt - Why, it doesn't seem weird at all to me to look out there and see the moon going by, you know?
@@ -2618,7 +2618,7 @@ I don't know as we've got much to do; there's a purge.
 Is it 84 hours yet? Yes, it is; I'm going to dump the waste water.
 You dumping?
 Yes.
-(Cough) Boy, it's a dusty vehicle in here. Man! But that view approaching the landing site is just fantastic right out - right smack out the window, you know that? _page : 132
+(Cough) Boy, it's a dusty vehicle in here. Man! But that view approaching the landing site is just fantastic right out - right smack out the window, you know that?
 Yes.
 Except there's such a big shadow being cast by everything - -
 1 or 2 degrees, Neil?
@@ -2636,7 +2636,7 @@ You want this somewhere?
 If you don't mind, I'll put it on this big piece of Velcro over here by the fuel cell.
 Yes, that's a good place for it.
 Anybody for a barf bag?
-Can you think of any use for a slide rule in the LM, Neil? _page : 133
+Can you think of any use for a slide rule in the LM, Neil?
 Huh?
 I can't think of any use for two of them.
 Okay.
@@ -2657,7 +2657,7 @@ Okay.
 Thank you.
 You're welcome.
 You like this?
-Not much. _page : 134
+Not much.
 ...?
 Want one?
 Yes.
@@ -2677,7 +2677,7 @@ Couldn't have done better myself.
 It may be raunchy later.
 It may be? There's no doubt about it!
 Oh, I'll take a couple small ones.
-Apollo 11, Houston. We have LOS coming up in 2 minutes now, and AOS will be at 86 plus 28 plus 15. Over. _page : 135
+Apollo 11, Houston. We have LOS coming up in 2 minutes now, and AOS will be at 86 plus 28 plus 15. Over.
 We'll see you on the other side.
 Anybody have one?
 I'll have a little one.
@@ -2699,7 +2699,7 @@ Nothing in it.
 Good grief, man!
 They tell me you got to use Velcro on there. Maybe on the other side.
 Use -
-I got a - pair of jockey shorts. Now cut - cut the lights off - lights off. _page : 136
+I got a - pair of jockey shorts. Now cut - cut the lights off - lights off.
 Very good, very good.
 How'd you sleep last night, Buzz, up on top?
 You open up the outer one, and you put the inner one in there and squeeze it and it breaks, then you got to take the ... and insert it and mush it all up - to get that stuff evenly distributed through it.
@@ -2718,7 +2718,7 @@ I ... you.
 Oh.
 ...?
 Yes, yes.
-Yes, I ... _page : 137
+Yes, I ...
 Well, I thought today went pretty well. If tomorrow and the next day are like today, we'll be safe.
 You got a crater coming up, Buzz? Right through here. I don't know if you can see it or not. If not, let me get a picture of it because it's really - got big ... on the bottom of it. It don't look good.
 It's out this way.
@@ -2735,7 +2735,7 @@ Yes.
 Like seashells - very pretty, very symmetrical.
 Take along one of those craters.
 I took overlapping pictures of all that ...
-Tomorrow, take - we're going to have to carry a lot of film to take as many pictures as they want. _page : 138
+Tomorrow, take - we're going to have to carry a lot of film to take as many pictures as they want.
 I'll tell you what we ought to do, ...
 Oh, okay, let me go do that.
 Anybody know when AOS is?
@@ -2756,7 +2756,7 @@ The dark slide I think is right over there in the girth shelf.
 Oh, yes, I got it.
 That's - that's the one.
 Are we going to keep the ... lens on?
-... getting earlier in time. Yes, that's best - better. _page : 139
+... getting earlier in time. Yes, that's best - better.
 ...
 Got a MASTER ALARM coming on here.
 Your f:8 is 250 - at infinity?
@@ -2776,7 +2776,7 @@ Houston, Apollo 11. Over.
 Okay. We just appeared to get a solid lock for the last - oh, about a minute, the TUNE FOR MAX needles have been wandering up and down and the pitch and yaw needles have been wandering around, but it appears to have reacquired by itself solidly now. We're just filling - finishing up our fuel cell purge. Hydrogen on number 3 is the last to go off, and it'll be coming off in just a second.
 Huh? Is that right? Really should have looked.
 ... flow?
-RATE to HIGH, Neil. _page : 140
+RATE to HIGH, Neil.
 I'll need to holler across to you to get the mission timers on. Do we want to check and get our two mission timers SYNC'd? What's this one read now? 82:50?
 51, 52, 53, 54, 55, 56 - -
 Okay, this one is 1 second slow down in the LEB.
@@ -2793,7 +2793,7 @@ Here's this LCG check. "Verify ... stick visible in red or green band."
 Yes. Not ... as it should be.
 The red one comes out this far, and the green one's out further than that. The whole thing is only about that long. It's got to be in one or the other or you can't see it.
 Having any luck there, Michael?
-... _page : 141
+...
 You don't need to take - you're not taking your scissors over there?
 No.
 I've got ...
@@ -2813,7 +2813,7 @@ About ready for a little help? ... that.
 What's that?
 ... I only have one ... left.
 Okay. Oh, let's see, one smell - blah.
-(Humming) _page : 142
+(Humming)
 Okay.
 You want one?
 ...
@@ -2834,14 +2834,14 @@ What did he say?
 Oh, what time is it? It's 95:54.
 Now, switch from RATE, HIGH, to RATE, LOW. But that might make it better and maybe a little bit worse.
 ...
-I guess that's right then, Neil; it rattles across the deadband at a fairly high rate. _page : 143
+I guess that's right then, Neil; it rattles across the deadband at a fairly high rate.
 ...
 Alright.
 ...
 Sure as hell is.
 I can't get that ...
 This one - this one? That won't hurt it. ...
-Stand by for some MASTER ALARMS; I'm purging. _page : 144
+Stand by for some MASTER ALARMS; I'm purging.
 ...
 Oh, ..., Mike.
 It's 96 hours even. 96 even and coming up on 40 seconds. Ready -
@@ -2860,7 +2860,7 @@ Okay, I'm going to ... camera out of its way.
 ...
 Okay, I wouldn't be surprised .... all over this goddam stuff.
 A three-ring circus. I got a fuel cell purge in progress and trying to set up cameras and brackets, watch an AUTO maneuver, and -
-Jesus Christ! _page : 145
+Jesus Christ!
 NORMAL, NORMAL.
 Another MASTER ALARM coming.
 Stand by for MASTER ALARM.
@@ -2882,7 +2882,7 @@ Okay. Chewing gum, you want any of that?
 Neil, I hate to bother you; could you get my solo book out of R-1 there?
 What?
 My solo book out of R-1.
-Solo book? _page : 146
+Solo book?
 Yes. Look - -
 R-1?
 Yes, it should be in R-1. Big frapping book, with a bunch of updates on the cover. Thank you, that's it. Appreciate it.
@@ -2899,7 +2899,7 @@ Hey, Buzz? How about - -
 Eagle, Houston. We'd like aft now and forward at AOS. Over.
 Roger.
 Apollo 11, Houston. 30 seconds to LOS. Both spacecraft looking good going over the hill. Out.
-Eagle, Columbia. _page : 147
+Eagle, Columbia.
 Go ahead.
 Roger. I'm getting ready to preload the probe. I'm going to disable all my roll thrusters. Would you please monitor my roll, your yaw?
 Roger.
@@ -2916,7 +2916,7 @@ Okay.
 And I'm ready to button up the hatch.
 Hey, Mike. Have you got the - got to the tunnel vent step yet?
 I'm just coming to that. What can I do for you?
-Well, we're waiting on you. _page : 148
+Well, we're waiting on you.
 Okay.
 We're still ahead of the timeline, so take your time.
 Okay.
@@ -2934,7 +2934,7 @@ Doing just fine. The - Stand by, I'll give you the DELTA-P reading - 3.0; I need
 Okay.
 I've got a 3.5 psid now; I'm going to start a maneuver here in a few minutes to depressurize it.
 Okay.
-How you - how you guys doing? _page : 149
+How you - how you guys doing?
 Okay. We're doing our regulator checks now.
 So I heard.
 I'm starting the maneuver.
@@ -2957,7 +2957,7 @@ Right.
 Okay, now - -
 I heard it click.
 Yes, so did I.
-That relay, I suppose. _page : 150
+That relay, I suppose.
 MASTER ARM, OFF.
 It's OFF.
 CB(11), ED LANDING GEAR FLAG, OPEN.
@@ -3008,7 +3008,7 @@ I can go to a high ...
 I can give you HIGH BIT RATE on the OMNI's if that will help you any.
 Roger. Understand.
 Boy, you just can't miss those checkpoints – those Diamondback and Sidewinder.
-AUTO optics is pointed just a little bit north of crater 130; pointing north. _page : 153
+AUTO optics is pointed just a little bit north of crater 130; pointing north.
 Houston, Eagle. We're ready to pressurize the RCS. Over.
 Roger.
 That's affirmative; the landing gear is out and gray.
@@ -3026,7 +3026,7 @@ Roger. Columbia, Eagle. Have you about maneuvered there, yet?
 Negative.
 Houston, Eagle. Are those angles for after the maneuver that Columbia is going to make or are they for right now? Over.
 We have about another 120 degrees to go, Buzz.
-Houston, Eagle. I believe I've got you on the high-gain antenna now in HIGH BIT RATE. Over. _page : 154
+Houston, Eagle. I believe I've got you on the high-gain antenna now in HIGH BIT RATE. Over.
 You've got P00 and DATA.
 Columbia.
 Columbia, out.
@@ -3045,7 +3045,7 @@ Very good.
 ...
 Mike, are you in AGS CAL attitude now?
 That's affirm. I'm holding you there with the DAP, getting the deadband. When you get ready to do the AGS CAL, I will sort of quiet down the thruster firing and then hope to stop it altogether, but I don't even think that'll get it.
-Okay. Well, I'm just about ready to do that. Whenever you're ready to let it go free, why just tell me. _page : 155
+Okay. Well, I'm just about ready to do that. Whenever you're ready to let it go free, why just tell me.
 Okay, it looks real quiet now; I'm ready to go right now.
 Buzz, you copy?
 Buzz, you copy?
@@ -3063,7 +3063,7 @@ A few minutes.
 GET of the separation burn is 100:39:50 even.
 I haven't gotten the updates for undocking time; I'm still carrying 100 hours 15 minutes, I guess, ...
 I'm surprised they didn't update it by 3 or 4 minutes to, you know, make that DELTA-V be in the same position that they wanted.
-Yes, I agree. _page : 156
+Yes, I agree.
 So we're about 3 minutes ahead of the printed flight plan; it might be wise to try to SEP about 3 minutes early, and we can give them a GET of SEP that's precise whenever they want it.
 I have 5 minutes and 15 seconds since we started. Attitude is holding very well.
 Roger, Mike. Just hold it a little bit longer.
@@ -3080,7 +3080,7 @@ Okay. It should really - it should be pointing from the - you know, our forward 
 Okay. We've wandered back over the bellyband now - let me assure that AGS CAL.
 ...
 How'd the AGS CAL work out?
-Oh, it danced around a little bit, but seemed to go right back to the original numbers. _page : 157
+Oh, it danced around a little bit, but seemed to go right back to the original numbers.
 Okay. I'm going to start a maneuver now to our undocking attitude.
 Now the undock attitude and the SEP attitude ought to be the same, so I'm going to go to what they gave me for the updated separation-burn attitude. That's just about 7 degrees off, but it's in your flight plan for the undock attitude.
 Okay.
@@ -3095,7 +3095,7 @@ Hey, Mike, what would you recommend as a good setting on the 16 millimeter?
 Well, what they recommend for you is f:8 at 1/250th and put it not on infinity, but on 7 feet, which covers all the way from infinity down to a very short distance to keep it in focus, and 6 frames per second, I guess.
 Yes, what you say, f:8 at 1/250th?
 Yes, f:8 at 1/250th. And after you get it all set up, check that f-stop again because it slides and slips off with very little twist.
-How about using, as an undocking time, 100 hours and 12 minutes? That suit your fancy? _page : 158
+How about using, as an undocking time, 100 hours and 12 minutes? That suit your fancy?
 That'll be fine.
 Okay.
 What have you got for AOS, Mike?
@@ -3115,7 +3115,7 @@ There's sure a better visual in the simulator.
 Okay. I picked up a little roll; I'm going to get rid of it.
 Okay with you if I start my pitch, or you think you're not far enough away yet, Mike?
 I'd prefer you stand by just a couple of seconds, Neil.
-Okay. I'll wait for when you're ready – when you think you've got your rates killed perfectly. _page : 159
+Okay. I'll wait for when you're ready – when you think you've got your rates killed perfectly.
 Okay. I'm still holding ...
 ...
 Okay, looks pretty good to me now.
@@ -3136,7 +3136,7 @@ It came on.
 Camera's working beautifully.
 Track off?
 It's off.
-I'm ready to start my yaw maneuver if it suits you, Mike. _page : 160
+I'm ready to start my yaw maneuver if it suits you, Mike.
 Does it look like you're going to be able to do this without firing any thrusters, Mike?
 I'd have to fire laterally once or twice.
 Very small.
@@ -3151,7 +3151,7 @@ Houston, Eagle. Are you copying the fairly large numbers for range and range rat
 Okay. That explains the difference.
 You want him to go to HIGH GAIN, YAW, zero or - say again the numbers.
 Okay. YAW, zero; PITCH, minus 20, on the HIGH GAIN. Columbia.
-Yes, I copy that, and I'll do it just as soon as I get to it. _page : 161
+Yes, I copy that, and I'll do it just as soon as I get to it.
 Okay, he says he'll do that as soon as he gets around there.
 Okay, Neil, I'm all set for the SEP burn, and we're looking good on this phasing.
 Okay.
@@ -3172,7 +3172,7 @@ Eagle, Columbia.
 Go ahead.
 Columbia's ...
 Eagle, Columbia. How's it going?
-Mike, the burn's complete; it was on time - residuals are nulled, and AGS's free. _page : 162
+Mike, the burn's complete; it was on time - residuals are nulled, and AGS's free.
 Beautiful.
 Eagle, Columbia.
 Go ahead.
@@ -3195,7 +3195,7 @@ You don't have an 8-minute mark.
 67 feet per second. Go ahead with the ...
 Can't beat that. Okay, through with that?
 Yes. I like it.
-Hold on to the ... below. _page : 163
+Hold on to the ... below.
 Okay. And I'll pull the breakers - think we can ... roll.
 Yes.
 Got them both?
@@ -3217,7 +3217,7 @@ Sure seems like we're going the wrong way.
 How much do we got to go to pick it up?
 Got to go - oh, half the moon to go, I guess.
 Coming down already.
-Okay. It's got us 152; it's 151; there's ..., okay? ... _page : 164
+Okay. It's got us 152; it's 151; there's ..., okay? ...
 There's 52.
 Got 8 minutes ...
 Now we can let us take - let it take us there.
@@ -3240,7 +3240,7 @@ Yes. Which one do you want? I've got - -
 That it? Where do you want it?
 Trade you that for a piece of gum. There it is.
 ...
-When do we have to get these? Alright, go on. _page : 165
+When do we have to get these? Alright, go on.
 What do you mean by bringing - bringing CSM trash in here?
 Well, that's stuff I had left over in my pocket.
 You want ...?
@@ -3262,7 +3262,7 @@ Okay. Well, I can ... - the radar antenna.
 No, that's the wrong circuit - that's ...
 There's the sun in the COAS.
 In the COAS?
-In the - I mean, in the reticle. _page : 166
+In the - I mean, in the reticle.
 Alright, let me - let me do my rain dance with the DSKY here.
 Okay.
 Got it on?
@@ -3283,7 +3283,7 @@ Ready?
 Yes.
 MARK it.
 124 19, 124 19. Well, it should have been - 124 00.
-Do another one? _page : 167
+Do another one?
 Yes.
 Okay. I'm about ready.
 Tell me when.
@@ -3303,7 +3303,7 @@ Okay. We'll ...
 Cottonpicker just won't stay - try it!
 Well, wait until we lose that descent stage, man.
 We'd better take - a - piece of tape; hold that down.
-How about if you get the bottom in the – get the bottom underneath this cover? That help? _page : 168
+How about if you get the bottom in the – get the bottom underneath this cover? That help?
 Well, it - it's still not; I've had it in there real good couple of times.
 Your - hoses were tearing hell out of my board.
 Sorry.
@@ -3322,7 +3322,7 @@ Oh, we're in PULSE, and we're not commanding any firing - -
 I don't know; that could have come under DOI, but I doubt it.
 I just think that's one of those sticky flags. ... got a good engine.
 Alright, let's see.
-... _page : 169
+...
 ENGINE STOP button was reset?
 ENGINE STOP button is START, but it is going to be now.
 Alright. Window bars; THROTTLE CONTROL to AUTO.
@@ -3342,7 +3342,7 @@ You want this one?
 Yes. I don't - think - it'll be helpful, but I'll stick it here and pull it out if I need it.
 Let's see; we haven't got P20 going yet, have we?
 No.
-Let's do that. Let's get the RENDEZVOUS RADAR circuit breaker in. _page : 170
+Let's do that. Let's get the RENDEZVOUS RADAR circuit breaker in.
 Okay.
 IN. Might look at the DPS.
 What do you hear?
@@ -3362,7 +3362,7 @@ Okay, I'm going to get the ASCENT BATS, ON. BATTERY 5, ON; looks good. BATTERY 6
 Yes, we've lost it.
 Well, did it go to mode 2? That's where I want it to go.
 No - I can't tell.
-Yes, it's going to mode 2. Hasn't it? _page : 171
+Yes, it's going to mode 2. Hasn't it?
 Yes.
 Yes. There we are. Beautiful.
 Go to AUTO TRACK?
@@ -3383,7 +3383,7 @@ Yes. Remember that one.
 180, 287, 0. Here goes.
 Give me - -
 You'll get them before we will.
-Ready to give them a status report? DOI? _page : 172
+Ready to give them a status report? DOI?
 Well, I hope it's on the right page.
 Okay, I'm going to get DESCENT QUANTITY, ON, ... ON.
 Okay, you want to give it - Okay, we've lost it. In AUTO now.
@@ -3405,7 +3405,7 @@ Okay, ...
 Okay, the OVERRIDE at 5 seconds.
 DESCENT, ARMED.
 ALTITUDE lights, ON? ... proceed?
-Proceed. 1, 0 – _page : 173
+Proceed. 1, 0 –
 IGNITION. 10 percent.
 Just about on time.
 You got the OVERRIDES ON?
@@ -3425,7 +3425,7 @@ Yes.
 To SLEW?
 SLEW.
 Houston, I'm getting a little fluctuation in the - AC voltage now. Just the meter, maybe, huh?
-Okay, we went by the 3-minute point early. A little off. _page : 174
+Okay, we went by the 3-minute point early. A little off.
 Rate of descent looks real good. Altitude – right about on.
 Our position checks downrange show us to be a little off. AGS - AGS is showing about 2-feet-per-second greater rate of descent.
 MARK.
@@ -3444,7 +3444,7 @@ We got a lockon?
 Yes. Altitude light's out.
 Okay.
 DELTA-H is minus 2900. We got the earth right out our front window.
-Sure enough. _page : 175
+Sure enough.
 Houston, you're looking at our DELTA-H. Program alarm.
 1202; 1202.
 What is it?
@@ -3463,7 +3463,7 @@ Okay. No flags. RCS is GO; DPS is GO; pressure is - okay.
 Okay, I'm still on SLEW, so we may tend to lose as we gradually pitch over; let me try AUTO again now, and see what happens. Okay, looks like it's holding.
 Okay. 07:30 coming up. Should be ...
 ...
-And I have the window. I have that - view – out the window - Going to ... _page : 176
+And I have the window. I have that - view – out the window - Going to ...
 Coming up on 8 minutes.
 Could you give us an estimated switchover time, please, Houston?
 Okay, 7000, ... Looks good.
@@ -3483,7 +3483,7 @@ That's not a bad-looking area. Okay.
 1030 is good.
 What's LPD?
 35 degrees, 35 degrees; 750, ... coming down to 23.
-Okay. _page : 177
+Okay.
 700, 21 down, 33 degrees.
 Pretty rocky area.
 600 feet, down to 19; 540 feet, down to 30, down to 15.
@@ -3503,7 +3503,7 @@ Altitude velocity light, 3-1/2 down, 220 feet; 13 forward, 11 forward, coming do
 I got to get ...
 160 feet, 6-1/2 down - 5-1/2 down, 9 forward. Still looks good. 120 feet.
 100 feet, 3-1/2 down, 9 forward. 5 percent - ...
-Okay. _page : 178
+Okay.
 Okay, 75 feet. And it's looking good; down a half. 6 forward; light's on. 6 - 60 feet down, 2-1/2, 2 forward, 2 forward.
 Looks good. 40 feet down, 2-1/2. Picking up some dust. 30 feet, 2-1/2 down - straight down; 4 forward, 4 forward, drifting to the right a little.
 20 feet, down a half; drifting forward just a little bit. Good. Okay.
@@ -3521,7 +3521,7 @@ I'll get the pressure vent.
 Okay.
 Very smooth touchdown.
 I didn't hear that vent going - -
-... oxidizer. _page : 179
+... oxidizer.
 ... vent.
 Houston, how do you reed Columbia on the high gain?
 Okay, Houston. On DESCENT 1, the fuel and oxidizer are reading 10 psi; on DESCENT 2, fuel is reading 10 psi; oxidizer, 11 psi.
@@ -3555,7 +3555,7 @@ Ready to copy.
 Columbia.
 Houston, Columbia on the high gain. Over.
 I'm reading you loud and clear. How's it going?
-Columbia. Roger. _page : 181
+Columbia. Roger.
 Negative that.
 Houston, Columbia on ... How do you read?
 Roger; Columbia OMNI Charlie. How do you read?
@@ -3575,14 +3575,14 @@ Roger. Thank you.
 Okay.
 Okay. I read back plus 00692, plus 11713, and minus 00144. And you have a grid square for me?
 Kilo 0.9 and 6.3. Thank you. One of these grid squares is about as much as you can scan on a single pass.
-Roger. _page : 182
+Roger.
 Okay.
 Houston, Columbia ...
 Roger. I can't see them.
 Roger. ...
 Roger. I need a very precise position because I can only do a decent Job of scanning maybe one of those grid squares at a time. The area that we've been sweeping covers 10's and 20's and 30's of them.
 Roger. How's the fuel coming?
-Roger. Well, I'll continue this maneuver then to roll 82, pitch 218, yaw zero, if that's okay with you, and do a P52 in that attitude. And that'll be a ... _page : 183
+Roger. Well, I'll continue this maneuver then to roll 82, pitch 218, yaw zero, if that's okay with you, and do a P52 in that attitude. And that'll be a ...
 Thank you kindly, Jim.
 Glad to have all you big roomful of people looking over our shoulder.
 Houston, Columbia on OMNI D, Delta. Over.
@@ -3603,7 +3603,7 @@ BALANCE COUPLE, ON, ...
 BALANCE COUPLE, ON.
 TTCA, JETS.
 Check.
-DEADBAND, MINIMUM. _page : 184
+DEADBAND, MINIMUM.
 MIN.
 ATT CONTROL, MODE CONTROL.
 Okay.
@@ -3625,7 +3625,7 @@ Yes.
 Okay.
 DSKY blanks.
 Got that ascent card?
-This one? Place to put it? _page : 185
+This one? Place to put it?
 Yes. 9, 8, 7, 6, 5 - ABORT STAGE; ENGINE ARM, ASCENT - Proceed.
 We're off; look at that stuff go all over the place.
 Look at that shadow. Beautiful! 26 - 36 feet per second up - -
@@ -3645,7 +3645,7 @@ It's a very quiet ride, just a little bit of slow wallowing back and forth - not
 Pressures are good.
 2 minutes the time; 170 is beautiful, 14 000.
 Within a foot per second again, AGS to PGNS.
-S-band looks like it's holding good - 1500, 182. _page : 186
+S-band looks like it's holding good - 1500, 182.
 Roger.
 Right on H-dot. Coming up here - -
 Looks like the velocity is sort of - -
@@ -3666,7 +3666,7 @@ Looking good here. It's a spectacular ride.
 Looks like ... off a little here.
 Roger. Good agreement in DELTA-V to go in both AGS and PGNS.
 ... three ...
-Alright, 800 to go. _page : 187
+Alright, 800 to go.
 Okay.
 700 to go. Okay, now open up the main shutoff.
 ASCENT FEED's, CLOSED, pressure's holding good; CROSS FEED, ON.
@@ -3688,7 +3688,7 @@ That's good.
 Okay, that sounds a little - little on the high side.
 Okay.
 Okay, Houston, we show 47.3 by 9.5.
-The AGS has 9.5 - 46.6. _page : 188
+The AGS has 9.5 - 46.6.
 Okay.
 ...
 Roger.
@@ -3709,7 +3709,7 @@ I got INVERTER 1.
 Close the AOT LAMP circuit breaker -
 Going to TRACK here.
 Yes.
-That right? _page : 189
+That right?
 Right.
 You know, I didn't see a lot of dust in the cockpit, did you?
 No, there was a fair amount. What did you get, 283?
@@ -3730,7 +3730,7 @@ I had to turn my S-band off so I could hear him - my S-band switch on the audio 
 Yes, that works good.
 Not at this point, no.
 Okay.
-... Hey, Mike, how do you read me? _page : 190
+... Hey, Mike, how do you read me?
 Okay, let's go to B DATA on your command.
 Eagle, Columbia.
 Loud and clear.
@@ -3750,7 +3750,7 @@ Okay, Mike, our CDH time is 126:17:45.58. Over.
 Roger; copy. CDH, 126:17:45.58.
 Affirmative.
 Eagle, Columbia. I have you in an orbit 49.5 by 46.1.
-Okay, thank you. _page : 191
+Okay, thank you.
 Eagle, Columbia. I'd like to go back to VHF RANGING configuration, please, on your mark.
 Roger. On my mark -
 MARK, VHF RANGING.
@@ -3771,7 +3771,7 @@ That's rugged country.
 Yes, that perigee we're on ...
 ... alright, isn't it?
 I got 4 feet forward and I got back 7 ...
-Boy, this water separator sure isn't working worth a durn. Maybe we ought to try the other one - ... water. Oh boy, this thing is just really spitting it. _page : 192
+Boy, this water separator sure isn't working worth a durn. Maybe we ought to try the other one - ... water. Oh boy, this thing is just really spitting it.
 I sure do; it's been on - yes, we do - it's been on all the time.
 We should see the tracking light now - That's it - Doesn't look ... but it's not - turned off.
 Okay, let's try and get a Y-dot, or an R-dot, at 30 seconds.
@@ -3791,7 +3791,7 @@ It's all over me.
 Coming out of that vent back of my neck, isn't it? That where it's coming out?
 Give us the CSI state vector - navigation difference - no updating CSI ...
 Through AGS.
-... _page : 193
+...
 Thinking about it.
 You going to come up with a solution for us?
 Range rate?
@@ -3813,7 +3813,7 @@ Going AGS all the way, huh?
 Yes, forget it.
 Get more tracking if we forget.
 No, we'll just - we'll just wait until CDH.
-You got a lot of film left in there? _page : 194
+You got a lot of film left in there?
 About half.
 You could run it some here. Oh, you just – you want to leave some for docking, huh?
 ... Got that cockpit all cleaned up so that we got places for all our trash, Mike?
@@ -3833,7 +3833,7 @@ Right, that's what we've got.
 ...
 Coming up on 1 minute to TIG. Neil, how's it looking?
 Pretty good.
-That last out of plane was in the AGS, not the radar. _page : 195
+That last out of plane was in the AGS, not the radar.
 Alright.
 ...
 Okay.
@@ -3855,7 +3855,7 @@ I can't see you, Michael.
 Okay. I got good radar; I just can't see you.
 ...
 Do you think that pressure dropped?
-Yes. _page : 196
+Yes.
 It doesn't show up in the ... books. I don't see any reason why we don't take them all back. All that we've got - -
 All got data.
 We all got something ...
@@ -3879,7 +3879,7 @@ Yes, so do we.
 A hundred and what?
 ...
 Okay, NOUN 81, minus 0, plus 0.4, plus 0.9.
-And now, plus 0.4, plus 0.9. ... _page : 197
+And now, plus 0.4, plus 0.9. ...
 And 15 minutes after TPI, I've got - -
 ...
 M-1.
@@ -3902,7 +3902,7 @@ You still got him?
 Yes. I probably won't when the sun gets in my telescope.
 ... ... hold the ...
 Now I can't see - -
-The what? _page : 198
+The what?
 Won't hold the ...
 ... going right down the ... and it sure has been nice.
 Okay. I just got sight of you in the sunlight here.
@@ -3922,7 +3922,7 @@ Yes, there are a couple of different LM bags that I left in there.
 Okay, well, why don't we ... back over there and ...?
 Right.
 ... bring the bag ...
-Could be. _page : 199
+Could be.
 Alright.
 Okay, ... have a plastic one and a ...
 Bring the ... back.
@@ -3944,7 +3944,7 @@ Right - that's ...
 12 on here, right?
 Not exactly.
 Not exactly?
-You're a little less. You're 10 seconds less in ... About that ... _page : 200
+You're a little less. You're 10 seconds less in ... About that ...
 Look's like you're making a high ... on us, Michael.
 Yes, ...
 ... let me move in just a ...
@@ -3966,7 +3966,7 @@ Oh, yes - got your high gain in sight; your tracking light - whole vehicle shows
 ...
 Are you burning yet?
 We're burning.
-... _page : 201
+...
 Good enough.
 Seems like when you get down to around 110, you just keep chasing him. You put it in – stick it in one axis, and it goes through - out of another, especially when ... stays about the same.
 If it's ..., it's definite.
@@ -3988,7 +3988,7 @@ My what?
 Your ... for ...
 It's in the bottom over ...
 ... pick me up ...
-I got you. _page : 202
+I got you.
 Okay. Don't ... other spacecraft.
 No, I'm not going to lose you, brother.
 What have you got for ...? ... I have 6.8 and 9 miles, ... out. Oh, that checks.
@@ -4010,7 +4010,7 @@ I'm slowly closing at 32 feet per second and a mile and a half.
 Okay, I've got a mile and a half and 32-1/2.
 ...
 Take ...
-Yes, I guess it'll take us another - 6 minutes or something like that. _page : 203
+Yes, I guess it'll take us another - 6 minutes or something like that.
 Yes.
 ... we got 15 ...
 ...
@@ -4032,7 +4032,7 @@ Okay.
 ...
 Flying all over us.
 Okay, we're about 11 feet a second coming in at you
-... _page : 204
+...
 That's good. What ... are you in?
 Hope we're not going to get a pitch straight down.
 We've got a - pitchdown and then a yaw to do - ...
@@ -4052,7 +4052,7 @@ You could - you -
 If I roll 120 - it'll roll left
 90, huh? ... 60?
 Well, why don't I start to roll - -
-Yes, I think if you roll up 60 – _page : 205
+Yes, I think if you roll up 60 –
 I'll be looking into his left window when I pitch up.
 I don't think so. If you did it right now you'd - -
 ... I got the earth coming up already; it's fantastic!
@@ -4072,7 +4072,7 @@ Okay.
 How does the roll attitude look?
 ...
 Let's see how the DSKY thinks it looks.
-Have you stopped rolling yet? _page : 206
+Have you stopped rolling yet?
 I'll stop. Matter of fact, I can stop right here, if you like that.
 Need a little bit more. That's the way; keep it going. Need a little more ... That's the way, keep going - go a little bit more - go ahead - go ahead - okay, stop. Okay, I got it now.
 You got the ... in ...?
@@ -4092,7 +4092,7 @@ HOLD.
 He's about 15 feet out now.
 Okay, I'd better try out the radar.
 Don't you want to beef up that radar?
-Yes. _page : 207
+Yes.
 Good.
 Ready to pull the circuit breakers?
 Okay. You ready?
@@ -4115,7 +4115,7 @@ Get ready for those million-dollar boxes. Got a lot of weight; now, watch it.
 You intend to keep ...?
 Yes.
 That's all your input, are you sure?
-Yes. _page : 208
+Yes.
 Okay.
 Use what?
 Use lithium hydroxide.
@@ -4137,7 +4137,7 @@ Oh, the tape, I guess.
 Want tape?
 Yes, please.
 Here you are.
-About how many pictures did you take with – the closeup camera? _page : 209
+About how many pictures did you take with – the closeup camera?
 I don't know; 30 maybe, 40?
 I hope I took the thing apart correctly.
 Push the cutter bar down first?
@@ -4158,7 +4158,7 @@ Yes?
 Okay.
 ... get rid of this ...
 Okay. If you want to have a look at what the moon looks like, you can open that up and look. Don't open the bag, though.
-... _page : 210
+...
 You'd never have guessed, huh? (Laughter)
 What did you do with that checklist?
 It's back yonder.
@@ -4179,7 +4179,7 @@ Ouch! Alright, here's your checklist.
 You vacuum all this stuff?
 Which?
 Gloves, lunar stuff?
-... _page : 211
+...
 Okay. It looks to me like - what we're going to do is vacuum you out and get you out of here. I'll - throw the switches down there.
 How about the data bag?
 No, I need this bag.
@@ -4201,7 +4201,7 @@ Okay.
 Yes.
 ...
 Just a minute.
-Say, I need some of those data books. _page : 212
+Say, I need some of those data books.
 Where did you put the book? Where did you put the first one? In here? Okay.
 ...
 No, we can leave those two here. No, I don't want either of those two. No, I think the others might be -
@@ -4221,7 +4221,7 @@ What do you do with it?
 Hey - what do you do with it?
 Just turn it down to off.
 This goes off - -
-No, no, no, no, that's not the one - it's this switch right next to that IMU - - _page : 213
+No, no, no, no, that's not the one - it's this switch right next to that IMU - -
 Oh.
 - - Buzz. Okay, that one, just turn it to – turn it to position 1 - extreme left; that one. There you go. Thank you.
 I thought you were going to be doing VHF RANGING on the darn thing because we had it set up for - VHF ...
@@ -4241,7 +4241,7 @@ Damn! My ears hurt from wearing this thing.
 How are the earpieces - inside ...
 ...
 ...
-Yes, I hate those damn ... _page : 214
+Yes, I hate those damn ...
 Yes, they're not - ...
 Yes. I believe - Did you hear any noise during - you didn't hear any noise during descent, did you? ...
 ...
@@ -4257,7 +4257,7 @@ But it's pattern is such that it sprays out horizontally, and it doesn't really 
 All the stuff looks like very light tan and gray, you know, that's - that's the color of it. When you get right up there to it, when you see it, why that isn't the color at all.
 Dark - battleship gray, isn't it?
 Maybe not - I don't know - -
-Well, what kind of - - _page : 215
+Well, what kind of - -
 - - what stuck to the spacecraft, I think you can see afterwards - -
 What do you think it is from the - geology standpoint, is it basalt dust?
 ...
@@ -4274,7 +4274,7 @@ Yes.
 Great, great. Yes, it's - beautiful. Man, that's beautiful. It doesn't make a dip whether ... and all that, I mean you know, they mapped the area and all that - -
 Eventually, it does - -
 Huh?
-Well, eventually, it does - it shows the ... - you can see those - ... _page : 216
+Well, eventually, it does - it shows the ... - you can see those - ...
 That's great; fantastic! That'll keep those geologists jumping for years.
 Yes, you got to keep ... No, that's right, you got a 6-foot pole, you just stick ... - -
 Sort of like wet sand - -
@@ -4291,7 +4291,7 @@ Yes. Is that right?
 You finally got it level, huh? What was that thing that you said it was supposed to be concave but it was convex?
 ...
 Yes, yes.
-... looking down there ... sure looked like it was convex ... Neil walked back a little later and it was right smack in the middle ... - - _page : 217
+... looking down there ... sure looked like it was convex ... Neil walked back a little later and it was right smack in the middle ... - -
 But there's all different kinds of rocks, huh, or at least several different kinds? Well, how - -
 - - ...
 Well, did - when you look - when you're walking around or just looking out the window of the LM, did it appear very homogeneous? Everything sort of the same color and all, or did it look ...?
@@ -4309,7 +4309,7 @@ Neil, when you get a hand, would you push that little goddam valve down to DUMP?
 It's the lower valve on the lower panel – lower left; that guy right there. Yes, that guy right there; put him down to DUMP. Dump's easy, fine; set the clock.
 ...
 Here's one.
-... for the hoses? Well, check the ends of the hoses. _page : 218
+... for the hoses? Well, check the ends of the hoses.
 Well, why don't you leave the vacuum cleaner; I think you just got ... now the other one - -
 No, this one's got ...
 Okay. Now the one I got is for my hose over here which doesn't have -
@@ -4325,7 +4325,7 @@ Good day, I don't know. It's - I tell you, it's not a bad way to live, with that
 ...
 Yes, we could put the couch up now if you want to do that.
 Okay.
-Yes. Maybe it - maybe it would make more sense to put the couch up now. Why don't you let me wrestle with the couch before we do anything more to this damn poor L-shaped bag? _page : 219
+Yes. Maybe it - maybe it would make more sense to put the couch up now. Why don't you let me wrestle with the couch before we do anything more to this damn poor L-shaped bag?
 ...
 Alright. And we're - we're LOS here for a while anyway, 131 -
 Here's about where we are, ... Yes, this is the handiest little thing you've ever seen. ... goes right in the helmet side, won't come out, and you can grab hold of anything you want, and there it is, it won't ...
@@ -4344,7 +4344,7 @@ You got to do what, Neil?
 I don't think it's harder to ... than it is – at orbital speeds. ... There just isn't any way really of ... altitude - or the size of this thing.
 We're in INERTIAL, aren't we?
 No, you want to go to INERTIAL?
-I wonder if Neil has made any preparations? _page : 220
+I wonder if Neil has made any preparations?
 What's your altitude?
 ...
 I guess we could put - ... to ...
@@ -4365,7 +4365,7 @@ I think - you had that same pair on all the time.
 Is that the ... - sitting there?
 Yes, here it is.
 Let me put it down here. Bring it on down. Over here. Put them all in one place.
-You ready for your underwear? Mike - you ready for your underwear? You ready for your underwear? _page : 221
+You ready for your underwear? Mike - you ready for your underwear? You ready for your underwear?
 Just a minute; yes.
 ... - put our - LCG.
 Yes.
@@ -4383,7 +4383,7 @@ Boy, I thought for a while there that some of those might get a little ... - ...
 Will that one do? ...
 Are you staying in this inertial attitude? Let's just leave it in REACQ then; it works just like a charm.
 Yes, that's right.
-How about that? _page : 222
+How about that?
 Beautiful.
 405 and 404 - What's the matter with it? (Laughter)
 403 I think we ...
@@ -4402,7 +4402,7 @@ How long does it take to warm up this thing? 3 hours?
 What state vector is in the LM slot? The LM?
 ... minus a few feet per second. ...
 Well, we got something in the LM slot ...
-Well, that's just an old vectors, because I never did VERB 66, I don't think, after ... _page : 223
+Well, that's just an old vectors, because I never did VERB 66, I don't think, after ...
 We got 22 feet per second. Almost have to be LM - previous to the SEP burn.
 Well, when it gets to be light, we got to ...
 Well, we probably ought to - ... TPI.
@@ -4422,7 +4422,7 @@ I got the tape - right underneath your couch. Okay?
 Alright.
 Okay, we need a new home for the tape. Anybody got any good suggestions?
 Okay?
-Alright. _page : 224
+Alright.
 We believed you, though.
 (Yawn)
 ...
@@ -4444,7 +4444,7 @@ You got the flight plan?
 ...
 ...
 Probably are. I purged them this morning when I woke up, Buzz. Probably did the hydrogen as well.
-47, 32, 47? _page : 225
+47, 32, 47?
 That was quite a wild gyration for docking.
 It was.
 Son-of-a-bitching - -
@@ -4463,7 +4463,7 @@ Then, when I fired the bottle, and then, just about all that came ... since the 
 Look at this.
 Yes.
 Figured nobody could see where we were ....
-Hey, did we decide the ... back? _page : 226
+Hey, did we decide the ... back?
 No, the data should go to the log ... The only good thing there you can say about it is ...
 ... you guys. ... love them ...
 All that probe and drogue and claptrap works; all that EVA transfer, you can forget about that and all those crazy procedures for taking that probe apart.
@@ -4484,7 +4484,7 @@ You got something ...?
 Yes. Yes, sir. Purring across the deep. Okay. Look at that.
 Yes. We can get VERB 64 before we come over the hill and see what looks good.
 Okay. LOS.
-Okay. I'm ready to proceed now. _page : 227
+Okay. I'm ready to proceed now.
 Do it.
 Here we go.
 Say, you guys, ... anything you want to do?
@@ -4503,7 +4503,7 @@ What's that pad say about horizon on the 100-degree - -
 2 minutes prior, 100-degree line,
 You got double lines?
 Yes, I got double line on the 30, so I can use that as a head position ... look down between them.
-They're not - they're not parallel? Can you see in the one-eye position? _page : 228
+They're not - they're not parallel? Can you see in the one-eye position?
 What I'm saying is, on the 30 degree, I have both panes of glass - -
 Yes.
 - - and if you line those up then, then is your eye in the right position for all the others?
@@ -4522,7 +4522,7 @@ Be happy to zip on around.
 This thing is taking forever to get around here; we've got 20 minutes to TIG. I think I'll speed it up a bit, if you don't mind.
 Hey, you got - 1, 0.1, point 1 you mean?
 Yes.
-You know, if you hit this hand controller like you do in the simulator, MINIMUM IMPULSE, just bang it, it'll bang over and bang back, and it'll fire two opposing pulses, and you get nothing. You know that? _page : 229
+You know, if you hit this hand controller like you do in the simulator, MINIMUM IMPULSE, just bang it, it'll bang over and bang back, and it'll fire two opposing pulses, and you get nothing. You know that?
 (Laughter) Yes.
 Oh, shit. ... yaw out 14 degrees. Why in the hell didn't I do that? Read that number wrong.
 Yes, it should have been 1.4 degrees yaw.
@@ -4541,7 +4541,7 @@ Give me the numbers.
 You mean after I went to all this work of cranking those numbers in you're going to drive back to zero?
 We got PROGRAM ALARM and an OPERATOR ERROR.
 (Laughter)
-Christ. Give me the numbers, 1519 and what? _page : 230
+Christ. Give me the numbers, 1519 and what?
 It won't pass with that number.
 1511 - 357.
 357, okay.
@@ -4563,7 +4563,7 @@ I'll proceed with this ...
 Huh? ... Don't you like this one? Alright.
 Let's not proceed.
 Alright. Stand by. Align spacecraft in roll. Already there.
-GDC align. _page : 231
+GDC align.
 Okay, that's a good one. One - standby 1, and I'll get that.
 Okay. GDC aligned.
 Circuit breakers: STABILIZATION CONTROL, panel 8, CLOSED.
@@ -4584,7 +4584,7 @@ MANUAL ATTITUDE, three, to RATE COMMAND. They are.
 BMAG MO - BMAG MODE, three, to RATE 2.
 BMAG MODE, three, to RATE 2.
 ROTATIONAL CONTROL POWER, DIRECT, two of them, OFF.
-Okay; OFF, OFF. _page : 232
+Okay; OFF, OFF.
 SCS TVC, two, to RATE COMMAND.
 RATE COMMAND, RATE COMMAND.
 TVC GIMBAL DRIVE, PITCH and YAW, to AUTO.
@@ -4605,7 +4605,7 @@ You do it all?
 No. It's not too hot, it's 65.
 Those temperatures are deceptive. I don't know where they measure it, but the cold point is -
 Okay. Sunrise, now 10 minutes prior to TIG; I should have the horizon on the 10-degree line, huh?
-No, 10 degrees - 2 minutes. _page : 233
+No, 10 degrees - 2 minutes.
 2 minutes; that's more like it, there.
 ... this COAS as far as steering and everything goes, it's hopeless.
 ...
@@ -4622,7 +4622,7 @@ Oh, yes, alright. Okay.
 Beautiful looking horizon, it's hard to describe.
 We can see it if we look through that thing you have.
 Where's ...?
-Here or here? God, it has an eerie look to it. It's not a horizon, it's just a band. _page : 234
+Here or here? God, it has an eerie look to it. It's not a horizon, it's just a band.
 You won't be able to see it, Neil, ...
 Which way?
 This way. Plus X ...
@@ -4643,7 +4643,7 @@ Alright.
 Okay. TVC SERVO POWER 1 to AC1.
 1 to AC1.
 2 to AC2.
-2 to AC2. _page : 235
+2 to AC2.
 TRANSLATIONAL CONTROL POWER, ON.
 ON.
 ROTATION CONTROL POWER, NORMAL, number 2, AC.
@@ -4667,7 +4667,7 @@ YAW 1 -
 MARK it.
 Got it.
 Okay. TRANSLATION CONTROLLER, clockwise.
-Clockwise. _page : 236
+Clockwise.
 Verify no MTVC.
 Verified.
 GIMBAL MOTORS, PITCH 2, YAW 2, OFF.
@@ -4689,7 +4689,7 @@ Okay. GPI set. Verify MTVC.
 Okay. MTVC verified; I'm on trim now.
 Proceed to trim.
 Does it look to you like the ... the right way?
-Yes. _page : 237
+Yes.
 Alright. ... we're coming up on ... out to your right.
 Okay.
 Okay, verify MTVC.
@@ -4711,7 +4711,7 @@ ENTER.
 Verify CMC.
 CMC verified; AUTO verified.
 Proceed.
-Okay, for the GIMBAL DRIVE. Up, down, zero. Up, down, zero. Okay, standing by for P-AX, OFF, and the Y-AX, OFF – _page : 238
+Okay, for the GIMBAL DRIVE. Up, down, zero. Up, down, zero. Okay, standing by for P-AX, OFF, and the Y-AX, OFF –
 MARK it.
 Good trim.
 ROTATIONAL CONTROL POWER, DIRECT, two, MAIN A/MAIN B.
@@ -4731,7 +4731,7 @@ Fantastic. First time we ever got a perfect horizon check. Spent too many hours 
 Beautiful.
 2 minutes - -
 DELTA-V THRUST A - -
-NORMAL. _page : 239
+NORMAL.
 - - DELTA-V - -
 TRANSLATION CONTROLLER, ARMED.
 - - okay, DELTA-V THRUST A, NORMAL; stand by for a malfunction - it's not there. Very good.
@@ -4754,7 +4754,7 @@ MARK it -
 DSKY blanks; EMS is in NORMAL.
 Check.
 Coming up on 15 seconds.
-Okay, I'll get the 99. _page : 240
+Okay, I'll get the 99.
 Okay. Stand by - -
 ... valve?
 - - stand by for ullage. Ullage.
@@ -4773,7 +4773,7 @@ MARK it -
 1 minute. Chamber pressure's holding right on 100.
 ... time looks good.
 Gimbals look good; total attitude looks good. Rates are damped out - a little bit. Still a little busy, light ...
-... still ahead. _page : 241
+... still ahead.
 Should I be going ...?
 Follow the needle; follow the needle ... Take it off. Okay. Looking good.
 This was ... - -
@@ -4794,7 +4794,7 @@ SHUTDOWN. 4 -
 ... going to gray and barber pole.
 Okay?
 Okay.
-Let's look at what we got. DELTA-V THRUST A and B are OFF - - _page : 242
+Let's look at what we got. DELTA-V THRUST A and B are OFF - -
 A and B are OFF.
 - - SPS valves, CLOSED?
 Okay.
@@ -4816,7 +4816,7 @@ X and Z, 0.2 -
 X and Z, good.
 F. Okay, and Z is down. Okay, then - you want to record those - five balls - -
 Let me record them - -
-- - five balls, plus 0.0, and I call it 0.8, it was hanging on 0.7 for a while, and it was zeroed and down. I'd give them - it was 0.1 down – plus 0.1. Now it's on zero, shit. Can't read those residuals; they dance all over the place. _page : 243
+- - five balls, plus 0.0, and I call it 0.8, it was hanging on 0.7 for a while, and it was zeroed and down. I'd give them - it was 0.1 down – plus 0.1. Now it's on zero, shit. Can't read those residuals; they dance all over the place.
 Okay, the residuals were 0.1, 3.9, and point - -
 Beautiful burn; SPS, I love you; you are a Jewel! Whoosh!
 Alright – EMS FUNCTION, OFF.
@@ -4837,7 +4837,7 @@ Pitch up.
 Alright, is that ROTATIONAL CONTROL POWER, DIRECT, two of them, OFF?
 Yes, I do.
 Circuit breakers - SPS PITCH 1, PITCH 2, YAW 1, YAW 2, OPEN?
-They're open. _page : 244
+They're open.
 Proceed.
 I think you did that already.
 Hey, Neil, you want to proceed on these?
@@ -4859,7 +4859,7 @@ You've got your - -
 ... service module RCS - -
 I've done that. Done that.
 Oh. Okay - -
-VERB 83. _page : 245
+VERB 83.
 - - RCS monitors checked - (Laughter) Okay, here comes Buzz's baby - VERB 83 - de-dum-de-dum-de-dum. Operator error (laughter).
 ... you don't know how to do it.
 (Laughter)
@@ -4877,7 +4877,7 @@ Okay, we got to visually acquire moon, take pictures, and then you got a P52 to 
 We haven't got any damned program ready to call up. ... It's the only way you can do it. Supposed to do a VERB 66 and then put numbers ... apogee ... and then look at altitude and altitude rate - -
 What are you doing, Mike? What you taking pictures of -
 Oh, I don't know. Wasting film, I guess.
-You can take some pretty good pictures out of the hatch, here. _page : 246
+You can take some pretty good pictures out of the hatch, here.
 You're right. This crapping thing - ... set on f:4 or 5.6; that's probably about right.
 Here's a ring that came from somewhere; I wonder where (singing).
 You want to take pictures over here? Go ahead, why don't you just set up that - -
@@ -4897,7 +4897,7 @@ I'm rolling.
 What for? What do you want to roll for?
 I was off in roll; I'm taking it back to where I should have been. This is a pretty good attitude right here, looks to me -
 Alright, I've seen enough of VERB 83, Mike - -
-Here you go. _page : 247
+Here you go.
 - - unless you want to call a VERB 89.
 Not me; I'd rather take pictures.
 What time is AOS?
@@ -16099,7 +16099,7 @@ Okay. Is that Activation 1? Do step 3. Is that correct?
 That's affirmative, Jim.
 Activation 11, omit step 1, do the rest. Is that correct?
 That's affirmative.
-Do Activation 12 and Activation 13, step 1. _comment: "PDF transcript says 'Do Activation 1 and...' which we believe is obviously wrong, but should check audio when it becomes available."
+Do Activation 12 and Activation 13, step 1.
 That's all correct.
 Okay, Jack. Pressure in tank 1 is approaching 100 psi. What's going to be the symptoms of this fuel cell starting to drop off?
 Stand by, Jack. We'll get the word on that.
@@ -33754,7 +33754,7 @@ Roger. Radiator is in FLOW position. Has been the whole pass.
 It's cooling us right down too. It's working.
 Reading back a GMT of 2-1—15 55 47 GMTRC. GMTRB is 16 05 31. Bank angle 55° left and right 65°.
 Molly Brown, Canary CAP COM. We are standing by for your UHF Com Check. Do you copy?
-Roger. We are on UHF #2. Have been the whole pass. Over. _comment: Pilot was in RECORD on No. 2 audio
+Roger. We are on UHF #2. Have been the whole pass. Over.
 Molly Brown, Canary CAP COM.
 Go ahead.
 I don't think they read me.
@@ -33810,7 +33810,7 @@ Oh, I know what it was. My knee was hitting the control stick, wasn't it?
 No, I don't think so. That would only be in Pulse anyway.
 We've got to get this pressure back up.
 Do we have a leak?
-It's this event they were talking about. _comment: Unexplained cryogenic pressure decay on GT-2
+It's this event they were talking about.
 Let's see.
 Look at the cabin pressure!
 What?
@@ -33827,7 +33827,7 @@ No, you couldn't, could you?
 No.
 Want to try it back on the primary and see what happens?
 That's how we lost it. Yes.
-See? _comment: Noted that primary dc-dc converter was still inoperative
+See?
 Yes.
 Okay.
 Okay. That did it.
@@ -34012,10 +34012,10 @@ I got my left shoulder harness tangled up in the backboard.
 Oh, Oh.
 Had to turn around to get it out.
 Hey, I think our yaw drift has stopped.
-We're down to 2400. That's pretty good. _comment: OAMS pressure
+We're down to 2400. That's pretty good.
 Is that okay?
 Yes, that's fine. It means we haven't used any OAMS fuel.
-Elapsed time is 1:05. Now, I'm going to get a main batteries check. _comment: Pilot misread elapsed time
+Elapsed time is 1:05. Now, I'm going to get a main batteries check.
 —9½ and 24 on one and 9½ and 24 on two, and 9½ and 24 on three. 9½ and 24 on four. Those mains are good!
 What time is it now, Gus?
 It's 63 minutes.
@@ -34023,7 +34023,7 @@ It's 63 minutes.
 Look at that thing. I don't know what we can do with any of this stuff floating around. Do you?
 No, I don't either. We need a special place to keep that stuff.
 I'll put it in my pocket.
-Okay. I'll verify that load. _comment: Pre-retro command load
+Okay. I'll verify that load.
 Is the T<sub>R</sub>-5 circuit breaker off?
 Yes.
 Okay.
@@ -34033,7 +34033,7 @@ No.
 All of our power is okay?
 Yep.
 Must have been our scanners, I guess.
-204. This is just beautiful, Gus! It checks to the digit! _comment: Pre-retro command load
+204. This is just beautiful, Gus! It checks to the digit!
 Hey, we ought to have our face plates closed.
 Okay.
 Cabin Air Recirculation Valve-UP. That's where it is.
@@ -34121,7 +34121,7 @@ Yes.
 What time is that Texas burn?
 1:33.
 1:33.
-Now see, it is coming down. _comment: oxygen pressure
+Now see, it is coming down.
 Okay.
 Now, we'll just recock it.
 That was O<sub>2</sub> High Rate for about two minutes to bring the pressure off the peg. it's now reading 985, and cabin pressure is holding at 5.6.
@@ -34131,7 +34131,7 @@ Aren't you going to take any pictures?
 I hadn't planned to on this pass. I'll get the camera out.
 Let's see, I want circuit breakers 9 and 10 off, don't I?
 Yes. That sun's bright, isn't it?
-Look at that! Where do you suppose that came from? _comment: A camera reel
+Look at that! Where do you suppose that came from?
 What?
 I know you shouldn't let those things float around, but I don't know what to do with them.
 What did he say that burn was on that … net? It's 48 ft —
@@ -34164,7 +34164,7 @@ The oxygen pressure.
 I've got to change this cartridge.
 We're at 1:21.
 Tape change at 1546. Tape cartridge No. 2 was replaced by tape cartridge No. 28.
-The red light did not come on. _comment: Tape recorder
+The red light did not come on.
 Molly Brown, Molly Brown, RKV.
 RKV, this is Molly Brown.
 Roger. Read you loud and clear. I'm going to update your T<sub>R</sub> and transmit a maneuver load to you.
@@ -34365,8 +34365,8 @@ They said to leave the brownies closed.
 Okay, starting Alinement Caging Check. Minus 10° in pitch, 10° in yaw, and 10° in roll. Going to CAGE, small-end-forward, holding attitudes out the window. Okay, I've caged. Going SEF, platform and attitude. Fine aline from 1:45 to 1:55.
 Let me have some of that juice when you get done.
 Get any water?
-Good stuff! _comment: Water
-You want me to stick this up here? _comment: Water nozzle
+Good stuff!
+You want me to stick this up here?
 Yes, we can attach it up there.
 Let me see if I can lock it in there.
 That oxygen still hasn't come off the peg.
@@ -34389,7 +34389,7 @@ Yes.
 Okay. Tell them we're sending them a T/M 2 cal.
 A T/M 2 cal is coming.
 I don't see where it says for us to do that, but I guess that's all right. I think we should have done it on the first pass.
-One of these pills came off. _comment: Germicide pills
+One of these pills came off.
 Molly Brown, Canary CAP COM.
 Go, Canaries.
 Roger. After your burn your orbit is 85.6, 92.6.
@@ -34397,7 +34397,7 @@ Roger. 85.6, 92.6.
 And I have a Two-Bravo time.
 I thought they weren't going to give those times to us.
 Stand by.
-If either one of these things leaks, we can just close up shop. _comment: Food packages
+If either one of these things leaks, we can just close up shop.
 Okay. What's the Two-Bravo time?
 Roger. ΔV90. GMTRC 16 52 25. GETRC 02 28 35. Roll left 55.
 Roger. Two-Bravo: 90 ΔV. 16 52 25 GMTRC. Elapsed time of 02 28 25. Roll left 55.
@@ -34433,7 +34433,7 @@ Must still be over Canaries.
 You're a noisy eater.
 Oh, no!
 What? What did you drop?
-Look at 'em jumping around down there. _comment: Food bags
+Look at 'em jumping around down there.
 What elapsed is it now, Gus?
 1:56.
 How do you like this going backwards? You can tell you're going backwards too, can't you?
@@ -34478,15 +34478,15 @@ Kano.
 The sun's hot.
 It is.
 Suit inlet temperature is still holding at 58, though.
-Boy, this is a manual dexterity test. _comment: Opening food bag feeding port
+Boy, this is a manual dexterity test.
 Yes.
-That stuff is really trying to crawl out of there. _comment: Grapefruit juice
+That stuff is really trying to crawl out of there.
 John Yardley loses his bet. Cabin temperature is up to 92°.
 Oh, man!
 It's bad, isn't it?
 That sun is something else.
 Yes.
-Can you stow these back over there in your side? _comment: Food packages
+Can you stow these back over there in your side?
 Yes.
 Somehow.
 You don't need that towel, do you?
@@ -34760,7 +34760,7 @@ That's about what we had in pitch attitude for zero before, wasn't it?
 Yes.
 Okay. At 2:40 in the flight plan —
 That shows 30° off on the ball.
-Started out at 66 and ended at 62, at 2:40. _comment: Oxygen quantity
+Started out at 66 and ended at 62, at 2:40.
 Hey, what time do we come across the coast here?
 We come across the coast at 3:04. What time is it?
 That's too much pitch-up for zero attitude, don't you think?
@@ -34808,8 +34808,8 @@ Right, sending T<sub>X</sub> now. And we confirm your T<sub>R</sub> — in synch
 Give us a hack when you start your Gage Correlation Check.
 Okay, Roger. Mark the Gage Correlation Check.
 Roger. Got it.
-Okay. Gage Correlation Check at 1816, and away we go. _note: Pilot misread 24-hour clock. It should have been 1716.
-What do you thin, John? Do you think that's about it? _note: Reference to yaw alinement
+Okay. Gage Correlation Check at 1816, and away we go.
+What do you thin, John? Do you think that's about it?
 Yes.
 —and the propellant quantity is 60 percent.
 That should be about zero, shouldn't it?
@@ -34850,7 +34850,7 @@ Roger, RKV. The platform alines all right when I'm in SEF and, evidently, when I
 Roger. Understand. Stand by one.
 The Gage Correlation Report is complete.
 The Gage Correlation Report is complete.
-Time is 1821. Can I read these into the recorder, Gus, or will it get to you? _comment: Pilot misread 24-hour clock. It should have been 1721
+Time is 1821. Can I read these into the recorder, Gus, or will it get to you?
 Read it into the recorder.
 Okay.
 Let's see. It's pitching down on Orbit Rate. Horizon Scan now. Let's see if it stops it. Pitched down to 10°.
@@ -34871,7 +34871,7 @@ Molly Brown, Guaymas CAP COM.
 Guaymas, Molly Brown.
 Your Three-Alpha times are nominal.
 Roger … and nominal.
-Can you come across a ground tracking looking down like that, Gus? _comment: Pilot demonstrating with hands on Orbital Path Display
+Can you come across a ground tracking looking down like that, Gus?
 Sideways?
 Yes, sideways, and pitch down 90. Will this hurt alinement? — because I can see some targets up north.
 You mean roll to the right?
@@ -34889,7 +34889,7 @@ Yes.
 Here, there is a target down there.
 Where?
 You've got to pitch the nose down. Right by the nose.
-That green spot? _comment: The Imperial Valley
+That green spot?
 No, down — like straight down.
 I don't know what you see.
 There's all kinds of stuff. See that town down there?
@@ -35197,7 +35197,7 @@ You have about 2 minutes.
 Hawaii CAP COM, Molly Brown.
 2 - 5 - 9 - 0 - 9 - 6 - 0
 Okay, but — that's what we're going to shoot for.
-Okay. At the start of this we'll be about 52 percent. _comment: OAMS propellant quantity
+Okay. At the start of this we'll be about 52 percent.
 Hawaii, Molly Brown.
 Man! I mean we start to burn just as we come over there.
 Let's go ahead and hit the Catch-Up thing and see what it says.
@@ -35263,7 +35263,7 @@ I'll give you one at 19. Okay?
 Okay.
 MARK!
 Okay, and the propellant source pressure is 1500.
-We had indicated 22 percent when we got done, Neil. _comment: OAMS propellant quantity
+We had indicated 22 percent when we got done, Neil.
 20 percent. Rog?
 About 22.
 Okay.
@@ -35521,7 +35521,7 @@ Oh, No!!
 300 feet. It ought to be pretty soon now.
 Broken my face plate when we went to landing attitude.
 Did it?
-That's what the problem was, right there. _note: Reference to sight mounting bracket extension
+That's what the problem was, right there.
 Look at the smoke coming out the thrusters.
 They're off.
 I don't understand that.
@@ -54258,7 +54258,7 @@ Okay, Buster. Re-entry attitude, switching ASCS normal
 ASCS is okay
 Switching to HF for radio check
 Freedom Seven, Cap Com how do read HF?
-Ahh, Roger, reading you loud and clear HF, Deke. How me? _note: HF was not received
+Ahh, Roger, reading you loud and clear HF, Deke. How me?
 Freedom Seven, Cap Com. I didn't read your answer.
 Ahh, Reading you loud and clear HF. How me?
 Back to UHF
@@ -54357,7 +54357,7 @@ Pilot reports all systems in the cockpit A-OK and operating properly.
 The medical monitor in the Mercury Control Center reports the pilot A-OK, all the way.
 The main parachute has deployed; the Mercury spacecraft Freedom 7 is now descending on its main parachute.
 As was expected at about this time, or in fact rather we expected it sooner than this time, our communication with Mercury astronaut Alan Shepard is getting a little rough.
-We did report deployment of the main parachute, we last reported his altitude at seven thousand feet descending. _note: From this point in the audio tape, commentary is provided by personnel from the aircraft carrier USS Lake Champlain (CV-39).
+We did report deployment of the main parachute, we last reported his altitude at seven thousand feet descending.
 Hello...this is the aircraft carrier Lake Champlain - the parachute and the capsule are still coming down, on the horizon there about even with the clouds, clouds now on the horizon...we are about four miles away from the spacecraft now, it has still not made its impact with the water, the helicopters are about I would estimate halfway through the point of impact, and as we see, the space capsule has not yet made impact with the water. In that lead helicopter ready to pick up the astronaut are First Lieutenant Wayne Koons, the pilot, and Marine co-pilot George Cox.
 We're now probably no more than three miles away from the – from the parachutes, they're coming into our – they're becoming very clear now. It's very possible that the carrier will be right close to the space capsule, the spacecraft as its being recovered from the water. It's only a matter of two or three more minutes, it's swaying gently in the wind, from side to side, to one side and then the other, it's a good thing there's a Naval commander inside or he might be getting seasick...
 The lead helicopter is now high up the parachute...they're now hovering over the parachute, and will be ready to pick him up out of the water almost immediately.
@@ -54579,9 +54579,9 @@ Start space-suit check procedure. Do you still read?
 Roger: start check of space-suit. In 3 minutes. Busy at the moment.
 Roger that.
 Finished space-suit check.
-Roger. Check UCB-connection. _comment: (passed twice).
-Do you read me? _comment: (passed — 5 times).
-Do you read me? _comment: (passed with music on background).
+Roger. Check UCB-connection.
+Do you read me?
+Do you read me?
 I hear you well, Do you read me?
 I hear you very low, there is indication of light and sound transmission on the panel. Obviously it's recording to tape. Do you understand?
 I've got you, I hear you well.

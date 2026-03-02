@@ -57,9 +57,9 @@ for mission in os.listdir(BASE_DIR):
                         # <del>Censored</del> -> (remove)
                         full_text = re.sub(r"<del>Censored</del>", "", full_text)
 
-                        full_text = re.sub(r"_page\s*:.*", "", full_text)
-                        full_text = re.sub(r"_comment\s*:.*", "", full_text)
-                        full_text = re.sub(r"_note\s*:.*", "", full_text)
+                        full_text = re.sub(r" _page\s*:.*", "", full_text)
+                        full_text = re.sub(r" _comment\s*:.*", "", full_text)
+                        full_text = re.sub(r" _note\s*:.*", "", full_text)
 
                         dataset.append(
                             {
