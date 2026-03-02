@@ -170,9 +170,6 @@ def train(args):
 
         with file.open("r", encoding="utf-8") as f:
             for line in f:
-                # for i, line in enumerate(f):
-                # if (i + 1) % 10000 == 0:
-                #     print(f"Processing line {i + 1}")
                 line = line.strip()
                 if not line:
                     continue
@@ -298,7 +295,7 @@ def test(args):
     inference_start = time.perf_counter()
 
     for idx, context in enumerate(contexts):
-        if (idx + 1) % 1000 == 0:
+        if (idx + 1) % 5000 == 0:
             print(f"Predicting {idx + 1}th entry")
 
         best_lang = None
