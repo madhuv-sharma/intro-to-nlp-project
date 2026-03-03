@@ -302,7 +302,6 @@ def test(args):
         best_score = float("-inf")
 
         context = unicodedata.normalize("NFC", context)
-        # TODO: uncomment with normalized caps data
         # context = normalize_caps(context)
         detected = detect_script(context)
 
