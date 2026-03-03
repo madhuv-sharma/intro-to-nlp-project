@@ -17,6 +17,8 @@ import pandas as pd
 # Character Ngram Language Model
 # ===============================
 
+SPECIAL_CHARS = {"^", "$"}
+
 
 class CharNgramLM:
     def __init__(self, n_min, n_max, alpha):
@@ -71,6 +73,8 @@ class CharNgramLM:
         return score
 
     def prob(self, context, char):
+        if char in SPECIAL_CHARS:
+            return 0.0
         for n in self.n_orders_rev:
             if len(context) < n:
                 continue
@@ -99,22 +103,22 @@ class CharNgramLM:
                     candidates.update(
                         c
                         for c in self.counts[n][sub_context].keys()
-                        if c != "__total__"
+                        if c != "__total__" and c not in SPECIAL_CHARS
                     )
 
         # fallback if unseen
         if not candidates:
-            candidates = self.vocab
+            candidates = {c for c in self.vocab if c not in SPECIAL_CHARS}
 
-        scores = []
-        for char in candidates:
-            scores.append((self.prob(context, char), char))
-
-        scores.sort(reverse=True)
+        scores = sorted(
+            ((self.prob(context, char), char) for char in candidates), reverse=True
+        )
         result = [c for _, c in scores[:3]]
 
         if len(result) < 3:
             for char in self.vocab:
+                if char in SPECIAL_CHARS:
+                    continue
                 if char not in result:
                     result.append(char)
                 if len(result) == 3:
@@ -183,8 +187,8 @@ def train(args):
         print(f"Finished training {lang}")
 
     for lm in lms.values():
-        lm.vocab.discard("^")
-        lm.vocab.discard("$")
+        for ch in SPECIAL_CHARS:
+            lm.vocab.discard(ch)
         lm.vocab_size = len(lm.vocab)
         lm.log_vocab_size = math.log(lm.vocab_size)
 
@@ -328,6 +332,7 @@ def test(args):
                 best_score = s
                 best_lang = lang
 
+        context = ("^" * (lms[best_lang].n_max - 1)) + context
         preds = lms[best_lang].predict_top3(context)
         pred_str = "".join(preds)
         if is_csv:
