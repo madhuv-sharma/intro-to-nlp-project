@@ -1,0 +1,500 @@
+en | -144.318 | What we're really trying to do is
+en | -171.262 | What we're really trying to do is get you
+fr | -16.050 | Ce qu
+fr | -107.225 | Ce que nous essayons vraiment d
+de | -62.648 | Was wir wirklich
+de | -120.715 | Was wir wirklich versuchen, ist,
+it | -70.113 | Quello che stiamo davve
+it | -176.036 | Quello che stiamo davvero cercando di fare è farti
+en | -30.506 | Okay. How do you r
+pt | -20.271 | Wie empfa
+fr | -67.603 | Et, 13, nous aimerions que vo
+de | -111.492 | Und, 13, wir möchten, dass Sie den
+it | -53.500 | E, 13, vorremmo che controllassi
+it | -48.759 | E, 13, vorremmo che controll
+en | -26.062 | Well, you can see wh
+fr | -50.830 | Eh bien, vous pou
+es | -8.187 | Eh bien,
+hu | -35.764 | Nun, Sie könne
+it | -45.220 | Bene, puoi vedere d
+it | -45.220 | Bene, puoi vedere dove
+en | -39.615 | It's going to take you
+en | -46.129 | It's going to take you about 15 h
+fr | -115.432 | Cela va vous prendre environ 15 heur
+fr | -92.293 | Cela va vous prendre environ
+de | -87.343 | Es wird etwa 15 Stunden da
+de | -38.096 | Es wird
+it | -40.883 | Ci vorranno circa
+nl | -18.239 | Je vous entends fort
+nl | -4.066 | Je vous
+de | -23.670 | Ich hö
+de | -140.209 | Ich höre dich laut und deutl
+it | -52.659 | Ti sento forte e chiar
+it | -52.659 | Ti sento forte e chiaro,
+en | -45.709 | Okay, Jim. If we need you, we'll send a cre
+fr | -114.132 | D'accord, Jim. Si nous avons besoin de vous, nous enverro
+fr | -114.132 | D'accord, Jim. Si nous avons besoin de vous, nous enverrons
+de | -68.331 | In Ordnung, Jim. Wenn wir Sie brauchen,
+de | -184.184 | In Ordnung, Jim. Wenn wir Sie brauchen, schicken wir eine Cre
+it | -49.376 | Va bene, Jim. Se abbiamo bisogn
+it | -41.603 | Va bene, Jim. Se abbiamo biso
+en | -58.351 | Get set. Keep ... It's better in here. S
+en | -22.360 | Get set. Keep ... It's better in
+fr | -31.448 | Préparez-
+fr | -41.973 | Préparez-vous. Ten
+de | -104.012 | Bereit machen. Halten ... Es ist bes
+de | -127.691 | Bereit machen. Halten ... Es ist besser hi
+it | -64.713 | Pronti. Mantieni ... È meglio qu
+de | -1.909 | Pronti. Mantieni ... È
+de | -36.303 | In Ordnung. Lassen Sie mi
+it | -6.831 | Va bene. Lasciami
+en | -95.785 | Okay. Unanimous opinion is that you're righ
+en | -81.313 | Okay. Unanimous opinion is that
+es | -101.796 | D'accord. L'opinion unanime est que
+de | -3.082 | In Ordnung. D
+de | -145.853 | In Ordnung. Die einhellige Meinung ist, dass Sie Re
+it | -14.189 | Va bene. L'opinione
+it | -33.089 | Va bene. L'opinione unani
+en | -42.309 | And I will pull the POWER
+fr | -37.559 | Et je vais tirer
+fr | -130.624 | Et je vais tirer le disjon
+de | -198.977 | Und ich werde den Leistungsschalter d
+de | -268.060 | Und ich werde den Leistungsschalter des Verstärker
+it | -129.724 | E tirerò l'interruttore del circuito dell'a
+it | -19.479 | E tirerò l'interr
+en | -56.204 | Jim, just a bit of information, if for any r
+en | -32.005 | Jim, just a bit of infor
+fr | -64.533 | Jim, juste un peu d'information, si
+de | -7.700 | Jim, juste u
+de | -117.234 | Jim, nur ein bisschen Information, falls au
+de | -88.593 | Jim, nur ein bisschen Informati
+it | -97.431 | Jim, solo un po' di informazione, se pe
+fr | -18.290 | À mon avis, certains d
+de | -190.632 | Wie ich es sehe, sind einige der kurzen - wir
+de | -50.761 | Wie ich es sehe, sin
+it | -122.884 | A mio avviso, alcuni dei corti sono - a
+it | -84.425 | A mio avviso, alcuni dei c
+en | -25.798 | Okay. It's coming down. What'
+tr | -40.284 | D'accord. Ça descend. Qu'est-ce
+pt | -75.749 | D'accord. Ça descend. Qu'est-ce que c'est ? Eh bi
+de | -115.617 | Verstanden. Es kommt herunter. Was ist
+de | -57.314 | Verstanden. Es k
+it | -7.288 | Va bene. Sta scend
+it | -83.376 | Va bene. Sta scendendo. Cos'è quello?
+en | -49.769 | You know one thing I
+en | -49.769 | You know one thing
+fr | -6.591 | Tu sais, Ja
+fr | -71.286 | Tu sais, Jack, une chose que j'
+de | -226.392 | Weißt du, Jack, eine Sache, die mir aufgefallen ist, als ich das
+de | -68.732 | Weißt du, Jack, eine Sache, die mi
+it | -66.699 | Sai, Jack, una cosa che ho n
+en | -84.632 | Okay. The length of the burns
+en | -33.437 | Okay. The length
+fr | -137.473 | D'accord. La durée des poussées se
+de | -107.658 | Verstanden. Die Dauer der Brennphasen
+de | -70.919 | Verstanden. Die D
+fr | -13.873 | Va bene. La dura
+es | -7.071 | Va bene. La d
+en | -68.093 | Why do I still have a VHF-A receiver
+en | -63.097 | Why do I still have a
+fi | -63.345 | मेरा VHF-
+fr | -58.512 | Pourquoi mon récepteur VH
+fr | -52.477 | Pourquoi mon récepteur
+de | -30.250 | Warum ist mein VHF-A-Em
+it | -121.938 | Perché il mio ricevitore VHF-A è ancora spe
+en | -31.003 | This is O<sub>2</s
+en | -96.584 | This is O<sub>2</sub>, and stand by for
+fr | -126.669 | Ceci est O₂, veuillez patienter une m
+es | -54.220 | Ceci est O₂, veu
+de | -99.213 | Das ist O₂, bitte e
+de | -225.927 | Das ist O₂, bitte eine Minute warten, und wir wer
+it | -125.269 | Questo è O₂, attendi un mi
+en | -2.898 | That's corre
+de | -38.121 | Das ist korrekt. J
+de | -29.504 | Das ist korr
+en | -105.613 | No. We don't want you to do that. Re
+en | -57.019 | No. We don't want you to do
+fr | -124.833 | Non. Nous ne voulons pas que vous fassiez
+de | -103.009 | Nein. Wir möchten nicht, dass Si
+de | -126.108 | Nein. Wir möchten nicht, dass Sie das
+it | -82.151 | No. Non vogliamo che tu lo faccia.
+en | -40.518 | Okay. We are going to skip
+en | -40.518 | Okay. We are going to skip t
+de | -3.082 | In Ordnung. Wir
+de | -75.740 | In Ordnung. Wir werden den E-
+tr | -198.728 | 好的。R<sub>1</sub> 加 0.34202，R<sub>2</s
+tr | -161.181 | 好的。R<sub>1</sub> 加
+vi | -229.782 | 了解。R<sub>1</sub> プラス 0.34202、R<
+vi | -229.782 | 了解。R<sub>1</sub> プラス 0.34202、R<sub>2</s
+fi | -198.127 | समझ गया। R<sub>1</sub> प्लस 0.34202, R<sub>2</sub>
+vi | -98.828 | حسنًا. R<sub>1</sub> ز
+fr | -20.171 | D'accord. R<sub>1</sub> plus 0.34202, R<sub>2</sub> moin
+fr | -12.693 | D'accord. R<sub>1</sub> plus 0.34202,
+de | -32.511 | Verstanden. R<
+de | -62.870 | Verstanden. R<sub>1</sub> plus 0.34202, R<sub>2</sub> min
+it | -14.867 | Ricevuto. R<sub>1</sub> più
+it | -29.504 | Ricevuto. R<sub>1</sub> più 0.34202, R<sub>2</sub>
+pt | -29.428 | D'accord. Nous commenço
+de | -34.188 | In Ordnung. Wir starten ... j
+de | -3.082 | In Ordnung.
+en | -66.682 | Okay, what was the
+en | -62.923 | Okay, what was th
+fr | -216.859 | D'accord, quelles étaient les deux dernières cho
+fr | -119.726 | D'accord, quelles étaient les deu
+en | -42.797 | Okay, was war
+it | -91.441 | Va bene, quali sono state le ultime due cose ch
+it | -25.198 | Va bene, quali son
+en | -108.304 | Sounds like that music's a pretty nice thin
+en | -11.973 | Sounds like tha
+fr | -85.679 | On dirait que cette
+de | -93.686 | Klingt, als wäre diese Musik e
+de | -83.725 | Klingt, als wäre diese Mu
+it | -90.738 | Sembra che quella m
+it | -170.731 | Sembra che quella musica sia una cosa piuttos
+en | -14.456 | You ... up our edibles? ... water?
+en | -8.668 | You ... up our edib
+es | -9.587 | Vous ... nos prov
+de | -88.393 | Haben Sie ... unsere Lebensmittel? ... Wasser?
+de | -18.044 | Haben S
+it | -14.593 | Hai ... i nostri vi
+en | -9.565 | How are you doing,
+en | -9.565 | How are yo
+tr | -33.767 | Comment ça va, Ji
+de | -25.215 | Wie geht'
+en | -19.483 | - - Why don't you try it now? Y
+en | -19.483 | - - Why don't you try it n
+fr | -91.752 | Pourquoi ne pas l'essayer maintenant ? Vous ête
+fr | -8.218 | Pourquoi n
+de | -5.953 | Warum ver
+de | -92.466 | Warum versuchen Sie es nicht
+it | -72.045 | Perché non lo provi ora? Sei
+en | -124.400 | Jim, the situation is that, at the moment, we'r
+en | -103.203 | Jim, the situation is that, at the
+fr | -3.833 | Jim, la situa
+fr | -110.034 | Jim, la situation est que, pour le moment, no
+de | -88.378 | Jim, die Situation ist, dass wir im Mome
+de | -11.196 | Jim, die Situation
+it | -68.127 | Jim, la situazione è che, al momento,
+it | -68.127 | Jim, la situazione è che, al momento, n
+en | -67.361 | Roger, Fred-o. Now we aren't - also at mi
+tr | -15.558 | Reçu, Fred-
+fr | -114.996 | Reçu, Fred-o. Maintenant, nous ne sommes pas - ég
+de | -31.364 | Verstanden, Fred-o. Jetz
+de | -133.784 | Verstanden, Fred-o. Jetzt sind wir nicht - auc
+it | -6.559 | Ricevuto, Fred-o. Ora non sia
+en | -16.444 | ... thous
+en | -49.301 | You want us on VOX,
+en | -49.301 | You want us on VOX, J
+tr | -206.228 | VOXにする
+fr | -62.515 | Tu veux qu'on soit sur V
+fr | -4.221 | Tu veux
+de | -102.555 | Willst du, dass wir auf VOX
+fr | -2.294 | Willst du, d
+it | -62.381 | Vuoi che siamo su VO
+en | -34.705 | I may be spending time in a - I may
+en | -3.075 | I may be spe
+fr | -116.067 | Je pourrais passer du temps dans - Je
+fr | -49.728 | Je pourrais passer
+de | -128.050 | Ich könnte Zeit verbringen in - Ich
+de | -197.273 | Ich könnte Zeit verbringen in - Ich könnte ver
+it | -65.900 | Potrei passare de
+it | -32.687 | Potrei pas
+en | -37.889 | Hey, that sounds goo
+tr | -36.170 | Reçu, cela se
+fr | -75.567 | Reçu, cela semble bie
+de | -49.191 | Verstanden, das klingt
+de | -81.315 | Verstanden, das klingt gut. Wirkli
+it | -15.998 | Ricevuto, suona bene. D
+it | -36.008 | Ricevuto, suona bene. Davvero b
+it | -89.748 | Okay, Jack. I've a question - one more que
+es | -49.244 | Okay, Jack. I've a question - one
+fr | -77.631 | D'accord, Jack. J'ai une question - encore une
+fr | -114.119 | D'accord, Jack. J'ai une question - encore une questio
+en | -0.053 | Okay, Jack. I
+de | -96.473 | Okay, Jack. Ich habe eine Frage - noch eine Fr
+it | -52.218 | Va bene, Jack. Ho una domanda - un'altra d
+de | -7.210 | Va bene, Jack. Ho
+en | -43.403 | Okay. Now, we're ready to go to work o
+fr | -155.446 | D'accord. Maintenant, nous sommes prêts à commencer à trava
+fr | -111.946 | D'accord. Maintenant, nous sommes prêts à comm
+de | -51.562 | In Ordnung. Jetzt sind
+es | -15.829 | Va bene. Ora siamo pronti
+it | -29.321 | Va bene. Ora siamo pronti per
+en | -71.453 | Good morning, 13. This is Houston. How are y
+en | -44.866 | Good morning, 13. This is Housto
+fr | -89.533 | Bonjour, 13. Ici Houston. Comment ça va
+fr | -63.791 | Bonjour, 13. Ici Houston. Comment ç
+de | -105.303 | Guten Morgen, 13. Hier ist Houston. Wie geht es Ih
+de | -39.340 | Guten Morgen, 13. Hier ist Ho
+it | -47.120 | Buongiorno, 13. Qui è Ho
+it | -56.613 | Buongiorno, 13. Qui è Houston. Come
+en | -18.969 | Aquarius,
+en | -0.951 | Aqu
+en | -0.951 | Aqua
+en | -18.969 | Aquarius, A
+en | -0.951 | Aquar
+en | -0.951 | Aquari
+en | -18.969 | Aquarius, AFT
+en | -37.407 | Roger. A little later tha
+en | -75.401 | Roger. A little later than that - l
+fr | -78.560 | Reçu. Un peu plus tard -
+fr | -78.560 | Reçu. Un peu plus tard - c
+de | -26.169 | Verstanden.
+de | -112.045 | Verstanden. Ein wenig spät
+it | -51.179 | Ricevuto. Un po' più tardi - come
+it | -18.003 | Ricevuto. Un po' pi
+en | -16.390 | Okay. First a comment. In the
+en | -41.101 | Okay. First a comment. In the middle of
+de | -3.082 | In Ordnung. Z
+de | -102.185 | In Ordnung. Zuerst ein Kommentar. In der Mitte
+it | -48.327 | Va bene. Prima un commento. Nel me
+tr | -15.558 | Reçu. ... 30 s
+tr | -15.558 | Reçu. ...
+de | -32.511 | Verstanden. ... 3
+de | -6.660 | Versta
+it | -0.464 | Ricevuto. ... 30 sec
+en | -17.727 | You're unreadable, Jack. We've got our sign
+fr | -54.099 | Vous êtes inaudible, Jack. Nous
+fr | -17.518 | Vous êtes i
+de | -152.287 | Du bist unverständlich, Jack. Wir haben unser
+it | -23.651 | Sei incomprensibi
+it | -75.039 | Sei incomprensibile, Jack. Abbiamo il
+en | -5.715 | Okay. Roll 180, pit
+en | -5.715 | Okay. Roll 180, pitch
+tr | -62.169 | Reçu. Roulis 180, tangage 228, lacet 001 ;
+tr | -31.271 | Reçu. Roulis 180, tang
+nl | -59.039 | Verstanden. Rollen 180, Nicken 228, Gie
+de | -45.870 | Verstanden. Rollen 1
+it | -58.022 | Ricevuto. Rollio 180, beccheggio 228, i
+it | -0.464 | Ricevuto. Ro
+es | 0.748 | En at
+fr | -44.323 | D'accord. J'ouvre le DÉPASSEMENT DU DÉMARRAGE DU MOT
+de | -115.102 | Verstanden. Ich öffne die MOTORSTA
+de | -32.511 | Verstanden. I
+it | -66.724 | Va bene. Sto aprendo l'OVERRIDE DI AVVIO MOTO
+it | -18.320 | Va bene. Sto apren
+en | -13.095 | Okay, Vance, give me a call
+de | -51.180 | In Ordnung, Vance, ruf mich an, wen
+de | -44.133 | In Ordnung, Vance, ruf mich an,
+it | -7.342 | Va bene, Vance, chia
+en | -26.929 | And, Aquarius; Houston.
+en | -0.951 | And, Aq
+it | -54.477 | Et, Aquarius ; Houston. J'ai un mod
+it | -82.730 | Et, Aquarius ; Houston. J'ai un module de s
+de | -88.919 | Und, Aquarius; Houston. Ich habe ein Servicemo
+en | -26.929 | Und, Aquarius; Houston.
+it | -92.711 | E, Aquarius; Houston. Ho un modulo di servi
+en | -26.929 | E, Aquarius; Houston. H
+en | -72.205 | Okay. Now on panel 8, I'm going to have
+fr | -49.043 | D'accord. Maintenant sur le panne
+fr | -178.495 | D'accord. Maintenant sur le panneau 8, je vais devoir l
+de | -79.139 | In Ordnung. Jetzt auf Ta
+de | -44.298 | In Ordnung. Jetzt a
+it | -16.447 | Va bene. Ora sul pan
+en | -46.816 | Okay. What else do you
+en | -66.949 | Okay. What else do you have for
+fr | -31.834 | D'accord. Qu'avez-vous d'autr
+fr | -63.904 | D'accord. Qu'avez-vous d'autre pou
+fr | -45.829 | In Ordnung. Was hast du so
+fr | -60.489 | In Ordnung. Was hast du sonst noch
+en | -102.752 | Okay. We're so efficient down here that we got
+es | -2.973 | Okay. We're so efficien
+fr | -138.036 | D'accord. Nous sommes si efficaces ici que nous avons
+de | -43.571 | In Ordnung. Wir sind hier
+de | -78.513 | In Ordnung. Wir sind hier so ef
+it | -38.972 | Va bene. Siamo così
+it | -110.261 | Va bene. Siamo così efficienti qui ch
+fr | -47.332 | Affirmatif. Vega et Altair
+de | -143.825 | Bestätigt. Vega und Altair sollte
+fi | -32.670 | Bestätigt.
+es | -5.350 | Affermativo.
+es | -5.350 | Affermativo. Vega
+en | -18.066 | Stand by 1,
+de | -5.661 | Warten
+de | -17.440 | Warten Si
+de | -4.732 | Attendere 1, F
+en | -48.603 | That just turned the MAS
+en | -48.603 | That just turned the M
+fr | -79.074 | Cela vient de réactiv
+fr | -95.836 | Cela vient de réactiver l'ALARME PRINCIPALE. Maintenan
+de | -184.318 | Das hat den HAUPTALARM wieder eingeschaltet. Jet
+de | -184.318 | Das hat den HAUPTALARM wieder eingeschaltet. J
+it | -52.912 | Questo ha appena riattivato l'ALLARME PRINCIPA
+it | -2.879 | Questo ha
+en | -20.699 | Oh, Vance, do you wa
+fr | -103.744 | Oh, Vance, voulez-vous rester dans cette attitud
+de | -116.727 | Oh, Vance, möchtest du in dieser Haltun
+de | -110.285 | Oh, Vance, möchtest du in dieser Ha
+it | -16.034 | Oh, Vance, vuoi rimane
+it | -16.034 | Oh, Vance, vuoi rimanere in
+en | -179.899 | Okay, will do. And also, let me ask you a question. In this configuration, docked, we h
+en | -173.184 | Okay, will do. And also, let me ask you a question. In this configurati
+fr | -295.402 | D'accord, je le ferai. Et aussi, laissez-moi vous poser une question. Dans cette configuration, amarrée, n
+fr | -260.303 | D'accord, je le ferai. Et aussi, laissez-moi vous poser une question. Dans cette
+de | -220.211 | In Ordnung, werde ich tun. Und außerdem, lassen Sie mich Ihnen e
+de | -164.743 | In Ordnung, werde ich tun. Und außerdem, lassen Si
+it | -177.886 | Va bene, lo farò. E inoltre, lasciatemi fare una domanda. In questa configurazione, attraccata, do
+it | -34.467 | Va bene, lo farò. E inoltre,
+en | -78.538 | Okay. Our troops would like to have you g
+pt | -27.377 | D'accord. Nos troupes aim
+pt | -14.046 | D'accord. Nos troupe
+de | -110.985 | Verstanden. Unsere Truppen möchten,
+de | -41.889 | Verstanden. Unsere
+it | -71.542 | Va bene. Le nostre truppe vo
+it | -165.330 | Va bene. Le nostre truppe vorrebbero che tu anda
+en | -40.517 | And, it's getting a littl
+nl | -13.039 | And, it's gett
+fr | -131.011 | Et il commence à faire un peu
+de | -136.779 | Und es wird jetzt hier ei
+de | -199.071 | Und es wird jetzt hier ein wenig wä
+it | -4.408 | E sta div
+en | -7.504 | Okay. It's gone off. It's
+en | -7.504 | Okay. It's gone off.
+fr | -100.839 | D'accord. C'est éteint. C'est éteint p
+fr | -42.750 | D'accord. C'est éteint.
+de | -199.037 | Verstanden. Es ist ausgegangen. Es ist aus
+de | -109.732 | Verstanden. Es ist ausgega
+it | -88.178 | Va bene. Si è spento. Si è spen
+en | -20.498 | In the interim, to
+en | -20.498 | In the interim, t
+en | -152.194 | その間、MAIN A
+fr | -19.058 | En attendant, pou
+fr | -66.427 | En attendant, pour aider la tension de MAIN A,
+de | -164.413 | In der Zwischenzeit, um die Spannung von
+de | -53.786 | In der Zwischenzei
+it | 0.786 | Nel frattemp
+it | 0.786 | Nel frattempo, p
+en | -37.889 | Jim, that sounds like
+fr | -98.838 | Jim, cela semble être le mei
+fr | -79.790 | Jim, cela semble être l
+de | -99.070 | Jim, das klingt nach der best
+de | -21.593 | Jim, das k
+it | -156.794 | Jim, sembra essere la scelta migli
+fr | -26.076 | D'accord. Je vous don
+fr | -85.405 | D'accord. Je vous donne l'accès maintenant.
+de | -200.223 | Verstanden. Ich gebe Ihnen jetzt Zugang. Wir
+de | -95.555 | Verstanden. Ich gebe Ihnen
+en | -13.434 | I don't thin
+en | -22.941 | I don't think so. I thi
+fr | -94.770 | Je ne pense pas. Je pense qu'il es
+de | -12.994 | Ich glaub
+de | -131.333 | Ich glaube nicht. Ich denke, er ist
+it | -86.948 | Non credo. Penso che sia sceso su
+fr | -96.885 | Négatif. À moins que vous ne vouli
+hu | -7.774 | Négati
+de | -90.923 | Negativ. Es sei denn, Sie
+de | -258.339 | Negativ. Es sei denn, Sie möchten, dass ich es tue. Ich werde
+es | -5.350 | Negativo.
+it | -115.317 | Negativo. A meno che tu non voglia c
+en | -43.467 | It should be o
+fr | -175.270 | Il devrait y avoir un éc
+fr | -235.440 | Il devrait y avoir un écart d'environ 8 degr
+de | -15.027 | Es sollt
+de | -118.556 | Es sollte um etwa 8 Grad abweichen, F
+it | -112.276 | Dovrebbe essere fuori di circa 8
+it | -112.276 | Dovrebbe essere fuori di circa 8 gradi, VOL
+it | -25.148 | And, Aquarius, check you ATCA (PGNS) breaker
+en | -18.969 | And, Aquarius, c
+en | -98.824 | 而且，Aquarius
+tr | -239.724 | 而且，Aquarius，请检查你
+fr | -137.969 | Et, Aquarius, vérifiez votre dis
+fr | -206.892 | Et, Aquarius, vérifiez votre disjoncteur A
+en | -0.951 | Und, Aquari
+de | -110.020 | Und, Aquarius, überprüfen S
+it | -91.852 | E, Aquarius, controlla il tuo interruttore ATCA
+it | -91.852 | E, Aquarius, controlla il tuo interruttore ATCA (PGN
+en | -21.158 | Jim, I'm sorry. We're not catching what yo
+fr | -39.230 | Jim, je suis dé
+fr | -8.099 | Jim, je suis
+fr | -96.529 | Jim, es tut mir leid. Wir vers
+es | -38.565 | Jim, es tut mir
+de | -0.670 | Jim, mi
+it | -38.415 | Jim, mi dispiace. Non capiamo cosa
+en | -72.985 | I guess I agree it surely would be
+fr | -125.788 | Je suppose que je suis d'accord, il serai
+fr | -203.430 | Je suppose que je suis d'accord, il serait certainement bien de doc
+de | -180.778 | Ich denke, ich stimme zu, es wäre sicherlic
+de | -30.972 | Ich denke, ic
+it | -90.722 | Penso di essere d'accordo, s
+it | -90.722 | Penso di essere d'accordo, sar
+en | -16.836 | You think ma
+en | -32.540 | You think main bus B is good,
+fr | -97.928 | Vous pensez que le bus principal B est bon, n'est-ce pas
+fr | -63.738 | Vous pensez que le bus
+de | -62.373 | Sie denken, dass de
+de | -138.690 | Sie denken, dass der Hauptbus B in Ordnung ist, nicht
+en | 0.155 | Pensi ch
+it | -63.144 | Pensi che il bus principale
+en | -13.822 | Okay, Vance, I'm ready to continue. I'm
+fr | -65.758 | D'accord, Vance, je suis prêt à
+de | -14.740 | Okay, Vance, ich bin be
+it | -17.881 | Va bene, Vance, sono pro
+it | -17.881 | Va bene, Vance, sono p
+en | -17.080 | Okay. I'll try to sq
+fr | -138.875 | D'accord. Je vais essayer de les y caser,
+fr | -138.875 | D'accord. Je vais essayer de les y caser, Ja
+en | -13.635 | Okay. Ich we
+it | -29.224 | Va bene. Cercherò di inserirli l
+en | -121.527 | Okay. The length of the burns are going to
+en | -33.437 | Okay. The length o
+fr | -63.401 | D'accord. La durée des
+fr | -70.339 | D'accord. La durée des brû
+de | -13.343 | Verstande
+de | -107.658 | Verstanden. Die Dauer der Brennphase
+it | -34.689 | Va bene. La durata del
+en | -23.699 | ISOL valve should be
+tr | -32.461 | ISOL 밸
+fr | -75.237 | La vanne ISOL doit être en
+fr | -88.984 | La vanne ISOL doit être en positi
+de | -45.046 | Das ISOL-Ventil sollte
+de | -65.346 | Das ISOL-Ventil sollte au
+it | -71.019 | La valvola ISOL deve essere in posizi
+it | -44.593 | La valvola ISOL deve esser
+en | -11.810 | Okay. Vance, I tried th
+en | -95.225 | Okay. Vance, I tried that but when I start
+fr | -216.370 | D'accord. Vance, j'ai essayé ça mais quand je commence à fai
+de | -37.046 | Verstanden. Vance, ich
+it | -70.420 | Va bene. Vance, ci ho provato, ma quando
+en | -97.145 | Okay. And it does it on both sets of ser
+fr | -1.123 | D'accord. Et
+de | -228.141 | Verstanden. Und es tritt bei beiden Servosätzen a
+de | -6.660 | Versta
+de | -7.044 | Va bene. E succede su
+it | -62.149 | Va bene. E succede su entrambi i set d
+it | 0.254 | Okay. Real fi
+en | -78.439 | Okay. Real fine. At your leisure, you can gi
+fr | -88.659 | D'accord. Très bien. À vot
+de | -121.245 | In Ordnung. Sehr gut. Wenn es Ihnen passt, könn
+de | -20.403 | Oder es is
+it | -16.015 | O è -
+en | -38.466 | Okay, Houston. How do you read,
+de | -115.820 | Houston, wie verstehen Sie mich
+de | -98.167 | Houston, wie verstehen S
+it | -25.778 | Houston, mi ric
+it | -50.668 | Houston, mi ricevi bene ades
+en | -6.093 | Right now we'r
+fr | -91.635 | En ce moment, nous parlons de 7 pieds par sec
+fr | -8.565 | En ce
+de | -118.069 | Im Moment sprechen wir über 7
+de | -146.896 | Im Moment sprechen wir über 7 Fuß pr
+es | -4.865 | In q
+it | -100.037 | In questo momento stiamo parlando d
+en | -53.873 | You better watch out; it's heading tha
+de | -12.950 | You better watch out; i
+fr | -8.671 | Tu ferai
+fr | -125.707 | Tu ferais mieux de faire att
+de | -14.003 | Du solltest besser
+it | -99.891 | Faresti meglio a fare attenzione; sta andan
+en | -13.759 | Okay. Both to NO
+fr | -77.726 | D'accord. Les deux sur
+de | -82.709 | Verstanden. Beide auf NORMA
+de | -40.615 | Verstanden. Beide a
+it | -0.464 | Ricevuto. Entra
+en | -42.108 | Oh, on our plotboard up here, we can't hardly
+en | -3.084 | Oh, on our plotbo
+fr | -25.474 | Oh, sur notre tabl
+de | -105.605 | Oh, auf unserem Plotboard hier kö
+de | -62.261 | Oh, auf unserem Plotboard hier
+it | -56.059 | Oh, sul nostro plotboard qui, non
+it | -15.310 | Oh, sul nostr
+en | -39.682 | And, Jack, how do you r
