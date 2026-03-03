@@ -1,8 +1,8 @@
 from pathlib import Path
 
-train_v0_dir = "train v0"
+train_v0_dir = "train without annotations v0"
 open_dev_dir = "open-dev"
-output_dir = "train v1"
+output_dir = "train without annotations v1"
 
 
 def combine_data():
