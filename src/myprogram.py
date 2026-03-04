@@ -170,13 +170,15 @@ def train(args):
             alpha = 1.5
         elif lang == "ko":
             n_min = 1
+            n_max = 3
         lms[lang] = CharNgramLM(n_min=n_min, n_max=n_max, alpha=alpha)
 
         with file.open("r", encoding="utf-8") as f:
             for line in f:
-                line = line.strip()
+                line = line.rstrip("\r\n")
                 if not line:
                     continue
+                line = line.strip('"')
                 line = unicodedata.normalize("NFC", line)
                 line = ("^" * lms[lang].n_max) + line + "$"
                 lms[lang].train_text(line)
@@ -262,7 +264,7 @@ def test(args):
         is_csv = True
     else:
         with open(args.test_data, "r", encoding="utf-8") as f:
-            contexts = [line.strip() for line in f if line.strip()]
+            contexts = [line.rstrip("\r\n") for line in f if line.rstrip("\r\n")]
         ids = None
         is_csv = False
 
@@ -305,6 +307,7 @@ def test(args):
         best_lang = None
         best_score = float("-inf")
 
+        context = context.strip('"')
         context = unicodedata.normalize("NFC", context)
         # context = normalize_caps(context)
         detected = detect_script(context)
@@ -327,12 +330,12 @@ def test(args):
 
         for lang in candidate_langs:
             lm = lms[lang]
-            s = lm.score_context(context)
+            s = lm.score_context(("^" * lms[lang].n_max) + context)
             if s > best_score:
                 best_score = s
                 best_lang = lang
 
-        context = ("^" * (lms[best_lang].n_max - 1)) + context
+        context = ("^" * lms[best_lang].n_max) + context
         preds = lms[best_lang].predict_top3(context)
         pred_str = "".join(preds)
         if is_csv:
