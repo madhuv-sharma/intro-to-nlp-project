@@ -69,7 +69,7 @@ class CharNgramLM:
             if not found:
                 score -= self.log_vocab_size
 
-        score = score / max(len(context), 1) if context else 0.0
+        # score = score / max(len(context), 1) if context else 0.0
         return score
 
     def prob(self, context, char):
@@ -380,7 +380,7 @@ def main():
     parser.add_argument("--test_data", default="../kaggle-data/test.csv")
     parser.add_argument("--test_output", default="../submission.csv")
     parser.add_argument("--n_min", type=int, default=2)
-    parser.add_argument("--n_max", type=int, default=6)
+    parser.add_argument("--n_max", type=int, default=5)
     parser.add_argument("--alpha", type=float, default=0.3)
     parser.add_argument("--no_adapt", action="store_true")
 
