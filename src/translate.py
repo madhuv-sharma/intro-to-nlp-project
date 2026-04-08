@@ -1,37 +1,72 @@
 import torch
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
-MODEL_NAME = "facebook/nllb-200-distilled-600M"
+MODEL_NAME = "Qwen/Qwen3.5-0.8B"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-LANG_MAP = {
-    "de": "deu_Latn",
-    "fr": "fra_Latn",
-    "it": "ita_Latn",
-    "ru": "rus_Cyrl",
-    "zh": "zho_Hans",
-    "ko": "kor_Hang",
-    "ja": "jpn_Jpan",
-    "hi": "hin_Deva",
-    "ar": "arb_Arab",
+LANGUAGE_NAMES = {
+    "de": "German",
+    "fr": "French",
+    "it": "Italian",
+    "ru": "Russian",
+    "zh": "Simplified Chinese",
+    "ko": "Korean",
+    "ja": "Japanese",
+    "hi": "Hindi",
+    "ar": "Arabic",
 }
 
 # TARGET_LANGS = ["zh", "de", "ko", "ru", "ja", "hi", "ar", "fr", "it"]
 TARGET_LANGS = ["hi"]
 
-BATCH_SIZE = 128 if DEVICE == "cuda" else 32
+BATCH_SIZE = 24 if DEVICE == "cuda" else 2
+MAX_INPUT_TOKENS = 1024
+MAX_NEW_TOKENS = 192
+
+
+def _build_prompt(tokenizer, line, language_name):
+    system_prompt = (
+        "You are a translation engine. Translate from English to the requested language. "
+        "Return only the translation."
+    )
+    user_prompt = (
+        f"Translate this English sentence to {language_name}.\n" f"English: {line}"
+    )
+
+    if getattr(tokenizer, "chat_template", None):
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ]
+        return tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+
+    return f"{system_prompt}\n\n{user_prompt}\nTranslation:"
+
+
+def _get_dtype():
+    if DEVICE != "cuda":
+        return torch.float32
+    if torch.cuda.is_bf16_supported():
+        return torch.bfloat16
+    return torch.float16
 
 
 def main():
-    print("Loading model...")
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+    print(f"Loading model: {MODEL_NAME}")
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
+    tokenizer.padding_side = "left"
 
-    model = AutoModelForSeq2SeqLM.from_pretrained(
-        MODEL_NAME, torch_dtype=torch.float16 if DEVICE == "cuda" else torch.float32
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
+    model = AutoModelForCausalLM.from_pretrained(
+        MODEL_NAME,
+        torch_dtype=_get_dtype(),
+        trust_remote_code=True,
     ).to(DEVICE)
-
     model.eval()
-    tokenizer.src_lang = "eng_Latn"
 
     print("Loading English lines...")
     with open("en.txt", "r", encoding="utf-8") as f:
@@ -40,37 +75,43 @@ def main():
     print(f"Total lines: {len(english_lines)}")
 
     for lang in TARGET_LANGS:
-
-        print(f"\nTranslating to {lang}...")
-        target_code = tokenizer.convert_tokens_to_ids(LANG_MAP[lang])
+        language_name = LANGUAGE_NAMES[lang]
+        print(f"\nTranslating to {lang} ({language_name})...")
 
         output_lines = []
 
         with torch.inference_mode():
             for i in range(0, len(english_lines), BATCH_SIZE):
-
                 batch = english_lines[i : i + BATCH_SIZE]
+                prompts = [
+                    _build_prompt(tokenizer, line, language_name) for line in batch
+                ]
 
                 inputs = tokenizer(
-                    batch, return_tensors="pt", padding=True, truncation=True
+                    prompts,
+                    return_tensors="pt",
+                    padding=True,
+                    truncation=True,
+                    max_length=MAX_INPUT_TOKENS,
                 ).to(DEVICE)
 
                 outputs = model.generate(
                     **inputs,
-                    forced_bos_token_id=target_code,
-                    max_new_tokens=384,
-                    num_beams=1,
+                    max_new_tokens=MAX_NEW_TOKENS,
                     do_sample=False,
+                    pad_token_id=tokenizer.pad_token_id,
+                    eos_token_id=tokenizer.eos_token_id,
                 )
 
-                translations = tokenizer.batch_decode(outputs, skip_special_tokens=True)
+                generated = outputs[:, inputs["input_ids"].shape[1] :]
+                translations = tokenizer.batch_decode(
+                    generated, skip_special_tokens=True
+                )
+                output_lines.extend([t.strip() for t in translations])
 
-                output_lines.extend(translations)
-
-                if (i // BATCH_SIZE) % 40 == 0:
+                if (i // BATCH_SIZE) % 20 == 0:
                     print(f"{lang}: {i}/{len(english_lines)}")
 
-        # Write language file
         with open(f"{lang}.txt", "w", encoding="utf-8") as f:
             for line in output_lines:
                 f.write(line + "\n")
