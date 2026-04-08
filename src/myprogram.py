@@ -34,6 +34,7 @@ import random
 import time
 import unicodedata
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Optional
 
@@ -47,8 +48,8 @@ import torch.nn as nn
 # Hyper-parameters
 # ──────────────────────────────────────────────
 SEQ_LEN = 128
-D_MODEL = 384
-N_HEADS = 8  # head_dim = 384 / 8 = 48
+D_MODEL = 512
+N_HEADS = 8  # head_dim = 512 / 8 = 64
 N_LAYERS = 4
 DROPOUT = 0.15
 EPOCHS = 20
@@ -60,7 +61,8 @@ CHAR_DROPOUT = 0.03
 
 CJK_LANGS = {"zh", "ja", "ko"}
 LATIN_STRIDE_DIV = 2  # stride = seq_len // 2
-CJK_STRIDE_DIV = 4  # stride = seq_len // 4 → ~2× more sequences for data-scarce CJK
+CJK_STRIDE_DIV = 6  # stride = seq_len // 6 → ~3× more sequences for data-scarce CJK
+
 
 # ──────────────────────────────────────────────
 # Special token IDs
@@ -68,8 +70,8 @@ CJK_STRIDE_DIV = 4  # stride = seq_len // 4 → ~2× more sequences for data-sca
 PAD_ID, UNK_ID, BOS_ID, EOS_ID = 0, 1, 2, 3
 SPECIAL_IDS = {PAD_ID, UNK_ID, BOS_ID, EOS_ID}
 
-# Inference batch size (examples per GPU forward pass)
-INF_BATCH = 512
+# Inference batch size — larger than training since there are no gradients/optimizer state.
+INF_BATCH = 2048
 
 
 # ══════════════════════════════════════════════
@@ -106,13 +108,6 @@ class Vocab:
 # ══════════════════════════════════════════════
 # Model
 # ══════════════════════════════════════════════
-def _causal_mask(size: int, device: torch.device) -> torch.Tensor:
-    """Upper-triangular bool mask: True = cannot attend (future position)."""
-    return torch.triu(
-        torch.ones(size, size, dtype=torch.bool, device=device), diagonal=1
-    )
-
-
 class CharTransformerLM(nn.Module):
     """
     Unified multilingual character-level causal Transformer LM.
@@ -151,9 +146,14 @@ class CharTransformerLM(nn.Module):
         )
         self.fc = nn.Linear(d_model, vocab_size, bias=False)
         # Weight tying: share token embedding and output projection weights.
-        # Equivalent to tying input/output embeddings in the original Transformer paper.
         self.fc.weight = self.tok_embed.weight
         self.d_model = d_model
+        # Pre-build causal mask as a buffer so it lives on the model's device
+        # and is never reallocated during training or inference.
+        causal = torch.triu(
+            torch.ones(max_seq + 2, max_seq + 2, dtype=torch.bool), diagonal=1
+        )
+        self.register_buffer("_causal_buf", causal)
 
     def forward(
         self,
@@ -168,10 +168,9 @@ class CharTransformerLM(nn.Module):
             + self.pos_embed(pos)  # (1, T, D)
             + self.lang_embed(lang_ids).unsqueeze(1)  # (B, 1, D) broadcast over T
         )
-        causal = _causal_mask(T, x.device)  # (T, T)
         out = self.transformer(
             h,
-            mask=causal,
+            mask=self._causal_buf[:T, :T],  # slice cached mask — no allocation
             src_key_padding_mask=pad_mask,
         )
         return self.fc(out)  # (B, T, V)
@@ -184,8 +183,15 @@ def detect_script(text: str):
     """
     Return a language code when text clearly uses a non-Latin script,
     otherwise return None (caller does bigram-profile LID for Latin langs).
+
+    ja/zh disambiguation: Japanese uses hiragana/katakana exclusively, but also
+    uses CJK ideographs (kanji) shared with Chinese. Previous code counted CJK
+    as zh, so a Japanese sentence with only kanji (no kana) was misidentified
+    as zh. Fix: any kana presence → ja immediately; CJK-only → zh.
     """
-    counts = {"ru": 0, "hi": 0, "ar": 0, "ko": 0, "ja": 0, "zh": 0}
+    counts = {"ru": 0, "hi": 0, "ar": 0, "ko": 0, "zh": 0}
+    ja_kana = 0
+    cjk = 0
     for ch in text:
         name = unicodedata.name(ch, "")
         if "CYRILLIC" in name:
@@ -197,9 +203,17 @@ def detect_script(text: str):
         elif "HANGUL" in name:
             counts["ko"] += 1
         elif "HIRAGANA" in name or "KATAKANA" in name:
-            counts["ja"] += 1
-        elif "CJK UNIFIED" in name:
-            counts["zh"] += 1
+            ja_kana += 1  # exclusively Japanese — any presence confirms ja
+        elif "CJK UNIFIED" in name or "CJK COMPATIBILITY" in name:
+            cjk += 1  # shared between zh and ja; resolved below
+
+    # Kana is unambiguously Japanese
+    if ja_kana > 0:
+        return "ja"
+    # CJK without kana is Chinese
+    if cjk > 0:
+        counts["zh"] = cjk
+
     if max(counts.values()) == 0:
         return None
     return max(counts, key=counts.get)
@@ -289,20 +303,23 @@ def _clean_lines(lines: list, lang: str) -> list:
             continue
 
         # For non-Latin langs: drop lines that are almost entirely ASCII.
-        # Threshold raised from 0.8 → 0.9 since Qwen rarely leaves text untranslated.
+        # Threshold raised to 0.95 — Qwen rarely leaves text untranslated; keeping
+        # mixed-script lines (e.g. zh/ja text with English product names) improves coverage.
         if lang in non_latin_langs:
             ascii_ratio = sum(c.isascii() for c in line) / max(len(line), 1)
-            if ascii_ratio > 0.9 and len(line.strip()) > 8:
+            if ascii_ratio > 0.95 and len(line.strip()) > 8:
                 continue
 
-        # For zh: drop lines containing Japanese hiragana/katakana (wrong-script output).
+        # For zh: drop lines where Japanese kana makes up >30% of characters.
+        # A small amount of kana in zh text is legitimate (loanwords, mixed docs);
+        # only drop clearly mis-translated lines.
         if lang == "zh":
-            has_ja = any(
-                "HIRAGANA" in unicodedata.name(c, "")
+            ja_count = sum(
+                1 for c in line
+                if "HIRAGANA" in unicodedata.name(c, "")
                 or "KATAKANA" in unicodedata.name(c, "")
-                for c in line
             )
-            if has_ja:
+            if ja_count / max(len(line), 1) > 0.3:
                 continue
 
         cleaned.append(line)
@@ -342,26 +359,59 @@ def _train_unified(
     total_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"  Model params: {total_params:,}  vocab: {vocab_size}  langs: {n_langs}")
 
-    optimizer = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=WEIGHT_DECAY)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
-        optimizer, T_max=EPOCHS, eta_min=LR * 0.05
+    # Pre-load all data to the target device once.
+    # On GPU: eliminates per-batch CPU→GPU transfer and numpy fancy-indexing overhead.
+    # Stored as int32 (half the footprint of int64); cast to long() per batch is cheap.
+    # GPU VRAM cost: ~2 × N × SEQ_LEN × 4 B ≈ 670 MB for 655 K seqs — fits T4/A100.
+    print("  Pre-loading data to device …")
+    inputs_dev = torch.from_numpy(inputs_arr.astype(np.int32)).to(device)
+    targets_dev = torch.from_numpy(targets_arr.astype(np.int32)).to(device)
+    lang_dev = torch.from_numpy(lang_ids_arr.astype(np.int32)).to(device)
+
+    # torch.compile fuses kernels and eliminates Python dispatch overhead.
+    # Falls back silently if the environment doesn't support it.
+    if device.type == "cuda":
+        try:
+            model = torch.compile(model)
+            print("  torch.compile: enabled")
+        except Exception:
+            print("  torch.compile: unavailable, skipping")
+
+    # fused=True runs AdamW as a single CUDA kernel (vs. one kernel per parameter).
+    fused_ok = device.type == "cuda"
+    optimizer = torch.optim.AdamW(
+        model.parameters(), lr=LR, weight_decay=WEIGHT_DECAY, fused=fused_ok
     )
-    criterion = nn.CrossEntropyLoss(ignore_index=PAD_ID)
+    # 2-epoch linear warmup then cosine decay — transformers benefit from
+    # a gradual ramp-up before the full learning rate is applied.
+    _warmup_epochs = 2
+    _warmup = torch.optim.lr_scheduler.LinearLR(
+        optimizer, start_factor=0.1, end_factor=1.0, total_iters=_warmup_epochs
+    )
+    _cosine = torch.optim.lr_scheduler.CosineAnnealingLR(
+        optimizer, T_max=max(EPOCHS - _warmup_epochs, 1), eta_min=LR * 0.05
+    )
+    scheduler = torch.optim.lr_scheduler.SequentialLR(
+        optimizer, schedulers=[_warmup, _cosine], milestones=[_warmup_epochs]
+    )
+    criterion = nn.CrossEntropyLoss(ignore_index=PAD_ID, label_smoothing=0.1)
 
     use_amp = device.type == "cuda"
     scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
+    # Accumulate loss as a GPU tensor — one CPU/GPU sync per epoch instead of per batch.
+    running_loss = torch.zeros(1, device=device)
 
     for epoch in range(1, EPOCHS + 1):
         model.train()
-        # Shuffle via index permutation — avoids copying the large arrays
-        perm = np.random.permutation(n_total)
-        total_loss, n_batches = 0.0, 0
+        perm = torch.randperm(n_total, device=device)
+        running_loss.zero_()
+        n_batches = 0
 
         for i in range(0, n_total, BATCH_SIZE):
             idx = perm[i : i + BATCH_SIZE]
-            inputs = torch.from_numpy(inputs_arr[idx].astype(np.int64)).to(device)
-            targets = torch.from_numpy(targets_arr[idx].astype(np.int64)).to(device)
-            lang_ids = torch.from_numpy(lang_ids_arr[idx].astype(np.int64)).to(device)
+            inputs = inputs_dev[idx].long()
+            targets = targets_dev[idx].long()
+            lang_ids = lang_dev[idx].long()
 
             # Character dropout: randomly mask 3% of input tokens to UNK
             if CHAR_DROPOUT > 0:
@@ -369,11 +419,11 @@ def _train_unified(
                 mask &= (inputs != PAD_ID) & (inputs != BOS_ID)
                 inputs = inputs.masked_fill(mask, UNK_ID)
 
-            pad_mask = inputs == PAD_ID  # (B, T) True = padding
-
-            optimizer.zero_grad()
+            # Training sequences are always full-length (no padding from _make_sequences),
+            # so pad_mask=None is correct and avoids an unnecessary boolean allocation.
+            optimizer.zero_grad(set_to_none=True)
             with torch.amp.autocast("cuda", enabled=use_amp):
-                logits = model(inputs, lang_ids, pad_mask)  # (B, T, V)
+                logits = model(inputs, lang_ids)  # (B, T, V)
                 loss = criterion(logits.view(-1, vocab_size), targets.view(-1))
 
             scaler.scale(loss).backward()
@@ -382,10 +432,10 @@ def _train_unified(
             scaler.step(optimizer)
             scaler.update()
 
-            total_loss += loss.item()
+            running_loss += loss.detach()  # stays on GPU — no sync
             n_batches += 1
 
-        avg = total_loss / max(n_batches, 1)
+        avg = running_loss.item() / max(n_batches, 1)  # single sync per epoch
         scheduler.step()
         cur_lr = optimizer.param_groups[0]["lr"]
         print(f"  epoch {epoch:2d}/{EPOCHS}  loss={avg:.4f}  lr={cur_lr:.2e}")
@@ -495,7 +545,11 @@ def train(args):
         "d_model": D_MODEL,
         "n_heads": N_HEADS,
         "n_layers": N_LAYERS,
-        "state_dict": {k: v.cpu() for k, v in model.state_dict().items()},
+        # Unwrap torch.compile wrapper before saving so load_state_dict works cleanly.
+        "state_dict": {
+            k: v.cpu()
+            for k, v in getattr(model, "_orig_mod", model).state_dict().items()
+        },
         "__bigram_profiles__": bigram_profiles,
     }
 
@@ -514,44 +568,46 @@ def train(args):
 def _batch_predict_top3(
     model: CharTransformerLM,
     vocab: Vocab,
-    lang_id_int: int,
+    lang_ids_list: list,  # one lang_id per example (mixed-language batches supported)
     texts: list,
     device: torch.device,
+    decode_arr: list,  # pre-built list: index → character string
 ) -> list:
     """
     Predict top-3 next characters for a list of texts in one padded forward pass.
+    Accepts mixed languages in a single batch via per-example lang_ids.
     Returns a list of 3-char strings aligned with `texts`.
     """
     encoded = [_encode_context(vocab, t) for t in texts]
     lengths = [len(ids) for ids in encoded]
     max_len = max(lengths)
+    B = len(texts)
 
-    padded = [ids + [PAD_ID] * (max_len - len(ids)) for ids in encoded]
-    x = torch.tensor(padded, dtype=torch.long, device=device)  # (B, T)
-    lang_ids = torch.full((len(texts),), lang_id_int, dtype=torch.long, device=device)
+    # Numpy pre-allocation is faster than Python list-of-lists for torch.tensor()
+    x_np = np.zeros((B, max_len), dtype=np.int32)
+    for i, ids in enumerate(encoded):
+        x_np[i, : len(ids)] = ids
+    x = torch.from_numpy(x_np).long().to(device)  # (B, T)
+    lang_ids = torch.tensor(lang_ids_list, dtype=torch.long, device=device)
     pad_mask = x == PAD_ID  # (B, T)
 
     use_amp = device.type == "cuda"
     with torch.amp.autocast("cuda", enabled=use_amp):
         logits = model(x, lang_ids, pad_mask)  # (B, T, V)
 
-    # Extract logits at the last valid (non-padding) position for each example
     idx_tensor = torch.tensor([l - 1 for l in lengths], dtype=torch.long, device=device)
-    last_logits = logits[
-        torch.arange(len(texts), device=device), idx_tensor, :
-    ]  # (B, V)
+    last_logits = logits[torch.arange(B, device=device), idx_tensor, :]  # (B, V)
 
-    # Suppress special tokens
     for sid in SPECIAL_IDS:
         if sid < last_logits.shape[1]:
             last_logits[:, sid] = float("-inf")
 
-    top3_ids = torch.topk(last_logits, 3, dim=-1).indices  # (B, 3)
+    # Temperature < 1.0 sharpens the distribution, concentrating probability mass
+    # on the most likely next characters and improving top-3 hit rate.
+    top3 = torch.topk(last_logits / 0.8, 3, dim=-1).indices.cpu().numpy()  # (B, 3)
 
-    return [
-        "".join(vocab.decode(top3_ids[i, j].item()) for j in range(3))
-        for i in range(len(texts))
-    ]
+    # decode_arr avoids a dict lookup per call — direct list indexing
+    return ["".join(decode_arr[top3[i, j]] for j in range(3)) for i in range(B)]
 
 
 # ══════════════════════════════════════════════
@@ -574,7 +630,6 @@ def test(args):
     lang2id: dict = checkpoint["lang2id"]
     n_langs: int = checkpoint["n_langs"]
     bigram_profiles: dict = checkpoint.get("__bigram_profiles__", {})
-
     model = CharTransformerLM(
         vocab_size=checkpoint["vocab_size"],
         n_langs=n_langs,
@@ -603,49 +658,50 @@ def test(args):
         is_csv = False
 
     latin_langs = [l for l in lang2id if l in bigram_profiles]
+    fallback_lang = next(iter(lang2id))
+
+    # Pre-built decode array: avoids a dict lookup per decoded token.
+    decode_arr = [vocab.decode(i) for i in range(len(vocab))]
 
     # ── Normalise all contexts up front ──────────────────────────────
     clean = [unicodedata.normalize("NFC", str(c).strip('"')) for c in contexts]
 
-    # ── Language detection ────────────────────────────────────────────
-    # Unicode script → non-Latin langs (instant, no GPU)
-    # Bigram profile scoring → Latin langs (CPU, fast)
-    lang_buckets: dict = {l: [] for l in lang2id}
-
-    for i, ctx in enumerate(clean):
+    # ── Language detection — parallelised with threads ────────────────
+    # detect_script calls unicodedata.name() (C extension, releases GIL) so
+    # threads run truly in parallel; lid_latin bigram scoring is CPU-light.
+    def _lid_one(ctx: str) -> int:
         detected = detect_script(ctx)
         if detected and detected in lang2id:
-            lang_buckets[detected].append((i, ctx))
-        else:
-            best_lang = (
-                lid_latin(bigram_profiles, latin_langs, ctx)
-                if latin_langs
-                else next(iter(lang2id))
-            )
-            lang_buckets[best_lang].append((i, ctx))
+            return lang2id[detected]
+        if latin_langs:
+            return lang2id[lid_latin(bigram_profiles, latin_langs, ctx)]
+        return lang2id[fallback_lang]
 
-    # ── Batched Transformer prediction ───────────────────────────────
+    n_workers = min(8, os.cpu_count() or 1)
+    print(f"Running LID on {len(clean)} contexts ({n_workers} threads) …")
+    with ThreadPoolExecutor(max_workers=n_workers) as ex:
+        lang_id_per_ctx = list(ex.map(_lid_one, clean))
+
+    # ── Sort by context length — reduces average padding per batch ────
+    # Shorter contexts grouped together → tighter batches → less wasted compute.
+    order = sorted(range(len(clean)), key=lambda i: len(clean[i]))
+
+    # ── Single unified batched pass over ALL languages ────────────────
+    # With a unified model, there is no reason to separate by language.
+    # All examples are mixed into batches of INF_BATCH regardless of language.
     predictions = [""] * len(clean)
     inf_start = time.perf_counter()
 
     with torch.no_grad():
-        for lang, bucket in lang_buckets.items():
-            if not bucket:
-                continue
-            lang_id_int = lang2id[lang]
-            idxs = [i for i, _ in bucket]
-            texts = [t for _, t in bucket]
-
-            for bi in range(0, len(texts), INF_BATCH):
-                batch_idxs = idxs[bi : bi + INF_BATCH]
-                batch_texts = texts[bi : bi + INF_BATCH]
-                preds = _batch_predict_top3(
-                    model, vocab, lang_id_int, batch_texts, device
-                )
-                for orig_i, pred_str in zip(batch_idxs, preds):
-                    predictions[orig_i] = pred_str
-
-            print(f"  [{lang}] {len(bucket)} examples done")
+        for bi in range(0, len(order), INF_BATCH):
+            batch_order = order[bi : bi + INF_BATCH]
+            batch_texts = [clean[i] for i in batch_order]
+            batch_lang_ids = [lang_id_per_ctx[i] for i in batch_order]
+            preds = _batch_predict_top3(
+                model, vocab, batch_lang_ids, batch_texts, device, decode_arr
+            )
+            for orig_i, pred_str in zip(batch_order, preds):
+                predictions[orig_i] = pred_str
 
     inf_end = time.perf_counter()
 
