@@ -7,7 +7,7 @@ Architecture
 ------------
 - Single CharTransformerLM for ALL languages (language conditioning via embedding)
 - Token embedding + learned positional embedding + language embedding → summed
-- 4-layer causal (decoder-only) Transformer, pre-norm style (GPT-2 variant)
+- Deeper causal (decoder-only) Transformer, pre-norm style (GPT-2 variant)
 - Weight-tied input/output embeddings (saves ~3 M params, improves perplexity)
 - Mixed-precision (fp16) training and inference
 - CosineAnnealingLR
@@ -22,7 +22,8 @@ Why unified model vs. 10 separate GRUs
 
 Usage
 -----
-  python myprogram.py train --work_dir ../work --train_dir ../data/train
+  python myprogram.py train --work_dir ../work --train_dir "../data/train v2 (with test)"
+  python myprogram.py train --work_dir ../work --resume_model ../work/model.pt --extra_epochs 8
   python myprogram.py test  --work_dir ../work --test_data ../kaggle-data/test.csv \\
                             --test_output ../submission.csv
 """
@@ -32,6 +33,7 @@ import os
 import random
 import time
 import unicodedata
+import warnings
 from collections import Counter
 from pathlib import Path
 from typing import Optional
@@ -46,20 +48,20 @@ import torch.nn as nn
 # Hyper-parameters
 # ──────────────────────────────────────────────
 SEQ_LEN = 128
-D_MODEL = 512
-N_HEADS = 8  # head_dim = 512 / 8 = 64
-N_LAYERS = 4
-DROPOUT = 0.15
-EPOCHS = 20
-BATCH_SIZE = 512
-LR = 5e-4  # lower than GRU — transformers are sensitive to high LR
-WEIGHT_DECAY = 1e-4
+D_MODEL = 576
+N_HEADS = 9  # head_dim = 576 / 9 = 64
+N_LAYERS = 5
+DROPOUT = 0.10
+EPOCHS = 12
+BATCH_SIZE = 256
+LR = 3e-4
+WEIGHT_DECAY = 1e-2
 GRAD_CLIP = 1.0
-CHAR_DROPOUT = 0.03
+CHAR_DROPOUT = 0.02
 
 CJK_LANGS = {"zh", "ja", "ko"}
 LATIN_STRIDE_DIV = 2  # stride = seq_len // 2
-CJK_STRIDE_DIV = 6  # stride = seq_len // 6 → ~3× more sequences for data-scarce CJK
+CJK_STRIDE_DIV = 8  # stride = seq_len // 8 → moderate extra CJK sampling
 
 
 # ──────────────────────────────────────────────
@@ -171,10 +173,10 @@ class CharTransformerLM(nn.Module):
 # ══════════════════════════════════════════════
 # Encoding utilities
 # ══════════════════════════════════════════════
-def _encode_context(vocab: Vocab, text: str) -> list:
-    """Prepend BOS, encode characters, clip to SEQ_LEN."""
+def _encode_context(vocab: Vocab, text: str, seq_len: int = SEQ_LEN) -> list:
+    """Prepend BOS, encode characters, clip to seq_len."""
     ids = [BOS_ID] + [vocab.encode(c) for c in text]
-    ids = ids[-SEQ_LEN:]
+    ids = ids[-seq_len:]
     return ids if ids else [BOS_ID]
 
 
@@ -242,11 +244,27 @@ def _train_unified(
     targets_arr: "np.ndarray",  # (N, SEQ_LEN) int16
     vocab: Vocab,
     device: torch.device,
-) -> "CharTransformerLM":
+    max_seq: int = SEQ_LEN,
+    d_model: int = D_MODEL,
+    n_heads: int = N_HEADS,
+    n_layers: int = N_LAYERS,
+    start_epoch: int = 1,
+    target_epochs: int = EPOCHS,
+    resume_model_state: Optional[dict] = None,
+    resume_optimizer_state: Optional[dict] = None,
+    resume_scheduler_state: Optional[dict] = None,
+    resume_scaler_state: Optional[dict] = None,
+) -> tuple:
     """Train a single CharTransformerLM on mixed multilingual sequences."""
     vocab_size = len(vocab)
     n_total = len(inputs_arr)
-    model = CharTransformerLM(vocab_size).to(device)
+    model = CharTransformerLM(
+        vocab_size=vocab_size,
+        d_model=d_model,
+        n_heads=n_heads,
+        n_layers=n_layers,
+        max_seq=max_seq,
+    ).to(device)
 
     total_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"  Model params: {total_params:,}  vocab: {vocab_size}")
@@ -268,6 +286,10 @@ def _train_unified(
         except Exception:
             print("  torch.compile: unavailable, skipping")
 
+    if resume_model_state is not None:
+        getattr(model, "_orig_mod", model).load_state_dict(resume_model_state)
+        print("  Loaded model weights for resume")
+
     # fused=True runs AdamW as a single CUDA kernel (vs. one kernel per parameter).
     fused_ok = device.type == "cuda"
     optimizer = torch.optim.AdamW(
@@ -280,19 +302,54 @@ def _train_unified(
         optimizer, start_factor=0.1, end_factor=1.0, total_iters=_warmup_epochs
     )
     _cosine = torch.optim.lr_scheduler.CosineAnnealingLR(
-        optimizer, T_max=max(EPOCHS - _warmup_epochs, 1), eta_min=LR * 0.05
+        optimizer, T_max=max(target_epochs - _warmup_epochs, 1), eta_min=LR * 0.05
     )
     scheduler = torch.optim.lr_scheduler.SequentialLR(
         optimizer, schedulers=[_warmup, _cosine], milestones=[_warmup_epochs]
     )
-    criterion = nn.CrossEntropyLoss(ignore_index=PAD_ID, label_smoothing=0.1)
+    criterion = nn.CrossEntropyLoss(ignore_index=PAD_ID, label_smoothing=0.05)
 
     use_amp = device.type == "cuda"
     scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
+
+    if resume_optimizer_state is not None:
+        optimizer.load_state_dict(resume_optimizer_state)
+        for state in optimizer.state.values():
+            for k, v in state.items():
+                if torch.is_tensor(v):
+                    state[k] = v.to(device)
+        print("  Loaded optimizer state for resume")
+    if resume_scheduler_state is not None:
+        scheduler.load_state_dict(resume_scheduler_state)
+        print("  Loaded scheduler state for resume")
+    if resume_scaler_state is not None and use_amp:
+        scaler.load_state_dict(resume_scaler_state)
+        print("  Loaded AMP scaler state for resume")
+
+    # If no scheduler state exists (or horizon changed), approximate by stepping.
+    if resume_scheduler_state is None and start_epoch > 1:
+        with warnings.catch_warnings():
+            warnings.filterwarnings(
+                "ignore", category=UserWarning, module=r"torch\.optim\.lr_scheduler"
+            )
+            for _ in range(1, start_epoch):
+                scheduler.step()
+        print(
+            f"  Scheduler advanced to epoch {start_epoch - 1} "
+            f"(target horizon: {target_epochs})"
+        )
+
     # Accumulate loss as a GPU tensor — one CPU/GPU sync per epoch instead of per batch.
     running_loss = torch.zeros(1, device=device)
 
-    for epoch in range(1, EPOCHS + 1):
+    if start_epoch > target_epochs:
+        print(
+            f"  start_epoch={start_epoch} is greater than target_epochs={target_epochs}; "
+            "skipping training."
+        )
+        return model, optimizer, scheduler, scaler, start_epoch - 1
+
+    for epoch in range(start_epoch, target_epochs + 1):
         model.train()
         perm = torch.randperm(n_total, device=device)
         running_loss.zero_()
@@ -328,26 +385,127 @@ def _train_unified(
         avg = running_loss.item() / max(n_batches, 1)  # single sync per epoch
         scheduler.step()
         cur_lr = optimizer.param_groups[0]["lr"]
-        print(f"  epoch {epoch:2d}/{EPOCHS}  loss={avg:.4f}  lr={cur_lr:.2e}")
+        print(f"  epoch {epoch:2d}/{target_epochs}  loss={avg:.4f}  lr={cur_lr:.2e}")
 
-    return model
+    return model, optimizer, scheduler, scaler, target_epochs
 
 
 # ══════════════════════════════════════════════
 # Train mode
 # ══════════════════════════════════════════════
+def _default_train_state_path(model_checkpoint_path: Path) -> Path:
+    return model_checkpoint_path.with_name(f"{model_checkpoint_path.stem}.train_state.pt")
+
+
+def _checkpoint_seq_len(checkpoint: dict, fallback: int = SEQ_LEN) -> int:
+    if "seq_len" in checkpoint:
+        return int(checkpoint["seq_len"])
+    state_dict = checkpoint.get("state_dict", {})
+    pos_w = state_dict.get("pos_embed.weight")
+    if torch.is_tensor(pos_w) and pos_w.ndim == 2 and pos_w.shape[0] >= 3:
+        return int(pos_w.shape[0] - 2)
+    return fallback
+
+
 def train(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     train_dir = Path(args.train_dir)
     total_start = time.perf_counter()
 
+    resume_model_ckpt = None
+    resume_train_state = None
+    resume_optimizer_state = None
+    resume_scheduler_state = None
+    resume_scheduler_state_raw = None
+    resume_scheduler_target_epochs = None
+    resume_scaler_state = None
+    resume_epoch = 0
+
+    if args.resume_model:
+        resume_model_path = Path(args.resume_model)
+        if not resume_model_path.exists():
+            raise FileNotFoundError(f"resume model not found: {resume_model_path}")
+        print(f"Resume model checkpoint: {resume_model_path}")
+        resume_model_ckpt = torch.load(
+            str(resume_model_path), map_location="cpu", weights_only=False
+        )
+        for k in ("vocab", "vocab_size", "state_dict"):
+            if k not in resume_model_ckpt:
+                raise ValueError(f"resume model checkpoint missing key: {k}")
+        resume_epoch = int(resume_model_ckpt.get("epoch", 0))
+
+        if args.resume_state:
+            resume_state_path = Path(args.resume_state)
+        else:
+            resume_state_path = _default_train_state_path(resume_model_path)
+        if resume_state_path.exists():
+            print(f"Resume train-state checkpoint: {resume_state_path}")
+            resume_train_state = torch.load(
+                str(resume_state_path), map_location="cpu", weights_only=False
+            )
+            state_epoch = int(resume_train_state.get("epoch", -1))
+            if state_epoch == resume_epoch:
+                resume_optimizer_state = resume_train_state.get("optimizer_state_dict")
+                resume_scheduler_state_raw = resume_train_state.get("scheduler_state_dict")
+                _sched_target = resume_train_state.get("target_epochs")
+                if _sched_target is not None:
+                    resume_scheduler_target_epochs = int(_sched_target)
+                resume_scaler_state = resume_train_state.get("scaler_state_dict")
+            else:
+                print(
+                    f"  Warning: model epoch ({resume_epoch}) and train-state epoch "
+                    f"({state_epoch}) differ; optimizer/scheduler/scaler state will be ignored."
+                )
+        else:
+            print(
+                "  No train-state checkpoint found; resuming from model weights only "
+                "(optimizer/scheduler will restart)."
+            )
+
+    model_d = (
+        int(resume_model_ckpt.get("d_model", D_MODEL)) if resume_model_ckpt else D_MODEL
+    )
+    model_h = (
+        int(resume_model_ckpt.get("n_heads", N_HEADS)) if resume_model_ckpt else N_HEADS
+    )
+    model_l = (
+        int(resume_model_ckpt.get("n_layers", N_LAYERS))
+        if resume_model_ckpt
+        else N_LAYERS
+    )
+    model_seq_len = (
+        _checkpoint_seq_len(resume_model_ckpt, SEQ_LEN) if resume_model_ckpt else SEQ_LEN
+    )
+    start_epoch = resume_epoch + 1
+    if resume_model_ckpt:
+        extra_epochs = args.extra_epochs if args.extra_epochs > 0 else EPOCHS
+        target_epochs = resume_epoch + extra_epochs
+    else:
+        target_epochs = EPOCHS
+
+    if resume_scheduler_state_raw is not None:
+        if resume_scheduler_target_epochs == target_epochs:
+            resume_scheduler_state = resume_scheduler_state_raw
+        else:
+            print(
+                "  Scheduler horizon changed; rebuilding scheduler for the new target and "
+                "advancing from epoch instead of loading old scheduler state."
+            )
+
     print(f"Device : {device}")
     print(
-        f"Transformer  d_model={D_MODEL}  n_heads={N_HEADS}  n_layers={N_LAYERS}  "
-        f"seq_len={SEQ_LEN}  epochs={EPOCHS}  batch={BATCH_SIZE}  fp16={device.type == 'cuda'}"
+        f"Transformer  d_model={model_d}  n_heads={model_h}  n_layers={model_l}  "
+        f"seq_len={model_seq_len}  target_epochs={target_epochs}  batch={BATCH_SIZE}  "
+        f"fp16={device.type == 'cuda'}"
     )
+    if resume_model_ckpt:
+        print(
+            f"  Resume window: start_epoch={start_epoch}  (+{target_epochs - resume_epoch} epochs)"
+        )
+    elif args.extra_epochs > 0:
+        print("  Note: --extra_epochs has no effect without --resume_model")
 
-    # ── Phase 1: Read & clean all language files ──────────────────────
+    # Phase 1: Read & clean all language files
     lang_lines: dict = {}
 
     for file in sorted(train_dir.glob("*.txt")):
@@ -362,17 +520,21 @@ def train(args):
         lang_lines[lang] = lines
         print(f"  [{lang}] {len(lines):,} lines after cleaning")
 
-    # ── Phase 2: Build unified vocabulary ────────────────────────────
-    print("\nBuilding unified vocabulary …")
-    all_lines = [line for lines in lang_lines.values() for line in lines]
-    # min_count=2: drop singleton characters (OCR noise, rare Unicode glyphs)
-    vocab = Vocab().build(all_lines, min_count=2)
-    print(f"  Unified vocab size: {len(vocab)}")
+    # Phase 2: Build/load vocabulary
+    print("\nBuilding unified vocabulary ...")
+    if resume_model_ckpt is not None:
+        vocab: Vocab = resume_model_ckpt["vocab"]
+        print(f"  Reusing checkpoint vocabulary  size={len(vocab)}")
+    else:
+        all_lines = [line for lines in lang_lines.values() for line in lines]
+        # min_count=1: keep rare characters to reduce UNK on CJK tails.
+        vocab = Vocab().build(all_lines, min_count=1)
+        print(f"  Unified vocab size: {len(vocab)}")
 
     print(f"  Languages: {sorted(lang_lines.keys())}")
 
-    # ── Phase 3: Encode all data → numpy arrays (int16 saves ~10× memory vs Python lists)
-    print("\nEncoding sequences …")
+    # Phase 3: Encode all data -> numpy arrays
+    print("\nEncoding sequences ...")
     inp_buf: list = []
     tgt_buf: list = []
 
@@ -386,66 +548,95 @@ def train(args):
             flat_ids.append(EOS_ID)
 
         n_before = len(inp_buf)
-        for inp, tgt in _make_sequences(flat_ids, SEQ_LEN, stride_div):
+        for inp, tgt in _make_sequences(flat_ids, model_seq_len, stride_div):
             inp_buf.append(inp)
             tgt_buf.append(tgt)
         print(f"  [{lang}] {len(inp_buf) - n_before:,} sequences")
 
     # int16 is sufficient: max vocab id < 32 767 for all expected languages
-    inputs_arr = np.array(inp_buf, dtype=np.int16)  # (N, SEQ_LEN)
-    targets_arr = np.array(tgt_buf, dtype=np.int16)  # (N, SEQ_LEN)
-    del inp_buf, tgt_buf  # free intermediate Python lists
+    inputs_arr = np.array(inp_buf, dtype=np.int16)
+    targets_arr = np.array(tgt_buf, dtype=np.int16)
+    del inp_buf, tgt_buf
 
     print(
         f"\nTotal sequences: {len(inputs_arr):,}  "
         f"(arrays: {inputs_arr.nbytes / 1024**2:.0f} MB)"
     )
 
-    # ── Phase 4: Train unified model ─────────────────────────────────
-    print("\n── Training unified CharTransformerLM ───────────────────────────")
+    # Phase 4: Train unified model
+    print("\n-- Training unified CharTransformerLM ---------------------------")
     t0 = time.perf_counter()
-    model = _train_unified(inputs_arr, targets_arr, vocab, device)
+    model, optimizer, scheduler, scaler, final_epoch = _train_unified(
+        inputs_arr=inputs_arr,
+        targets_arr=targets_arr,
+        vocab=vocab,
+        device=device,
+        max_seq=model_seq_len,
+        d_model=model_d,
+        n_heads=model_h,
+        n_layers=model_l,
+        start_epoch=start_epoch,
+        target_epochs=target_epochs,
+        resume_model_state=(
+            resume_model_ckpt["state_dict"] if resume_model_ckpt is not None else None
+        ),
+        resume_optimizer_state=resume_optimizer_state,
+        resume_scheduler_state=resume_scheduler_state,
+        resume_scaler_state=resume_scaler_state,
+    )
     model.eval()
     print(f"  Training time: {time.perf_counter() - t0:.1f}s")
 
-    # ── Save checkpoint ───────────────────────────────────────────────
+    # Save checkpoints
+    os.makedirs(args.work_dir, exist_ok=True)
+    save_path = os.path.join(args.work_dir, "model.pt")
     checkpoint = {
         "vocab": vocab,
         "vocab_size": len(vocab),
-        "d_model": D_MODEL,
-        "n_heads": N_HEADS,
-        "n_layers": N_LAYERS,
+        "d_model": model_d,
+        "n_heads": model_h,
+        "n_layers": model_l,
+        "seq_len": model_seq_len,
+        "epoch": final_epoch,
+        "target_epochs": target_epochs,
         # Unwrap torch.compile wrapper before saving so load_state_dict works cleanly.
         "state_dict": {
             k: v.cpu()
             for k, v in getattr(model, "_orig_mod", model).state_dict().items()
         },
     }
-
-    os.makedirs(args.work_dir, exist_ok=True)
-    save_path = os.path.join(args.work_dir, "model.pt")
     torch.save(checkpoint, save_path)
 
+    train_state_path = _default_train_state_path(Path(save_path))
+    train_state = {
+        "epoch": final_epoch,
+        "target_epochs": target_epochs,
+        "seq_len": model_seq_len,
+        "optimizer_state_dict": optimizer.state_dict(),
+        "scheduler_state_dict": scheduler.state_dict(),
+        "scaler_state_dict": scaler.state_dict() if device.type == "cuda" else None,
+        "model_checkpoint_path": save_path,
+    }
+    torch.save(train_state, str(train_state_path))
+
     print(
-        f"\n✓ Training complete — {time.perf_counter() - total_start:.1f}s  |  saved to {save_path}"
+        f"\nTraining complete - {time.perf_counter() - total_start:.1f}s  "
+        f"| model: {save_path} | resume state: {train_state_path}"
     )
 
-
-# ══════════════════════════════════════════════
-# Batched inference helpers
-# ══════════════════════════════════════════════
 def _batch_predict_top3(
     model: CharTransformerLM,
     vocab: Vocab,
     texts: list,
     device: torch.device,
     decode_arr: list,  # pre-built list: index → character string
+    seq_len: int = SEQ_LEN,
 ) -> list:
     """
     Predict top-3 next characters for a list of texts in one padded forward pass.
     Returns a list of 3-char strings aligned with `texts`.
     """
-    encoded = [_encode_context(vocab, t) for t in texts]
+    encoded = [_encode_context(vocab, t, seq_len=seq_len) for t in texts]
     lengths = [len(ids) for ids in encoded]
     max_len = max(lengths)
     B = len(texts)
@@ -492,17 +683,21 @@ def test(args):
         weights_only=False,
     )
 
+    ckpt_seq_len = _checkpoint_seq_len(checkpoint, SEQ_LEN)
     vocab: Vocab = checkpoint["vocab"]
     model = CharTransformerLM(
         vocab_size=checkpoint["vocab_size"],
         d_model=checkpoint.get("d_model", D_MODEL),
         n_heads=checkpoint.get("n_heads", N_HEADS),
         n_layers=checkpoint.get("n_layers", N_LAYERS),
+        max_seq=ckpt_seq_len,
     ).to(device)
     model.load_state_dict(checkpoint["state_dict"])
     model.eval()
 
-    print(f"Loaded unified model  vocab={checkpoint['vocab_size']}")
+    print(
+        f"Loaded unified model  vocab={checkpoint['vocab_size']}  seq_len={ckpt_seq_len}"
+    )
 
     # Load test data
     if args.test_data.endswith(".csv"):
@@ -534,7 +729,7 @@ def test(args):
             batch_order = order[bi : bi + INF_BATCH]
             batch_texts = [clean[i] for i in batch_order]
             preds = _batch_predict_top3(
-                model, vocab, batch_texts, device, decode_arr
+                model, vocab, batch_texts, device, decode_arr, seq_len=ckpt_seq_len
             )
             for orig_i, pred_str in zip(batch_order, preds):
                 predictions[orig_i] = pred_str
@@ -570,7 +765,23 @@ def main():
     )
     parser.add_argument("mode", choices=["train", "test"])
     parser.add_argument("--work_dir", default="../work")
-    parser.add_argument("--train_dir", default="../data/train")
+    parser.add_argument("--train_dir", default="../data/train v2 (with test)")
+    parser.add_argument(
+        "--resume_model",
+        default=None,
+        help="Path to a previous model checkpoint (model.pt) for continued training.",
+    )
+    parser.add_argument(
+        "--resume_state",
+        default=None,
+        help="Optional optimizer/scaler state checkpoint; defaults to model.train_state.pt next to --resume_model.",
+    )
+    parser.add_argument(
+        "--extra_epochs",
+        type=int,
+        default=0,
+        help="Additional epochs to train when resuming. If omitted, trains for another EPOCHS.",
+    )
     parser.add_argument("--test_data", default="../kaggle-data/test.csv")
     parser.add_argument("--test_output", default="../submission.csv")
     args = parser.parse_args()
@@ -586,3 +797,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
