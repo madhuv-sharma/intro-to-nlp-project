@@ -1,4 +1,5 @@
 import argparse
+import heapq
 import math
 import os
 import pickle
@@ -26,11 +27,12 @@ class CharNgramLM:
         self.n_max = n_max
         self.alpha = alpha
         self.n_orders = list(range(self.n_min, self.n_max + 1))
-        self.n_orders_rev = list(reversed(self.n_orders))
         self.counts = {n: defaultdict(Counter) for n in self.n_orders}
         self.vocab = set()
         self.vocab_size = 0
         self.log_vocab_size = 0.0
+        self.unigram = Counter()
+        self._unigram_order = []
         self.cache = {}
 
     def train_text(self, text):
@@ -44,6 +46,7 @@ class CharNgramLM:
                 self.counts[n][context][char] += 1
                 self.counts[n][context]["__total__"] += 1
                 self.vocab.add(char)
+                self.unigram[char] += 1
 
     def score_context(self, context):
         score = 0.0
@@ -85,7 +88,9 @@ class CharNgramLM:
             if counter:
                 ctx_count = counter["__total__"]
                 char_count = counter.get(char, 0)
-                p = (char_count + self.alpha) / (ctx_count + self.alpha * self.vocab_size)
+                p = (char_count + self.alpha) / (
+                    ctx_count + self.alpha * self.vocab_size
+                )
                 w = ctx_count
             else:
                 p = 1.0 / self.vocab_size if self.vocab_size else 0.0
@@ -97,22 +102,51 @@ class CharNgramLM:
         return total_prob / total_weight
 
     def predict_top3(self, context):
-        if context in self.cache:
-            return self.cache[context]
+        if not hasattr(self, "cache"):
+            self.cache = {}
+        if not hasattr(self, "_unigram_order"):
+            self._unigram_order = []
 
-        # With interpolation every vocab char has a meaningful score — always score all
-        candidates = {c for c in self.vocab if c not in SPECIAL_CHARS}
+        # Only the last n_max chars determine prediction.
+        cache_key = context[-self.n_max :]
+        if cache_key in self.cache:
+            return self.cache[cache_key]
 
-        scores = sorted(
-            ((self.prob(context, char), char) for char in candidates), reverse=True
-        )
-        result = [c for _, c in scores[:3]]
+        # Single pass: accumulate excess score per char across all matching n-gram orders.
+        # For ranking, the constant base term (alpha contribution) can be ignored.
+        # excess[c] = sum_n( ctx_count_n / D_n * count_n[c] )
+        # where D_n = ctx_count_n + alpha * vocab_size
+        scores = defaultdict(float)
+        for n in self.n_orders:
+            if len(context) < n:
+                continue
+            counter = self.counts[n].get(context[-n:])
+            if not counter:
+                continue
+            ctx_count = counter["__total__"]
+            w_over_D = ctx_count / (ctx_count + self.alpha * self.vocab_size)
+            for c, cnt in counter.items():
+                if c != "__total__" and c not in SPECIAL_CHARS:
+                    scores[c] += w_over_D * cnt
+
+        if scores:
+            result = [
+                c for c, _ in heapq.nlargest(3, scores.items(), key=lambda x: x[1])
+            ]
+        else:
+            result = []
+
+        if len(result) < 3:
+            for c in self._unigram_order:
+                if c not in result:
+                    result.append(c)
+                if len(result) == 3:
+                    break
 
         if len(self.cache) > 50000:
-            print("Cache size exceeded, clearing cache")
             self.cache.clear()
 
-        self.cache[context] = result
+        self.cache[cache_key] = result
         return result
 
 
@@ -129,6 +163,35 @@ def save_model(model, path):
 def load_model(path):
     with open(path, "rb") as f:
         return pickle.load(f)
+
+
+def normalize_text(text):
+    text = text.rstrip("\r\n")
+    text = text.strip('"')
+    text = unicodedata.normalize("NFC", text)
+    text = text.replace("\t", " ")
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def ensure_lm_compat(lm):
+    if not hasattr(lm, "n_orders"):
+        lm.n_orders = list(range(lm.n_min, lm.n_max + 1))
+    if not hasattr(lm, "cache"):
+        lm.cache = {}
+    if not hasattr(lm, "unigram"):
+        lm.unigram = Counter()
+    if not hasattr(lm, "_unigram_order") or not lm._unigram_order:
+        if lm.unigram:
+            lm._unigram_order = [
+                c for c, _ in lm.unigram.most_common() if c not in SPECIAL_CHARS
+            ]
+        else:
+            lm._unigram_order = [c for c in sorted(lm.vocab) if c not in SPECIAL_CHARS]
+    if not hasattr(lm, "vocab_size") or not lm.vocab_size:
+        lm.vocab_size = len([c for c in lm.vocab if c not in SPECIAL_CHARS])
+    if not hasattr(lm, "log_vocab_size") or lm.log_vocab_size == 0.0:
+        lm.log_vocab_size = math.log(max(lm.vocab_size, 1))
 
 
 # ===============================
@@ -159,11 +222,9 @@ def train(args):
 
         with file.open("r", encoding="utf-8") as f:
             for line in f:
-                line = line.rstrip("\r\n")
+                line = normalize_text(line)
                 if not line:
                     continue
-                line = line.strip('"')
-                line = unicodedata.normalize("NFC", line)
                 line = ("^" * lms[lang].n_max) + line + "$"
                 lms[lang].train_text(line)
 
@@ -175,8 +236,11 @@ def train(args):
     for lm in lms.values():
         for ch in SPECIAL_CHARS:
             lm.vocab.discard(ch)
+            lm.unigram.pop(ch, None)
         lm.vocab_size = len(lm.vocab)
         lm.log_vocab_size = math.log(lm.vocab_size)
+        lm._unigram_order = [c for c, _ in lm.unigram.most_common()]
+        ensure_lm_compat(lm)
 
     os.makedirs(args.work_dir, exist_ok=True)
     save_model(lms, os.path.join(args.work_dir, "model.pkl"))
@@ -240,6 +304,8 @@ def test(args):
     total_start = time.perf_counter()
 
     lms = load_model(os.path.join(args.work_dir, "model.pkl"))
+    for lm in lms.values():
+        ensure_lm_compat(lm)
 
     if args.test_data.endswith(".csv"):
         test_df = pd.read_csv(args.test_data)
@@ -291,8 +357,7 @@ def test(args):
         best_lang = None
         best_score = float("-inf")
 
-        context = context.strip('"')
-        context = unicodedata.normalize("NFC", context)
+        context = normalize_text(context)
         # context = normalize_caps(context)
         detected = detect_script(context)
 
@@ -311,8 +376,9 @@ def test(args):
             # else:
             #     candidate_langs = latin_langs
 
-            # candidate_langs = lms.keys()
-            candidate_langs = ["en", "fr", "de", "it"]
+            candidate_langs = [lang for lang in ["en", "fr", "de", "it"] if lang in lms]
+            if not candidate_langs:
+                candidate_langs = list(lms.keys())
 
         for lang in candidate_langs:
             lm = lms[lang]
