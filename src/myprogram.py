@@ -98,8 +98,9 @@ class CharNgramLM:
         if not hasattr(self, "_unigram_order"):
             self._unigram_order = []
 
-        if context in self.cache:
-            return self.cache[context]
+        cache_key = context[-self.n_max :]
+        if cache_key in self.cache:
+            return self.cache[cache_key]
 
         candidates = set()
 
@@ -132,7 +133,7 @@ class CharNgramLM:
         if len(self.cache) > 50000:
             self.cache.clear()
 
-        self.cache[context] = result
+        self.cache[cache_key] = result
         return result
 
 
