@@ -1,5 +1,4 @@
 import argparse
-import heapq
 import math
 import os
 import pickle
@@ -19,6 +18,7 @@ import pandas as pd
 # ===============================
 
 SPECIAL_CHARS = {"^", "$"}
+TOP_UNIGRAM_LOG_COUNT = 10
 
 
 class CharNgramLM:
@@ -78,28 +78,19 @@ class CharNgramLM:
     def prob(self, context, char):
         if char in SPECIAL_CHARS:
             return 0.0
-        total_weight = 0.0
-        total_prob = 0.0
-        for n in self.n_orders:
+        for n in reversed(self.n_orders):
             if len(context) < n:
                 continue
             sub_context = context[-n:]
             counter = self.counts[n].get(sub_context)
-            if counter:
-                ctx_count = counter["__total__"]
-                char_count = counter.get(char, 0)
-                p = (char_count + self.alpha) / (
-                    ctx_count + self.alpha * self.vocab_size
-                )
-                w = ctx_count
-            else:
-                p = 1.0 / self.vocab_size if self.vocab_size else 0.0
-                w = 1.0
-            total_weight += w
-            total_prob += w * p
-        if total_weight == 0.0:
-            return 1.0 / self.vocab_size if self.vocab_size else 0.0
-        return total_prob / total_weight
+            if not counter:
+                continue
+            ctx_count = counter["__total__"]
+            char_count = counter.get(char, 0)
+            return (char_count + self.alpha) / (
+                ctx_count + self.alpha * self.vocab_size
+            )
+        return 1.0 / self.vocab_size if self.vocab_size else 0.0
 
     def predict_top3(self, context):
         if not hasattr(self, "cache"):
@@ -107,34 +98,29 @@ class CharNgramLM:
         if not hasattr(self, "_unigram_order"):
             self._unigram_order = []
 
-        # Only the last n_max chars determine prediction.
-        cache_key = context[-self.n_max :]
-        if cache_key in self.cache:
-            return self.cache[cache_key]
+        if context in self.cache:
+            return self.cache[context]
 
-        # Single pass: accumulate excess score per char across all matching n-gram orders.
-        # For ranking, the constant base term (alpha contribution) can be ignored.
-        # excess[c] = sum_n( ctx_count_n / D_n * count_n[c] )
-        # where D_n = ctx_count_n + alpha * vocab_size
-        scores = defaultdict(float)
+        candidates = set()
+
+        # gather candidates only from seen context continuations.
         for n in self.n_orders:
-            if len(context) < n:
-                continue
-            counter = self.counts[n].get(context[-n:])
-            if not counter:
-                continue
-            ctx_count = counter["__total__"]
-            w_over_D = ctx_count / (ctx_count + self.alpha * self.vocab_size)
-            for c, cnt in counter.items():
-                if c != "__total__" and c not in SPECIAL_CHARS:
-                    scores[c] += w_over_D * cnt
+            if len(context) >= n:
+                sub_context = context[-n:]
+                if sub_context in self.counts[n]:
+                    candidates.update(
+                        c
+                        for c in self.counts[n][sub_context].keys()
+                        if c != "__total__" and c not in SPECIAL_CHARS
+                    )
 
-        if scores:
-            result = [
-                c for c, _ in heapq.nlargest(3, scores.items(), key=lambda x: x[1])
-            ]
+        if candidates:
+            scores = sorted(
+                ((self.prob(context, char), char) for char in candidates), reverse=True
+            )
+            result = [c for _, c in scores[:3]]
         else:
-            result = []
+            result = [c for c in self._unigram_order if c not in SPECIAL_CHARS][:3]
 
         if len(result) < 3:
             for c in self._unigram_order:
@@ -146,7 +132,7 @@ class CharNgramLM:
         if len(self.cache) > 50000:
             self.cache.clear()
 
-        self.cache[cache_key] = result
+        self.cache[context] = result
         return result
 
 
@@ -181,6 +167,17 @@ def ensure_lm_compat(lm):
         lm.cache = {}
     if not hasattr(lm, "unigram"):
         lm.unigram = Counter()
+    if not lm.unigram and hasattr(lm, "counts") and lm.n_orders:
+        # Recover approximate global char frequency from the smallest available
+        # n-gram order so fallback can still use LM-top chars on older checkpoints.
+        n_ref = min(lm.n_orders)
+        if n_ref in lm.counts:
+            recovered = Counter()
+            for counter in lm.counts[n_ref].values():
+                for ch, cnt in counter.items():
+                    if ch != "__total__" and ch not in SPECIAL_CHARS:
+                        recovered[ch] += cnt
+            lm.unigram = recovered
     if not hasattr(lm, "_unigram_order") or not lm._unigram_order:
         if lm.unigram:
             lm._unigram_order = [
@@ -233,7 +230,7 @@ def train(args):
 
         print(f"Finished training {lang}")
 
-    for lm in lms.values():
+    for lang, lm in lms.items():
         for ch in SPECIAL_CHARS:
             lm.vocab.discard(ch)
             lm.unigram.pop(ch, None)
@@ -241,6 +238,11 @@ def train(args):
         lm.log_vocab_size = math.log(lm.vocab_size)
         lm._unigram_order = [c for c, _ in lm.unigram.most_common()]
         ensure_lm_compat(lm)
+        top_unigram_order = lm._unigram_order[:TOP_UNIGRAM_LOG_COUNT]
+        print(
+            f"Top {len(top_unigram_order)} unigram order for {lang}: "
+            f"{', '.join(repr(ch) for ch in top_unigram_order)}"
+        )
 
     os.makedirs(args.work_dir, exist_ok=True)
     save_model(lms, os.path.join(args.work_dir, "model.pkl"))
