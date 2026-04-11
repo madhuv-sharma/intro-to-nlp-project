@@ -75,54 +75,38 @@ class CharNgramLM:
     def prob(self, context, char):
         if char in SPECIAL_CHARS:
             return 0.0
-        for n in self.n_orders_rev:
+        total_weight = 0.0
+        total_prob = 0.0
+        for n in self.n_orders:
             if len(context) < n:
                 continue
             sub_context = context[-n:]
             counter = self.counts[n].get(sub_context)
-            if not counter:
-                continue
-            context_count = counter["__total__"]
-            char_count = counter.get(char, 0)
-            return (char_count + self.alpha) / (
-                context_count + (self.alpha * self.vocab_size)
-            )
-        return 1 / self.vocab_size if self.vocab_size else 0.0
+            if counter:
+                ctx_count = counter["__total__"]
+                char_count = counter.get(char, 0)
+                p = (char_count + self.alpha) / (ctx_count + self.alpha * self.vocab_size)
+                w = ctx_count
+            else:
+                p = 1.0 / self.vocab_size if self.vocab_size else 0.0
+                w = 1.0
+            total_weight += w
+            total_prob += w * p
+        if total_weight == 0.0:
+            return 1.0 / self.vocab_size if self.vocab_size else 0.0
+        return total_prob / total_weight
 
     def predict_top3(self, context):
         if context in self.cache:
             return self.cache[context]
 
-        candidates = set()
-
-        # collect possible next chars from all n-gram orders
-        for n in self.n_orders:
-            if len(context) >= n:
-                sub_context = context[-n:]
-                if sub_context in self.counts[n]:
-                    candidates.update(
-                        c
-                        for c in self.counts[n][sub_context].keys()
-                        if c != "__total__" and c not in SPECIAL_CHARS
-                    )
-
-        # fallback if unseen
-        if not candidates:
-            candidates = {c for c in self.vocab if c not in SPECIAL_CHARS}
+        # With interpolation every vocab char has a meaningful score — always score all
+        candidates = {c for c in self.vocab if c not in SPECIAL_CHARS}
 
         scores = sorted(
             ((self.prob(context, char), char) for char in candidates), reverse=True
         )
         result = [c for _, c in scores[:3]]
-
-        if len(result) < 3:
-            for char in self.vocab:
-                if char in SPECIAL_CHARS:
-                    continue
-                if char not in result:
-                    result.append(char)
-                if len(result) == 3:
-                    break
 
         if len(self.cache) > 50000:
             print("Cache size exceeded, clearing cache")
