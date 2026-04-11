@@ -18,7 +18,6 @@ import pandas as pd
 # ===============================
 
 SPECIAL_CHARS = {"^", "$"}
-TOP_UNIGRAM_LOG_COUNT = 10
 
 
 class CharNgramLM:
@@ -27,12 +26,11 @@ class CharNgramLM:
         self.n_max = n_max
         self.alpha = alpha
         self.n_orders = list(range(self.n_min, self.n_max + 1))
+        self.n_orders_rev = list(reversed(self.n_orders))
         self.counts = {n: defaultdict(Counter) for n in self.n_orders}
         self.vocab = set()
         self.vocab_size = 0
         self.log_vocab_size = 0.0
-        self.unigram = Counter()
-        self._unigram_order = []
         self.cache = {}
 
     def train_text(self, text):
@@ -46,7 +44,6 @@ class CharNgramLM:
                 self.counts[n][context][char] += 1
                 self.counts[n][context]["__total__"] += 1
                 self.vocab.add(char)
-                self.unigram[char] += 1
 
     def score_context(self, context):
         score = 0.0
@@ -78,33 +75,27 @@ class CharNgramLM:
     def prob(self, context, char):
         if char in SPECIAL_CHARS:
             return 0.0
-        for n in reversed(self.n_orders):
+        for n in self.n_orders_rev:
             if len(context) < n:
                 continue
             sub_context = context[-n:]
             counter = self.counts[n].get(sub_context)
             if not counter:
                 continue
-            ctx_count = counter["__total__"]
+            context_count = counter["__total__"]
             char_count = counter.get(char, 0)
             return (char_count + self.alpha) / (
-                ctx_count + self.alpha * self.vocab_size
+                context_count + (self.alpha * self.vocab_size)
             )
-        return 1.0 / self.vocab_size if self.vocab_size else 0.0
+        return 1 / self.vocab_size if self.vocab_size else 0.0
 
     def predict_top3(self, context):
-        if not hasattr(self, "cache"):
-            self.cache = {}
-        if not hasattr(self, "_unigram_order"):
-            self._unigram_order = []
-
-        cache_key = context[-self.n_max :]
-        if cache_key in self.cache:
-            return self.cache[cache_key]
+        if context in self.cache:
+            return self.cache[context]
 
         candidates = set()
 
-        # gather candidates only from seen context continuations.
+        # collect possible next chars from all n-gram orders
         for n in self.n_orders:
             if len(context) >= n:
                 sub_context = context[-n:]
@@ -115,25 +106,29 @@ class CharNgramLM:
                         if c != "__total__" and c not in SPECIAL_CHARS
                     )
 
-        if candidates:
-            scores = sorted(
-                ((self.prob(context, char), char) for char in candidates), reverse=True
-            )
-            result = [c for _, c in scores[:3]]
-        else:
-            result = [c for c in self._unigram_order if c not in SPECIAL_CHARS][:3]
+        # fallback if unseen
+        if not candidates:
+            candidates = {c for c in self.vocab if c not in SPECIAL_CHARS}
+
+        scores = sorted(
+            ((self.prob(context, char), char) for char in candidates), reverse=True
+        )
+        result = [c for _, c in scores[:3]]
 
         if len(result) < 3:
-            for c in self._unigram_order:
-                if c not in result:
-                    result.append(c)
+            for char in self.vocab:
+                if char in SPECIAL_CHARS:
+                    continue
+                if char not in result:
+                    result.append(char)
                 if len(result) == 3:
                     break
 
         if len(self.cache) > 50000:
+            print("Cache size exceeded, clearing cache")
             self.cache.clear()
 
-        self.cache[cache_key] = result
+        self.cache[context] = result
         return result
 
 
@@ -150,46 +145,6 @@ def save_model(model, path):
 def load_model(path):
     with open(path, "rb") as f:
         return pickle.load(f)
-
-
-def normalize_text(text):
-    text = text.rstrip("\r\n")
-    text = text.strip('"')
-    text = unicodedata.normalize("NFC", text)
-    text = text.replace("\t", " ")
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
-
-
-def ensure_lm_compat(lm):
-    if not hasattr(lm, "n_orders"):
-        lm.n_orders = list(range(lm.n_min, lm.n_max + 1))
-    if not hasattr(lm, "cache"):
-        lm.cache = {}
-    if not hasattr(lm, "unigram"):
-        lm.unigram = Counter()
-    if not lm.unigram and hasattr(lm, "counts") and lm.n_orders:
-        # Recover approximate global char frequency from the smallest available
-        # n-gram order so fallback can still use LM-top chars on older checkpoints.
-        n_ref = min(lm.n_orders)
-        if n_ref in lm.counts:
-            recovered = Counter()
-            for counter in lm.counts[n_ref].values():
-                for ch, cnt in counter.items():
-                    if ch != "__total__" and ch not in SPECIAL_CHARS:
-                        recovered[ch] += cnt
-            lm.unigram = recovered
-    if not hasattr(lm, "_unigram_order") or not lm._unigram_order:
-        if lm.unigram:
-            lm._unigram_order = [
-                c for c, _ in lm.unigram.most_common() if c not in SPECIAL_CHARS
-            ]
-        else:
-            lm._unigram_order = [c for c in sorted(lm.vocab) if c not in SPECIAL_CHARS]
-    if not hasattr(lm, "vocab_size") or not lm.vocab_size:
-        lm.vocab_size = len([c for c in lm.vocab if c not in SPECIAL_CHARS])
-    if not hasattr(lm, "log_vocab_size") or lm.log_vocab_size == 0.0:
-        lm.log_vocab_size = math.log(max(lm.vocab_size, 1))
 
 
 # ===============================
@@ -220,9 +175,11 @@ def train(args):
 
         with file.open("r", encoding="utf-8") as f:
             for line in f:
-                line = normalize_text(line)
+                line = line.rstrip("\r\n")
                 if not line:
                     continue
+                line = line.strip('"')
+                line = unicodedata.normalize("NFC", line)
                 line = ("^" * lms[lang].n_max) + line + "$"
                 lms[lang].train_text(line)
 
@@ -231,19 +188,11 @@ def train(args):
 
         print(f"Finished training {lang}")
 
-    for lang, lm in lms.items():
+    for lm in lms.values():
         for ch in SPECIAL_CHARS:
             lm.vocab.discard(ch)
-            lm.unigram.pop(ch, None)
         lm.vocab_size = len(lm.vocab)
         lm.log_vocab_size = math.log(lm.vocab_size)
-        lm._unigram_order = [c for c, _ in lm.unigram.most_common()]
-        ensure_lm_compat(lm)
-        top_unigram_order = lm._unigram_order[:TOP_UNIGRAM_LOG_COUNT]
-        print(
-            f"Top {len(top_unigram_order)} unigram order for {lang}: "
-            f"{', '.join(repr(ch) for ch in top_unigram_order)}"
-        )
 
     os.makedirs(args.work_dir, exist_ok=True)
     save_model(lms, os.path.join(args.work_dir, "model.pkl"))
@@ -307,8 +256,6 @@ def test(args):
     total_start = time.perf_counter()
 
     lms = load_model(os.path.join(args.work_dir, "model.pkl"))
-    for lm in lms.values():
-        ensure_lm_compat(lm)
 
     if args.test_data.endswith(".csv"):
         test_df = pd.read_csv(args.test_data)
@@ -360,7 +307,8 @@ def test(args):
         best_lang = None
         best_score = float("-inf")
 
-        context = normalize_text(context)
+        context = context.strip('"')
+        context = unicodedata.normalize("NFC", context)
         # context = normalize_caps(context)
         detected = detect_script(context)
 
@@ -379,9 +327,8 @@ def test(args):
             # else:
             #     candidate_langs = latin_langs
 
-            candidate_langs = [lang for lang in ["en", "fr", "de", "it"] if lang in lms]
-            if not candidate_langs:
-                candidate_langs = list(lms.keys())
+            # candidate_langs = lms.keys()
+            candidate_langs = ["en", "fr", "de", "it"]
 
         for lang in candidate_langs:
             lm = lms[lang]
