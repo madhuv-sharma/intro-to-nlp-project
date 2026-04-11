@@ -33,7 +33,7 @@ class CharNgramLM:
         self.log_vocab_size = 0.0
         self.cache = {}
 
-    def _train_sequence(self, text):
+    def train_text(self, text):
         text_len = len(text)
         for i in range(text_len):
             for n in self.n_orders:
@@ -44,16 +44,6 @@ class CharNgramLM:
                 self.counts[n][context][char] += 1
                 self.counts[n][context]["__total__"] += 1
                 self.vocab.add(char)
-
-    def train_line(self, line):
-        bounded = ("^" * self.n_max) + line + "$"
-        self._train_sequence(bounded)
-
-    def train_text(self, text):
-        for line in text.splitlines():
-            if not line:
-                continue
-            self.train_line(line)
 
     def score_context(self, context):
         score = 0.0
@@ -190,7 +180,8 @@ def train(args):
                     continue
                 line = line.strip('"')
                 line = unicodedata.normalize("NFC", line)
-                lms[lang].train_line(line)
+                line = ("^" * lms[lang].n_max) + line + "$"
+                lms[lang].train_text(line)
 
         # text = file.read_text(encoding="utf-8")
         # lms[lang].train_text(text)
