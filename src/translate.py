@@ -16,8 +16,7 @@ LANGUAGE_NAMES = {
     "ar": "Arabic",
 }
 
-# TARGET_LANGS = ["zh", "de", "ko", "ru", "ja", "hi", "ar", "fr", "it"]
-TARGET_LANGS = ["hi"]
+TARGET_LANGS = ["zh", "de", "ko", "ru", "ja", "hi", "ar", "fr", "it"]
 
 BATCH_SIZE = 24 if DEVICE == "cuda" else 2
 MAX_INPUT_TOKENS = 1024
